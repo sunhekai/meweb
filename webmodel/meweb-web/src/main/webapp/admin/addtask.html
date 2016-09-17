@@ -14,11 +14,16 @@
 <meta name="apple-mobile-web-app-title" content="Amaze UI" />
 <link rel="stylesheet" href="assets/css/amazeui.min.css"/>
 <link rel="stylesheet" href="assets/css/admin.css">
-<link rel="stylesheet" href="assets/css/jquery.datetimepicker.css">
-<script src="assets/js/jquery.min.js"></script>
+<link rel="stylesheet" href="assets/css/jquery-ui.css">
+<link rel="stylesheet" href="assets/css/jquery-ui-timepicker-addon.css">
+
+<script src="assets/js/jquery.js"></script>
+<script src="assets/js/jquery-ui.min.js"></script>
+<script src="assets/js/jquery-ui-timepicker-addon.js"></script>
+<script src="assets/js/jquery-ui-timepicker-addon-i18n.min.js"></script>
+<script src="assets/js/jquery-ui-sliderAccess.js"></script>
 <script src="assets/js/addtask.js"></script>
 <script src="assets/js/common.js"></script>
-<script src="assets/js/jquery.datetimepicker.full.js"></script>
 </head>
 <body>
 <!--[if lte IE 9]><p class="browsehappy">升级你的浏览器吧！ <a href="http://se.360.cn/" target="_blank">升级浏览器</a>以获得更好的体验！</p><![endif]-->
@@ -220,6 +225,18 @@
           <div class="zuo">预计结束时间：</div>
           <div class="you">
             <input type="text" name="schenddate" class="am-input-sm" id="schenddate" placeholder="请输入关键词">
+          </div>
+        </div>
+        <div class="am-form-group am-cf">
+          <div class="zuo">开始时间：</div>
+          <div class="you">
+            <p class="datep"><input type="text" name="startdate" class="datainp" id="startdate" placeholder="请输入关键词"></p>
+          </div>
+        </div>
+         <div class="am-form-group am-cf">
+          <div class="zuo">结束时间：</div>
+          <div class="you">
+            <input type="text" name="enddate" class="am-input-sm" id="enddate" placeholder="请输入关键词">
           </div>
         </div>
         <div class="am-form-group am-cf">

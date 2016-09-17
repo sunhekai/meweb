@@ -55,7 +55,6 @@ public class LoginController {
 	 @RequestMapping("/admin/testjson")
 	 public @ResponseBody Object getJSON() {
 		return userSevice.findUserByName("admin");
-	 
 	 }
 	 
 	 
