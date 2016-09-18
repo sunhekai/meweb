@@ -1,7 +1,0 @@
-0:0:0:0:0:0:0:1 - - [10/Sep/2016:22:29:35 +0800] "GET /meweb-web/ HTTP/1.1" 200 57 http-bio-8080-exec-1 1592
-0:0:0:0:0:0:0:1 - - [10/Sep/2016:22:29:40 +0800] "GET /meweb-web/login HTTP/1.1" 404 981 http-bio-8080-exec-2 66
-0:0:0:0:0:0:0:1 - - [10/Sep/2016:22:31:29 +0800] "GET /meweb-web/login HTTP/1.1" 404 987 http-bio-8080-exec-1 49058
-0:0:0:0:0:0:0:1 - - [10/Sep/2016:23:49:51 +0800] "GET /meweb-web/ HTTP/1.1" 302 - http-bio-8080-exec-1 232
-0:0:0:0:0:0:0:1 - - [10/Sep/2016:23:50:02 +0800] "GET /meweb-web/login HTTP/1.1" 404 987 http-bio-8080-exec-2 11252
-0:0:0:0:0:0:0:1 - - [10/Sep/2016:23:50:10 +0800] "GET /meweb-web/ HTTP/1.1" 302 - http-bio-8080-exec-3 8
-0:0:0:0:0:0:0:1 - - [10/Sep/2016:23:50:14 +0800] "GET /meweb-web/login HTTP/1.1" 404 987 http-bio-8080-exec-4 4486

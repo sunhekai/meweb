@@ -1,0 +1,15 @@
+CREATE TABLE meweb.task (
+	taskid BIGINT NOT NULL AUTO_INCREMENT,
+	taskname varchar(400) NULL,
+	schstartdate TIMESTAMP NULL,
+	schenddate TIMESTAMP NULL,
+	startdate TIMESTAMP NULL,
+	enddate TIMESTAMP NULL,
+	fzr BIGINT NULL,
+	fzrname varchar(40) NULL,
+	persons varchar(200) NULL,
+	CONSTRAINT task_pk PRIMARY KEY (taskid)
+)
+ENGINE=InnoDB
+DEFAULT CHARSET=utf8
+COLLATE=utf8_general_ci;

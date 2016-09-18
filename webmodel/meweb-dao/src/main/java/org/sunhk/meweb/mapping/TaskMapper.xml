@@ -1,0 +1,283 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="org.sunhk.meweb.dao.TaskMapper" >
+  <resultMap id="BaseResultMap" type="org.sunhk.meweb.model.Task" >
+    <id column="taskid" property="taskid" jdbcType="BIGINT" />
+    <result column="taskname" property="taskname" jdbcType="VARCHAR" />
+    <result column="schstartdate" property="schstartdate" jdbcType="TIMESTAMP" />
+    <result column="schenddate" property="schenddate" jdbcType="TIMESTAMP" />
+    <result column="startdate" property="startdate" jdbcType="TIMESTAMP" />
+    <result column="enddate" property="enddate" jdbcType="TIMESTAMP" />
+    <result column="fzr" property="fzr" jdbcType="BIGINT" />
+    <result column="fzrname" property="fzrname" jdbcType="VARCHAR" />
+    <result column="persons" property="persons" jdbcType="VARCHAR" />
+  </resultMap>
+  <sql id="Example_Where_Clause" >
+    <where >
+      <foreach collection="oredCriteria" item="criteria" separator="or" >
+        <if test="criteria.valid" >
+          <trim prefix="(" suffix=")" prefixOverrides="and" >
+            <foreach collection="criteria.criteria" item="criterion" >
+              <choose >
+                <when test="criterion.noValue" >
+                  and ${criterion.condition}
+                </when>
+                <when test="criterion.singleValue" >
+                  and ${criterion.condition} #{criterion.value}
+                </when>
+                <when test="criterion.betweenValue" >
+                  and ${criterion.condition} #{criterion.value} and #{criterion.secondValue}
+                </when>
+                <when test="criterion.listValue" >
+                  and ${criterion.condition}
+                  <foreach collection="criterion.value" item="listItem" open="(" close=")" separator="," >
+                    #{listItem}
+                  </foreach>
+                </when>
+              </choose>
+            </foreach>
+          </trim>
+        </if>
+      </foreach>
+    </where>
+  </sql>
+  <sql id="Update_By_Example_Where_Clause" >
+    <where >
+      <foreach collection="example.oredCriteria" item="criteria" separator="or" >
+        <if test="criteria.valid" >
+          <trim prefix="(" suffix=")" prefixOverrides="and" >
+            <foreach collection="criteria.criteria" item="criterion" >
+              <choose >
+                <when test="criterion.noValue" >
+                  and ${criterion.condition}
+                </when>
+                <when test="criterion.singleValue" >
+                  and ${criterion.condition} #{criterion.value}
+                </when>
+                <when test="criterion.betweenValue" >
+                  and ${criterion.condition} #{criterion.value} and #{criterion.secondValue}
+                </when>
+                <when test="criterion.listValue" >
+                  and ${criterion.condition}
+                  <foreach collection="criterion.value" item="listItem" open="(" close=")" separator="," >
+                    #{listItem}
+                  </foreach>
+                </when>
+              </choose>
+            </foreach>
+          </trim>
+        </if>
+      </foreach>
+    </where>
+  </sql>
+  <sql id="Base_Column_List" >
+    taskid, taskname, schstartdate, schenddate, startdate, enddate, fzr, fzrname, persons
+  </sql>
+  <select id="selectByExample" resultMap="BaseResultMap" parameterType="org.sunhk.meweb.model.TaskExample" >
+    select
+    <if test="distinct" >
+      distinct
+    </if>
+    <include refid="Base_Column_List" />
+    from task
+    <if test="_parameter != null" >
+      <include refid="Example_Where_Clause" />
+    </if>
+    <if test="orderByClause != null" >
+      order by ${orderByClause}
+    </if>
+    <if test="limit != null" >
+      <if test="offset != null" >
+        limit ${offset}, ${limit}
+      </if>
+      <if test="offset == null" >
+        limit ${limit}
+      </if>
+    </if>
+  </select>
+  <select id="selectByPrimaryKey" resultMap="BaseResultMap" parameterType="java.lang.Long" >
+    select 
+    <include refid="Base_Column_List" />
+    from task
+    where taskid = #{taskid,jdbcType=BIGINT}
+  </select>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Long" >
+    delete from task
+    where taskid = #{taskid,jdbcType=BIGINT}
+  </delete>
+  <delete id="deleteByExample" parameterType="org.sunhk.meweb.model.TaskExample" >
+    delete from task
+    <if test="_parameter != null" >
+      <include refid="Example_Where_Clause" />
+    </if>
+  </delete>
+  <insert id="insert" parameterType="org.sunhk.meweb.model.Task" >
+    insert into task (taskid, taskname, schstartdate, 
+      schenddate, startdate, enddate, 
+      fzr, fzrname, persons
+      )
+    values (#{taskid,jdbcType=BIGINT}, #{taskname,jdbcType=VARCHAR}, #{schstartdate,jdbcType=TIMESTAMP}, 
+      #{schenddate,jdbcType=TIMESTAMP}, #{startdate,jdbcType=TIMESTAMP}, #{enddate,jdbcType=TIMESTAMP}, 
+      #{fzr,jdbcType=BIGINT}, #{fzrname,jdbcType=VARCHAR}, #{persons,jdbcType=VARCHAR}
+      )
+  </insert>
+  <insert id="insertSelective" parameterType="org.sunhk.meweb.model.Task" >
+    insert into task
+    <trim prefix="(" suffix=")" suffixOverrides="," >
+      <if test="taskid != null" >
+        taskid,
+      </if>
+      <if test="taskname != null" >
+        taskname,
+      </if>
+      <if test="schstartdate != null" >
+        schstartdate,
+      </if>
+      <if test="schenddate != null" >
+        schenddate,
+      </if>
+      <if test="startdate != null" >
+        startdate,
+      </if>
+      <if test="enddate != null" >
+        enddate,
+      </if>
+      <if test="fzr != null" >
+        fzr,
+      </if>
+      <if test="fzrname != null" >
+        fzrname,
+      </if>
+      <if test="persons != null" >
+        persons,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides="," >
+      <if test="taskid != null" >
+        #{taskid,jdbcType=BIGINT},
+      </if>
+      <if test="taskname != null" >
+        #{taskname,jdbcType=VARCHAR},
+      </if>
+      <if test="schstartdate != null" >
+        #{schstartdate,jdbcType=TIMESTAMP},
+      </if>
+      <if test="schenddate != null" >
+        #{schenddate,jdbcType=TIMESTAMP},
+      </if>
+      <if test="startdate != null" >
+        #{startdate,jdbcType=TIMESTAMP},
+      </if>
+      <if test="enddate != null" >
+        #{enddate,jdbcType=TIMESTAMP},
+      </if>
+      <if test="fzr != null" >
+        #{fzr,jdbcType=BIGINT},
+      </if>
+      <if test="fzrname != null" >
+        #{fzrname,jdbcType=VARCHAR},
+      </if>
+      <if test="persons != null" >
+        #{persons,jdbcType=VARCHAR},
+      </if>
+    </trim>
+  </insert>
+  <select id="countByExample" parameterType="org.sunhk.meweb.model.TaskExample" resultType="java.lang.Integer" >
+    select count(*) from task
+    <if test="_parameter != null" >
+      <include refid="Example_Where_Clause" />
+    </if>
+  </select>
+  <update id="updateByExampleSelective" parameterType="map" >
+    update task
+    <set >
+      <if test="record.taskid != null" >
+        taskid = #{record.taskid,jdbcType=BIGINT},
+      </if>
+      <if test="record.taskname != null" >
+        taskname = #{record.taskname,jdbcType=VARCHAR},
+      </if>
+      <if test="record.schstartdate != null" >
+        schstartdate = #{record.schstartdate,jdbcType=TIMESTAMP},
+      </if>
+      <if test="record.schenddate != null" >
+        schenddate = #{record.schenddate,jdbcType=TIMESTAMP},
+      </if>
+      <if test="record.startdate != null" >
+        startdate = #{record.startdate,jdbcType=TIMESTAMP},
+      </if>
+      <if test="record.enddate != null" >
+        enddate = #{record.enddate,jdbcType=TIMESTAMP},
+      </if>
+      <if test="record.fzr != null" >
+        fzr = #{record.fzr,jdbcType=BIGINT},
+      </if>
+      <if test="record.fzrname != null" >
+        fzrname = #{record.fzrname,jdbcType=VARCHAR},
+      </if>
+      <if test="record.persons != null" >
+        persons = #{record.persons,jdbcType=VARCHAR},
+      </if>
+    </set>
+    <if test="_parameter != null" >
+      <include refid="Update_By_Example_Where_Clause" />
+    </if>
+  </update>
+  <update id="updateByExample" parameterType="map" >
+    update task
+    set taskid = #{record.taskid,jdbcType=BIGINT},
+      taskname = #{record.taskname,jdbcType=VARCHAR},
+      schstartdate = #{record.schstartdate,jdbcType=TIMESTAMP},
+      schenddate = #{record.schenddate,jdbcType=TIMESTAMP},
+      startdate = #{record.startdate,jdbcType=TIMESTAMP},
+      enddate = #{record.enddate,jdbcType=TIMESTAMP},
+      fzr = #{record.fzr,jdbcType=BIGINT},
+      fzrname = #{record.fzrname,jdbcType=VARCHAR},
+      persons = #{record.persons,jdbcType=VARCHAR}
+    <if test="_parameter != null" >
+      <include refid="Update_By_Example_Where_Clause" />
+    </if>
+  </update>
+  <update id="updateByPrimaryKeySelective" parameterType="org.sunhk.meweb.model.Task" >
+    update task
+    <set >
+      <if test="taskname != null" >
+        taskname = #{taskname,jdbcType=VARCHAR},
+      </if>
+      <if test="schstartdate != null" >
+        schstartdate = #{schstartdate,jdbcType=TIMESTAMP},
+      </if>
+      <if test="schenddate != null" >
+        schenddate = #{schenddate,jdbcType=TIMESTAMP},
+      </if>
+      <if test="startdate != null" >
+        startdate = #{startdate,jdbcType=TIMESTAMP},
+      </if>
+      <if test="enddate != null" >
+        enddate = #{enddate,jdbcType=TIMESTAMP},
+      </if>
+      <if test="fzr != null" >
+        fzr = #{fzr,jdbcType=BIGINT},
+      </if>
+      <if test="fzrname != null" >
+        fzrname = #{fzrname,jdbcType=VARCHAR},
+      </if>
+      <if test="persons != null" >
+        persons = #{persons,jdbcType=VARCHAR},
+      </if>
+    </set>
+    where taskid = #{taskid,jdbcType=BIGINT}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="org.sunhk.meweb.model.Task" >
+    update task
+    set taskname = #{taskname,jdbcType=VARCHAR},
+      schstartdate = #{schstartdate,jdbcType=TIMESTAMP},
+      schenddate = #{schenddate,jdbcType=TIMESTAMP},
+      startdate = #{startdate,jdbcType=TIMESTAMP},
+      enddate = #{enddate,jdbcType=TIMESTAMP},
+      fzr = #{fzr,jdbcType=BIGINT},
+      fzrname = #{fzrname,jdbcType=VARCHAR},
+      persons = #{persons,jdbcType=VARCHAR}
+    where taskid = #{taskid,jdbcType=BIGINT}
+  </update>
+</mapper>

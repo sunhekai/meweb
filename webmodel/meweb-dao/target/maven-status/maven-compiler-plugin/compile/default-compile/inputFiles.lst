@@ -1,4 +1,7 @@
-D:\dev\sts-bundle\webframe\webmodel\meweb-dao\src\main\java\org\sunhk\meweb\model\SysUserExample.java
-D:\dev\sts-bundle\webframe\webmodel\meweb-dao\src\main\java\org\sunhk\meweb\model\SysUser.java
-D:\dev\sts-bundle\webframe\webmodel\meweb-dao\src\main\java\org\sunhk\meweb\common\proxy\MyProxy.java
-D:\dev\sts-bundle\webframe\webmodel\meweb-dao\src\main\java\org\sunhk\meweb\dao\SysUserMapper.java
+D:\dev\sts-bundle\webframe\meweb\webmodel\meweb-dao\src\main\java\org\sunhk\meweb\common\proxy\MyProxy.java
+D:\dev\sts-bundle\webframe\meweb\webmodel\meweb-dao\src\main\java\org\sunhk\meweb\model\TaskExample.java
+D:\dev\sts-bundle\webframe\meweb\webmodel\meweb-dao\src\main\java\org\sunhk\meweb\model\SysUserExample.java
+D:\dev\sts-bundle\webframe\meweb\webmodel\meweb-dao\src\main\java\org\sunhk\meweb\model\SysUser.java
+D:\dev\sts-bundle\webframe\meweb\webmodel\meweb-dao\src\main\java\org\sunhk\meweb\dao\SysUserMapper.java
+D:\dev\sts-bundle\webframe\meweb\webmodel\meweb-dao\src\main\java\org\sunhk\meweb\model\Task.java
+D:\dev\sts-bundle\webframe\meweb\webmodel\meweb-dao\src\main\java\org\sunhk\meweb\dao\TaskMapper.java

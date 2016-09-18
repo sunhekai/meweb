@@ -1,0 +1,13 @@
+org\sunhk\meweb\model\TaskExample$Criteria.class
+org\sunhk\meweb\model\TaskExample$GeneratedCriteria.class
+org\sunhk\meweb\common\proxy\MyProxy.class
+org\sunhk\meweb\dao\SysUserMapper.class
+org\sunhk\meweb\model\SysUserExample$Criteria.class
+org\sunhk\meweb\model\SysUserExample$Criterion.class
+org\sunhk\meweb\model\SysUserExample.class
+org\sunhk\meweb\model\SysUser.class
+org\sunhk\meweb\model\TaskExample.class
+org\sunhk\meweb\model\Task.class
+org\sunhk\meweb\model\TaskExample$Criterion.class
+org\sunhk\meweb\model\SysUserExample$GeneratedCriteria.class
+org\sunhk\meweb\dao\TaskMapper.class
