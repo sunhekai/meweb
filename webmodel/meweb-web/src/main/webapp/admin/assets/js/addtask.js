@@ -29,11 +29,21 @@ $(document).ready(function(){
 //		disabledDates:['1986/01/08','1986/01/09','1986/01/10'],
 //		startDate:	'1986/01/05'
 //	});
-	
-		$('#schstartdate').datetimepicker();
-		$('#schenddate').datetimepicker();
+		$("#mainForm").initForm();
+		
+		$('#schstartdate').datetimepicker({
+			timeFormat: "hh:mm",
+			dateFormat:"yy-mm-dd"
+		});
+		$('#schenddate').datetimepicker({
+			timeFormat: "hh:mm",
+			dateFormat:"yy-mm-dd"
+		});
 		
 	 $("#btn").click(function () { 
+
+			
+			
 	        var formData = $("#mainForm").serializeArray();  
 	        var d ={};  
 //	       $.each(formData, function() {  
@@ -41,8 +51,10 @@ $(document).ready(function(){
 //	        });  
 	        d[formData[0].name] = formData[0].value;
 	        d[formData[1].name] = formData[1].value;
-	        d[formData[2].name] = new Date(formData[2].value);
-	        d[formData[3].name] = new Date(formData[3].value);
+//	        d[formData[2].name] = new Date(formData[2].value);
+//	        d[formData[3].name] = new Date(formData[3].value);
+	        d[formData[2].name] = formData[2].value;
+	        d[formData[3].name] = formData[3].value;
 	        d[formData[4].name] = new Date(formData[4].value);
 	        d[formData[5].name] = new Date(formData[5].value);
 	       console.log(JSON.stringify(d))  
@@ -64,6 +76,14 @@ $(document).ready(function(){
 	            }
 	        });  
 	    }) ; 
+	 $("#btnExport").click(function () { 
+		 var url = contextPath + "/admin/testexport";
+		 var form = $('<form method="post" action="' + url + '"></form>');
+		 taskid = 123;
+		 var parameter = $('<input type="text" name="taskid" value="'+taskid+'" />');
+		 form.appendTo('body').submit().remove();
+	 });
+	
 	 
 	 $("#btn2").click(function () {
 		 $("#prodcutDetailSrc").attr("src","addtask.html");

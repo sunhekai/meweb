@@ -70,4 +70,9 @@ public class SysUser {
     public void setLocked(Boolean locked) {
         this.locked = locked;
     }
+
+	public String getCredentialsSalt() {
+		// TODO Auto-generated method stub
+		return this.getUsername() + this.getSalt();
+	}
 }

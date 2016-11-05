@@ -10,15 +10,7 @@
 
 	<!-- 启动扫描所有的controller -->
 	<context:component-scan base-package="org.sunhk.meweb.*" />
-	<bean id="conversionService"
-		class="org.springframework.format.support.FormattingConversionServiceFactoryBean">
-		<property name="converters">
-			<list>
-				<bean class="org.sunhk.meweb.web.DateConverter" />
-			</list>
-		</property>
-	</bean>
-	<mvc:annotation-driven conversion-service="conversionService" />
+	
 	<context:annotation-config />
 
 
@@ -59,7 +51,7 @@
 						<bean class="com.fasterxml.jackson.databind.ObjectMapper">
 							<property name="dateFormat">
 								<bean class="java.text.SimpleDateFormat">
-									<constructor-arg type="java.lang.String" value="yyyy-MM-dd HH:mm:ss" />
+									<constructor-arg type="java.lang.String" value="yyyy-MM-dd HH:mm" />
 								</bean>
 							</property>
 						</bean>
@@ -94,7 +86,7 @@
 		<property name="prefix" value="/"></property>
 		<property name="suffix" value=".html"></property>
 	</bean>
-
+<!-- 
 	<bean id="taskJob" class="org.sunhk.meweb.job.QuartzTaskRun" />
 	<bean id="taskInfo"
 		class="org.springframework.scheduling.quartz.MethodInvokingJobDetailFactoryBean">
@@ -115,11 +107,11 @@
 			<ref bean="taskInfo" />
 		</property>
 		<property name="cronExpression">
-			<value>0/5 * * * * ?</value>
+			<value>0/50 * * * * ?</value>
 		</property>
-	</bean>
+	</bean> -->
 
-	<!-- 调度工厂 -->
+	<!-- 调度工厂 
 	<bean id="scheduler"
 		class="org.springframework.scheduling.quartz.SchedulerFactoryBean">
 		<property name="triggers">
@@ -127,7 +119,7 @@
 				<ref bean="myTrigger" />
 			</list>
 		</property>
-	</bean>
+	</bean>-->
 
 	<!-- 多段文件上传 -->
 	<bean id="multipartResolver"

@@ -4,21 +4,23 @@ import java.util.Date;
 
 import org.springframework.format.annotation.DateTimeFormat;
 
+import com.fasterxml.jackson.annotation.JsonFormat;
+
 public class Task{
     private Long taskid;
 
     private String taskname;
-    
-    @DateTimeFormat(pattern="yyyy-MM-dd HH:mm:ss")
+
+
     private Date schstartdate;
-    
-    @DateTimeFormat(pattern="yyyy-MM-dd HH:mm:ss")
+
+
     private Date schenddate;
-    
-    @DateTimeFormat(pattern="yyyy-MM-dd HH:mm:ss")
+
+
     private Date startdate;
-    
-    @DateTimeFormat(pattern="yyyy-MM-dd HH:mm:ss")
+
+
     private Date enddate;
 
     private Long fzr;
@@ -42,7 +44,7 @@ public class Task{
     public void setTaskname(String taskname) {
         this.taskname = taskname;
     }
-   
+    
     public Date getSchstartdate() {
         return schstartdate;
     }

@@ -1,0 +1,480 @@
+2016-9-19 22:18:28[ INFO](ContextLoader.java:285) Root WebApplicationContext: initialization started
+2016-9-19 22:18:28[ INFO](AbstractApplicationContext.java:510) Refreshing Root WebApplicationContext: startup date [Mon Sep 19 22:18:28 CST 2016]; root of context hierarchy
+2016-9-19 22:18:28[ INFO](XmlBeanDefinitionReader.java:317) Loading XML bean definitions from class path resource [spring-mybatis.xml]
+2016-9-19 22:18:29[ INFO](XmlBeanDefinitionReader.java:317) Loading XML bean definitions from class path resource [spring-config-shiro.xml]
+2016-9-19 22:18:30[ INFO](PropertiesLoaderSupport.java:172) Loading properties file from class path resource [jdbc.properties]
+2016-9-19 22:18:30[ INFO](PropertiesLoaderSupport.java:172) Loading properties file from class path resource [druid.properties]
+2016-9-19 22:18:30[ INFO](AutowiredAnnotationBeanPostProcessor.java:153) JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2016-9-19 22:18:30[ INFO](PostProcessorRegistrationDelegate.java:309) Bean '(inner bean)#3893e1cc' of type [class org.springframework.aop.aspectj.AspectJMethodBeforeAdvice] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2016-9-19 22:18:31[ INFO](PostProcessorRegistrationDelegate.java:309) Bean 'org.springframework.aop.aspectj.AspectJPointcutAdvisor#0' of type [class org.springframework.aop.aspectj.AspectJPointcutAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2016-9-19 22:18:31[ INFO](PostProcessorRegistrationDelegate.java:309) Bean '(inner bean)#71091ed' of type [class org.springframework.aop.aspectj.AspectJAfterAdvice] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2016-9-19 22:18:31[ INFO](PostProcessorRegistrationDelegate.java:309) Bean 'org.springframework.aop.aspectj.AspectJPointcutAdvisor#1' of type [class org.springframework.aop.aspectj.AspectJPointcutAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2016-9-19 22:18:31[ INFO](PostProcessorRegistrationDelegate.java:309) Bean '(inner bean)#77f8c9ba' of type [class org.springframework.aop.aspectj.AspectJAroundAdvice] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2016-9-19 22:18:31[ INFO](PostProcessorRegistrationDelegate.java:309) Bean 'org.springframework.aop.aspectj.AspectJPointcutAdvisor#2' of type [class org.springframework.aop.aspectj.AspectJPointcutAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2016-9-19 22:18:31[ INFO](PostProcessorRegistrationDelegate.java:309) Bean 'org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0' of type [class org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2016-9-19 22:18:31[ INFO](PostProcessorRegistrationDelegate.java:309) Bean 'org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#1' of type [class org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2016-9-19 22:18:31[ INFO](PostProcessorRegistrationDelegate.java:309) Bean 'org.springframework.cache.annotation.AnnotationCacheOperationSource#0' of type [class org.springframework.cache.annotation.AnnotationCacheOperationSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2016-9-19 22:18:31[ INFO](PostProcessorRegistrationDelegate.java:309) Bean 'org.springframework.cache.config.internalCacheAdvisor' of type [class org.springframework.cache.interceptor.BeanFactoryCacheOperationSourceAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2016-9-19 22:18:31[ INFO](PostProcessorRegistrationDelegate.java:309) Bean 'org.springframework.transaction.annotation.AnnotationTransactionAttributeSource#0' of type [class org.springframework.transaction.annotation.AnnotationTransactionAttributeSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2016-9-19 22:18:31[ INFO](PostProcessorRegistrationDelegate.java:309) Bean 'org.springframework.transaction.config.internalTransactionAdvisor' of type [class org.springframework.transaction.interceptor.BeanFactoryTransactionAttributeSourceAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2016-9-19 22:18:31[ INFO](PostProcessorRegistrationDelegate.java:309) Bean 'sysUserFilter' of type [class org.sunhk.meweb.common.filter.SysUserFilter] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2016-9-19 22:18:32[ INFO](PostProcessorRegistrationDelegate.java:309) Bean 'dataSource' of type [class com.alibaba.druid.pool.DruidDataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2016-9-19 22:18:32[ INFO](PostProcessorRegistrationDelegate.java:309) Bean 'sqlSessionFactory' of type [class org.mybatis.spring.SqlSessionFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2016-9-19 22:18:32[ INFO](PostProcessorRegistrationDelegate.java:309) Bean 'sqlSessionFactory' of type [class org.apache.ibatis.session.defaults.DefaultSqlSessionFactory] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2016-9-19 22:18:33[ INFO](PostProcessorRegistrationDelegate.java:309) Bean 'sysUserMapper' of type [class org.mybatis.spring.mapper.MapperFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2016-9-19 22:18:33[ INFO](PostProcessorRegistrationDelegate.java:309) Bean 'taskMapper' of type [class org.mybatis.spring.mapper.MapperFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2016-9-19 22:18:33[ INFO](PostProcessorRegistrationDelegate.java:309) Bean 'sysUserMapper' of type [class com.sun.proxy.$Proxy35] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2016-9-19 22:18:33[ INFO](PostProcessorRegistrationDelegate.java:309) Bean 'sysUserService' of type [class org.sunhk.meweb.service.impl.SysUserServiceImpl] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2016-9-19 22:18:33[ INFO](PostProcessorRegistrationDelegate.java:309) Bean 'transactionManager' of type [class org.springframework.jdbc.datasource.DataSourceTransactionManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2016-9-19 22:18:33[ INFO](PostProcessorRegistrationDelegate.java:309) Bean '(inner bean)#5fdd67b1' of type [class org.springframework.transaction.interceptor.NameMatchTransactionAttributeSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2016-9-19 22:18:33[ INFO](PostProcessorRegistrationDelegate.java:309) Bean 'txadvice' of type [class org.springframework.transaction.interceptor.TransactionInterceptor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2016-9-19 22:18:33[ INFO](PostProcessorRegistrationDelegate.java:309) Bean 'performanceMonitor' of type [class org.springframework.aop.interceptor.PerformanceMonitorInterceptor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2016-9-19 22:18:33[ INFO](AuthorizingRealm.java:248) No cache or cacheManager properties have been set.  Authorization cache cannot be obtained.
+2016-9-19 22:18:33[ INFO](PostProcessorRegistrationDelegate.java:309) Bean 'userRealm' of type [class org.sunhk.meweb.common.realm.UserRealm] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2016-9-19 22:18:33[ INFO](PostProcessorRegistrationDelegate.java:309) Bean 'securityManager' of type [class org.apache.shiro.web.mgt.DefaultWebSecurityManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2016-9-19 22:18:33[ INFO](PostProcessorRegistrationDelegate.java:309) Bean 'util:map#53d50ed1' of type [class org.springframework.beans.factory.config.MapFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2016-9-19 22:18:33[ INFO](PostProcessorRegistrationDelegate.java:309) Bean 'util:map#53d50ed1' of type [class java.util.LinkedHashMap] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2016-9-19 22:18:34[ INFO](PostProcessorRegistrationDelegate.java:309) Bean 'authService' of type [class org.sunhk.meweb.service.impl.AuthServiceImpl] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2016-9-19 22:18:34[ INFO](PostProcessorRegistrationDelegate.java:309) Bean 'proxy' of type [class org.sunhk.meweb.common.proxy.MyProxy] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2016-9-19 22:18:34[ INFO](MyProxy.java:27) ------------------------------before excute method,method name is:'org.sunhk.meweb.service.impl.AuthServiceImpl.loadFilterChainDefinitions'
+2016-9-19 22:18:35[ INFO](DruidDataSource.java:456) {dataSource-1} inited
+2016-9-19 22:18:35[ INFO](MyProxy.java:29) ------------------------------after excute method
+2016-9-19 22:18:35[ INFO](EhCacheManagerFactoryBean.java:129) Initializing EhCache CacheManager
+2016-9-19 22:18:36[ INFO](ContextLoader.java:325) Root WebApplicationContext: initialization completed in 7460 ms
+2016-9-19 22:18:36[ INFO](FrameworkServlet.java:484) FrameworkServlet 'Spring': initialization started
+2016-9-19 22:18:36[ INFO](AbstractApplicationContext.java:510) Refreshing WebApplicationContext for namespace 'Spring-servlet': startup date [Mon Sep 19 22:18:36 CST 2016]; parent: Root WebApplicationContext
+2016-9-19 22:18:36[ INFO](XmlBeanDefinitionReader.java:317) Loading XML bean definitions from class path resource [springmvc-servlet.xml]
+2016-9-19 22:18:36[ INFO](AutowiredAnnotationBeanPostProcessor.java:153) JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2016-9-19 22:18:37[ INFO](AbstractHandlerMethodMapping.java:220) Mapped "{[/login],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String org.sunhk.meweb.controller.LoginController.doLogin(java.lang.String,java.lang.String,javax.servlet.http.HttpServletRequest)
+2016-9-19 22:18:37[ INFO](AbstractHandlerMethodMapping.java:220) Mapped "{[/admin/testjson],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.Object org.sunhk.meweb.controller.LoginController.getJSON()
+2016-9-19 22:18:37[ INFO](AbstractHandlerMethodMapping.java:220) Mapped "{[/admin/testtask],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.Object org.sunhk.meweb.controller.TaskController.getJSON(org.sunhk.meweb.model.Task)
+2016-9-19 22:18:37[ INFO](AbstractHandlerMethodMapping.java:220) Mapped "{[/admin/gettask],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.Object org.sunhk.meweb.controller.TaskController.getJSON()
+2016-9-19 22:18:38[ INFO](RequestMappingHandlerAdapter.java:518) Looking for @ControllerAdvice: WebApplicationContext for namespace 'Spring-servlet': startup date [Mon Sep 19 22:18:36 CST 2016]; parent: Root WebApplicationContext
+2016-9-19 22:18:38[ INFO](RequestMappingHandlerAdapter.java:518) Looking for @ControllerAdvice: WebApplicationContext for namespace 'Spring-servlet': startup date [Mon Sep 19 22:18:36 CST 2016]; parent: Root WebApplicationContext
+2016-9-19 22:18:38[ INFO](AbstractUrlHandlerMapping.java:314) Mapped URL path [/login] onto handler 'loginController'
+2016-9-19 22:18:38[ INFO](AbstractUrlHandlerMapping.java:314) Mapped URL path [/login.*] onto handler 'loginController'
+2016-9-19 22:18:38[ INFO](AbstractUrlHandlerMapping.java:314) Mapped URL path [/login/] onto handler 'loginController'
+2016-9-19 22:18:38[ INFO](AbstractUrlHandlerMapping.java:314) Mapped URL path [/admin/testjson] onto handler 'loginController'
+2016-9-19 22:18:38[ INFO](AbstractUrlHandlerMapping.java:314) Mapped URL path [/admin/testjson.*] onto handler 'loginController'
+2016-9-19 22:18:38[ INFO](AbstractUrlHandlerMapping.java:314) Mapped URL path [/admin/testjson/] onto handler 'loginController'
+2016-9-19 22:18:38[ INFO](AbstractUrlHandlerMapping.java:314) Mapped URL path [/admin/testtask] onto handler 'taskController'
+2016-9-19 22:18:38[ INFO](AbstractUrlHandlerMapping.java:314) Mapped URL path [/admin/testtask.*] onto handler 'taskController'
+2016-9-19 22:18:38[ INFO](AbstractUrlHandlerMapping.java:314) Mapped URL path [/admin/testtask/] onto handler 'taskController'
+2016-9-19 22:18:38[ INFO](AbstractUrlHandlerMapping.java:314) Mapped URL path [/admin/gettask] onto handler 'taskController'
+2016-9-19 22:18:38[ INFO](AbstractUrlHandlerMapping.java:314) Mapped URL path [/admin/gettask.*] onto handler 'taskController'
+2016-9-19 22:18:38[ INFO](AbstractUrlHandlerMapping.java:314) Mapped URL path [/admin/gettask/] onto handler 'taskController'
+2016-9-19 22:18:39[ INFO](StdSchedulerFactory.java:1184) Using default implementation for ThreadExecutor
+2016-9-19 22:18:39[ INFO](SchedulerSignalerImpl.java:61) Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+2016-9-19 22:18:39[ INFO](QuartzScheduler.java:240) Quartz Scheduler v.2.2.1 created.
+2016-9-19 22:18:39[ INFO](RAMJobStore.java:155) RAMJobStore initialized.
+2016-9-19 22:18:39[ INFO](QuartzScheduler.java:305) Scheduler meta-data: Quartz Scheduler (v2.2.1) 'scheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+2016-9-19 22:18:39[ INFO](StdSchedulerFactory.java:1339) Quartz scheduler 'scheduler' initialized from an externally provided properties instance.
+2016-9-19 22:18:39[ INFO](StdSchedulerFactory.java:1343) Quartz scheduler version: 2.2.1
+2016-9-19 22:18:39[ INFO](QuartzScheduler.java:2311) JobFactory set to: org.springframework.scheduling.quartz.AdaptableJobFactory@3637806f
+2016-9-19 22:18:39[ INFO](AbstractUrlHandlerMapping.java:314) Mapped URL path [/**] onto handler 'org.springframework.web.servlet.resource.DefaultServletHttpRequestHandler#0'
+2016-9-19 22:18:39[ INFO](DefaultLifecycleProcessor.java:341) Starting beans in phase 2147483647
+2016-9-19 22:18:39[ INFO](SchedulerFactoryBean.java:647) Starting Quartz Scheduler now
+2016-9-19 22:18:39[ INFO](QuartzScheduler.java:575) Scheduler scheduler_$_NON_CLUSTERED started.
+2016-9-19 22:18:39[ INFO](FrameworkServlet.java:503) FrameworkServlet 'Spring': initialization completed in 2868 ms
+2016-9-19 22:21:47[ INFO](ContextLoader.java:285) Root WebApplicationContext: initialization started
+2016-9-19 22:21:48[ INFO](AbstractApplicationContext.java:510) Refreshing Root WebApplicationContext: startup date [Mon Sep 19 22:21:48 CST 2016]; root of context hierarchy
+2016-9-19 22:21:48[ INFO](XmlBeanDefinitionReader.java:317) Loading XML bean definitions from class path resource [spring-mybatis.xml]
+2016-9-19 22:21:48[ INFO](XmlBeanDefinitionReader.java:317) Loading XML bean definitions from class path resource [spring-config-shiro.xml]
+2016-9-19 22:21:49[ INFO](PropertiesLoaderSupport.java:172) Loading properties file from class path resource [jdbc.properties]
+2016-9-19 22:21:49[ INFO](PropertiesLoaderSupport.java:172) Loading properties file from class path resource [druid.properties]
+2016-9-19 22:21:49[ INFO](AutowiredAnnotationBeanPostProcessor.java:153) JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2016-9-19 22:21:49[ INFO](PostProcessorRegistrationDelegate.java:309) Bean '(inner bean)#634066f9' of type [class org.springframework.aop.aspectj.AspectJMethodBeforeAdvice] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2016-9-19 22:21:49[ INFO](PostProcessorRegistrationDelegate.java:309) Bean 'org.springframework.aop.aspectj.AspectJPointcutAdvisor#0' of type [class org.springframework.aop.aspectj.AspectJPointcutAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2016-9-19 22:21:49[ INFO](PostProcessorRegistrationDelegate.java:309) Bean '(inner bean)#1742315c' of type [class org.springframework.aop.aspectj.AspectJAfterAdvice] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2016-9-19 22:21:49[ INFO](PostProcessorRegistrationDelegate.java:309) Bean 'org.springframework.aop.aspectj.AspectJPointcutAdvisor#1' of type [class org.springframework.aop.aspectj.AspectJPointcutAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2016-9-19 22:21:49[ INFO](PostProcessorRegistrationDelegate.java:309) Bean '(inner bean)#71423310' of type [class org.springframework.aop.aspectj.AspectJAroundAdvice] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2016-9-19 22:21:49[ INFO](PostProcessorRegistrationDelegate.java:309) Bean 'org.springframework.aop.aspectj.AspectJPointcutAdvisor#2' of type [class org.springframework.aop.aspectj.AspectJPointcutAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2016-9-19 22:21:50[ INFO](PostProcessorRegistrationDelegate.java:309) Bean 'org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0' of type [class org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2016-9-19 22:21:50[ INFO](PostProcessorRegistrationDelegate.java:309) Bean 'org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#1' of type [class org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2016-9-19 22:21:50[ INFO](PostProcessorRegistrationDelegate.java:309) Bean 'org.springframework.cache.annotation.AnnotationCacheOperationSource#0' of type [class org.springframework.cache.annotation.AnnotationCacheOperationSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2016-9-19 22:21:50[ INFO](PostProcessorRegistrationDelegate.java:309) Bean 'org.springframework.cache.config.internalCacheAdvisor' of type [class org.springframework.cache.interceptor.BeanFactoryCacheOperationSourceAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2016-9-19 22:21:50[ INFO](PostProcessorRegistrationDelegate.java:309) Bean 'org.springframework.transaction.annotation.AnnotationTransactionAttributeSource#0' of type [class org.springframework.transaction.annotation.AnnotationTransactionAttributeSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2016-9-19 22:21:50[ INFO](PostProcessorRegistrationDelegate.java:309) Bean 'org.springframework.transaction.config.internalTransactionAdvisor' of type [class org.springframework.transaction.interceptor.BeanFactoryTransactionAttributeSourceAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2016-9-19 22:21:50[ INFO](PostProcessorRegistrationDelegate.java:309) Bean 'sysUserFilter' of type [class org.sunhk.meweb.common.filter.SysUserFilter] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2016-9-19 22:21:51[ INFO](PostProcessorRegistrationDelegate.java:309) Bean 'dataSource' of type [class com.alibaba.druid.pool.DruidDataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2016-9-19 22:21:52[ INFO](PostProcessorRegistrationDelegate.java:309) Bean 'sqlSessionFactory' of type [class org.mybatis.spring.SqlSessionFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2016-9-19 22:21:52[ INFO](PostProcessorRegistrationDelegate.java:309) Bean 'sqlSessionFactory' of type [class org.apache.ibatis.session.defaults.DefaultSqlSessionFactory] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2016-9-19 22:21:52[ INFO](PostProcessorRegistrationDelegate.java:309) Bean 'sysUserMapper' of type [class org.mybatis.spring.mapper.MapperFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2016-9-19 22:21:52[ INFO](PostProcessorRegistrationDelegate.java:309) Bean 'taskMapper' of type [class org.mybatis.spring.mapper.MapperFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2016-9-19 22:21:52[ INFO](PostProcessorRegistrationDelegate.java:309) Bean 'sysUserMapper' of type [class com.sun.proxy.$Proxy35] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2016-9-19 22:21:52[ INFO](PostProcessorRegistrationDelegate.java:309) Bean 'sysUserService' of type [class org.sunhk.meweb.service.impl.SysUserServiceImpl] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2016-9-19 22:21:52[ INFO](PostProcessorRegistrationDelegate.java:309) Bean 'transactionManager' of type [class org.springframework.jdbc.datasource.DataSourceTransactionManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2016-9-19 22:21:52[ INFO](PostProcessorRegistrationDelegate.java:309) Bean '(inner bean)#30943e2a' of type [class org.springframework.transaction.interceptor.NameMatchTransactionAttributeSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2016-9-19 22:21:52[ INFO](PostProcessorRegistrationDelegate.java:309) Bean 'txadvice' of type [class org.springframework.transaction.interceptor.TransactionInterceptor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2016-9-19 22:21:52[ INFO](PostProcessorRegistrationDelegate.java:309) Bean 'performanceMonitor' of type [class org.springframework.aop.interceptor.PerformanceMonitorInterceptor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2016-9-19 22:21:52[ INFO](AuthorizingRealm.java:248) No cache or cacheManager properties have been set.  Authorization cache cannot be obtained.
+2016-9-19 22:21:52[ INFO](PostProcessorRegistrationDelegate.java:309) Bean 'userRealm' of type [class org.sunhk.meweb.common.realm.UserRealm] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2016-9-19 22:21:52[ INFO](PostProcessorRegistrationDelegate.java:309) Bean 'securityManager' of type [class org.apache.shiro.web.mgt.DefaultWebSecurityManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2016-9-19 22:21:52[ INFO](PostProcessorRegistrationDelegate.java:309) Bean 'util:map#426f29b0' of type [class org.springframework.beans.factory.config.MapFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2016-9-19 22:21:52[ INFO](PostProcessorRegistrationDelegate.java:309) Bean 'util:map#426f29b0' of type [class java.util.LinkedHashMap] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2016-9-19 22:21:53[ INFO](PostProcessorRegistrationDelegate.java:309) Bean 'authService' of type [class org.sunhk.meweb.service.impl.AuthServiceImpl] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2016-9-19 22:21:53[ INFO](PostProcessorRegistrationDelegate.java:309) Bean 'proxy' of type [class org.sunhk.meweb.common.proxy.MyProxy] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2016-9-19 22:21:53[ INFO](MyProxy.java:27) ------------------------------before excute method,method name is:'org.sunhk.meweb.service.impl.AuthServiceImpl.loadFilterChainDefinitions'
+2016-9-19 22:21:54[ INFO](DruidDataSource.java:456) {dataSource-1} inited
+2016-9-19 22:21:54[ INFO](MyProxy.java:29) ------------------------------after excute method
+2016-9-19 22:21:54[ INFO](EhCacheManagerFactoryBean.java:129) Initializing EhCache CacheManager
+2016-9-19 22:21:55[ INFO](ContextLoader.java:325) Root WebApplicationContext: initialization completed in 7260 ms
+2016-9-19 22:21:55[ INFO](FrameworkServlet.java:484) FrameworkServlet 'Spring': initialization started
+2016-9-19 22:21:55[ INFO](AbstractApplicationContext.java:510) Refreshing WebApplicationContext for namespace 'Spring-servlet': startup date [Mon Sep 19 22:21:55 CST 2016]; parent: Root WebApplicationContext
+2016-9-19 22:21:55[ INFO](XmlBeanDefinitionReader.java:317) Loading XML bean definitions from class path resource [springmvc-servlet.xml]
+2016-9-19 22:21:55[ INFO](AutowiredAnnotationBeanPostProcessor.java:153) JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2016-9-19 22:21:55[ INFO](AbstractUrlHandlerMapping.java:314) Mapped URL path [/login] onto handler 'loginController'
+2016-9-19 22:21:55[ INFO](AbstractUrlHandlerMapping.java:314) Mapped URL path [/login.*] onto handler 'loginController'
+2016-9-19 22:21:55[ INFO](AbstractUrlHandlerMapping.java:314) Mapped URL path [/login/] onto handler 'loginController'
+2016-9-19 22:21:55[ INFO](AbstractUrlHandlerMapping.java:314) Mapped URL path [/admin/testjson] onto handler 'loginController'
+2016-9-19 22:21:55[ INFO](AbstractUrlHandlerMapping.java:314) Mapped URL path [/admin/testjson.*] onto handler 'loginController'
+2016-9-19 22:21:55[ INFO](AbstractUrlHandlerMapping.java:314) Mapped URL path [/admin/testjson/] onto handler 'loginController'
+2016-9-19 22:21:55[ INFO](AbstractUrlHandlerMapping.java:314) Mapped URL path [/admin/testtask] onto handler 'taskController'
+2016-9-19 22:21:55[ INFO](AbstractUrlHandlerMapping.java:314) Mapped URL path [/admin/testtask.*] onto handler 'taskController'
+2016-9-19 22:21:55[ INFO](AbstractUrlHandlerMapping.java:314) Mapped URL path [/admin/testtask/] onto handler 'taskController'
+2016-9-19 22:21:55[ INFO](AbstractUrlHandlerMapping.java:314) Mapped URL path [/admin/gettask] onto handler 'taskController'
+2016-9-19 22:21:55[ INFO](AbstractUrlHandlerMapping.java:314) Mapped URL path [/admin/gettask.*] onto handler 'taskController'
+2016-9-19 22:21:55[ INFO](AbstractUrlHandlerMapping.java:314) Mapped URL path [/admin/gettask/] onto handler 'taskController'
+2016-9-19 22:21:57[ INFO](StdSchedulerFactory.java:1184) Using default implementation for ThreadExecutor
+2016-9-19 22:21:57[ INFO](SchedulerSignalerImpl.java:61) Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+2016-9-19 22:21:57[ INFO](QuartzScheduler.java:240) Quartz Scheduler v.2.2.1 created.
+2016-9-19 22:21:57[ INFO](RAMJobStore.java:155) RAMJobStore initialized.
+2016-9-19 22:21:57[ INFO](QuartzScheduler.java:305) Scheduler meta-data: Quartz Scheduler (v2.2.1) 'scheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+2016-9-19 22:21:57[ INFO](StdSchedulerFactory.java:1339) Quartz scheduler 'scheduler' initialized from an externally provided properties instance.
+2016-9-19 22:21:57[ INFO](StdSchedulerFactory.java:1343) Quartz scheduler version: 2.2.1
+2016-9-19 22:21:57[ INFO](QuartzScheduler.java:2311) JobFactory set to: org.springframework.scheduling.quartz.AdaptableJobFactory@8dac968
+2016-9-19 22:21:57[ INFO](AbstractUrlHandlerMapping.java:314) Mapped URL path [/**] onto handler 'org.springframework.web.servlet.resource.DefaultServletHttpRequestHandler#0'
+2016-9-19 22:21:57[ INFO](DefaultLifecycleProcessor.java:341) Starting beans in phase 2147483647
+2016-9-19 22:21:57[ INFO](SchedulerFactoryBean.java:647) Starting Quartz Scheduler now
+2016-9-19 22:21:57[ INFO](QuartzScheduler.java:575) Scheduler scheduler_$_NON_CLUSTERED started.
+2016-9-19 22:21:57[ INFO](FrameworkServlet.java:503) FrameworkServlet 'Spring': initialization completed in 2221 ms
+2016-9-19 22:34:34[ INFO](ContextLoader.java:285) Root WebApplicationContext: initialization started
+2016-9-19 22:34:34[ INFO](AbstractApplicationContext.java:510) Refreshing Root WebApplicationContext: startup date [Mon Sep 19 22:34:34 CST 2016]; root of context hierarchy
+2016-9-19 22:34:35[ INFO](XmlBeanDefinitionReader.java:317) Loading XML bean definitions from class path resource [spring-mybatis.xml]
+2016-9-19 22:34:35[ INFO](XmlBeanDefinitionReader.java:317) Loading XML bean definitions from class path resource [spring-config-shiro.xml]
+2016-9-19 22:34:36[ INFO](PropertiesLoaderSupport.java:172) Loading properties file from class path resource [jdbc.properties]
+2016-9-19 22:34:36[ INFO](PropertiesLoaderSupport.java:172) Loading properties file from class path resource [druid.properties]
+2016-9-19 22:34:36[ INFO](AutowiredAnnotationBeanPostProcessor.java:153) JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2016-9-19 22:34:36[ INFO](PostProcessorRegistrationDelegate.java:309) Bean '(inner bean)#6e379dae' of type [class org.springframework.aop.aspectj.AspectJMethodBeforeAdvice] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2016-9-19 22:34:36[ INFO](PostProcessorRegistrationDelegate.java:309) Bean 'org.springframework.aop.aspectj.AspectJPointcutAdvisor#0' of type [class org.springframework.aop.aspectj.AspectJPointcutAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2016-9-19 22:34:36[ INFO](PostProcessorRegistrationDelegate.java:309) Bean '(inner bean)#38d179a' of type [class org.springframework.aop.aspectj.AspectJAfterAdvice] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2016-9-19 22:34:36[ INFO](PostProcessorRegistrationDelegate.java:309) Bean 'org.springframework.aop.aspectj.AspectJPointcutAdvisor#1' of type [class org.springframework.aop.aspectj.AspectJPointcutAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2016-9-19 22:34:36[ INFO](PostProcessorRegistrationDelegate.java:309) Bean '(inner bean)#5e7aabe7' of type [class org.springframework.aop.aspectj.AspectJAroundAdvice] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2016-9-19 22:34:36[ INFO](PostProcessorRegistrationDelegate.java:309) Bean 'org.springframework.aop.aspectj.AspectJPointcutAdvisor#2' of type [class org.springframework.aop.aspectj.AspectJPointcutAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2016-9-19 22:34:36[ INFO](PostProcessorRegistrationDelegate.java:309) Bean 'org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0' of type [class org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2016-9-19 22:34:36[ INFO](PostProcessorRegistrationDelegate.java:309) Bean 'org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#1' of type [class org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2016-9-19 22:34:37[ INFO](PostProcessorRegistrationDelegate.java:309) Bean 'org.springframework.cache.annotation.AnnotationCacheOperationSource#0' of type [class org.springframework.cache.annotation.AnnotationCacheOperationSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2016-9-19 22:34:37[ INFO](PostProcessorRegistrationDelegate.java:309) Bean 'org.springframework.cache.config.internalCacheAdvisor' of type [class org.springframework.cache.interceptor.BeanFactoryCacheOperationSourceAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2016-9-19 22:34:37[ INFO](PostProcessorRegistrationDelegate.java:309) Bean 'org.springframework.transaction.annotation.AnnotationTransactionAttributeSource#0' of type [class org.springframework.transaction.annotation.AnnotationTransactionAttributeSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2016-9-19 22:34:37[ INFO](PostProcessorRegistrationDelegate.java:309) Bean 'org.springframework.transaction.config.internalTransactionAdvisor' of type [class org.springframework.transaction.interceptor.BeanFactoryTransactionAttributeSourceAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2016-9-19 22:34:37[ INFO](PostProcessorRegistrationDelegate.java:309) Bean 'sysUserFilter' of type [class org.sunhk.meweb.common.filter.SysUserFilter] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2016-9-19 22:34:37[ INFO](PostProcessorRegistrationDelegate.java:309) Bean 'dataSource' of type [class com.alibaba.druid.pool.DruidDataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2016-9-19 22:34:38[ INFO](PostProcessorRegistrationDelegate.java:309) Bean 'sqlSessionFactory' of type [class org.mybatis.spring.SqlSessionFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2016-9-19 22:34:38[ INFO](PostProcessorRegistrationDelegate.java:309) Bean 'sqlSessionFactory' of type [class org.apache.ibatis.session.defaults.DefaultSqlSessionFactory] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2016-9-19 22:34:38[ INFO](PostProcessorRegistrationDelegate.java:309) Bean 'sysUserMapper' of type [class org.mybatis.spring.mapper.MapperFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2016-9-19 22:34:38[ INFO](PostProcessorRegistrationDelegate.java:309) Bean 'taskMapper' of type [class org.mybatis.spring.mapper.MapperFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2016-9-19 22:34:38[ INFO](PostProcessorRegistrationDelegate.java:309) Bean 'sysUserMapper' of type [class com.sun.proxy.$Proxy36] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2016-9-19 22:34:38[ INFO](PostProcessorRegistrationDelegate.java:309) Bean 'sysUserService' of type [class org.sunhk.meweb.service.impl.SysUserServiceImpl] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2016-9-19 22:34:38[ INFO](PostProcessorRegistrationDelegate.java:309) Bean 'transactionManager' of type [class org.springframework.jdbc.datasource.DataSourceTransactionManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2016-9-19 22:34:39[ INFO](PostProcessorRegistrationDelegate.java:309) Bean '(inner bean)#a03c88d' of type [class org.springframework.transaction.interceptor.NameMatchTransactionAttributeSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2016-9-19 22:34:39[ INFO](PostProcessorRegistrationDelegate.java:309) Bean 'txadvice' of type [class org.springframework.transaction.interceptor.TransactionInterceptor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2016-9-19 22:34:39[ INFO](PostProcessorRegistrationDelegate.java:309) Bean 'performanceMonitor' of type [class org.springframework.aop.interceptor.PerformanceMonitorInterceptor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2016-9-19 22:34:39[ INFO](AuthorizingRealm.java:248) No cache or cacheManager properties have been set.  Authorization cache cannot be obtained.
+2016-9-19 22:34:39[ INFO](PostProcessorRegistrationDelegate.java:309) Bean 'userRealm' of type [class org.sunhk.meweb.common.realm.UserRealm] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2016-9-19 22:34:39[ INFO](PostProcessorRegistrationDelegate.java:309) Bean 'securityManager' of type [class org.apache.shiro.web.mgt.DefaultWebSecurityManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2016-9-19 22:34:39[ INFO](PostProcessorRegistrationDelegate.java:309) Bean 'util:map#717cd61d' of type [class org.springframework.beans.factory.config.MapFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2016-9-19 22:34:39[ INFO](PostProcessorRegistrationDelegate.java:309) Bean 'util:map#717cd61d' of type [class java.util.LinkedHashMap] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2016-9-19 22:34:39[ INFO](PostProcessorRegistrationDelegate.java:309) Bean 'authService' of type [class org.sunhk.meweb.service.impl.AuthServiceImpl] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2016-9-19 22:34:39[ INFO](PostProcessorRegistrationDelegate.java:309) Bean 'proxy' of type [class org.sunhk.meweb.common.proxy.MyProxy] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2016-9-19 22:34:39[ INFO](MyProxy.java:27) ------------------------------before excute method,method name is:'org.sunhk.meweb.service.impl.AuthServiceImpl.loadFilterChainDefinitions'
+2016-9-19 22:34:40[ INFO](DruidDataSource.java:456) {dataSource-1} inited
+2016-9-19 22:34:41[ INFO](MyProxy.java:29) ------------------------------after excute method
+2016-9-19 22:34:41[ INFO](EhCacheManagerFactoryBean.java:129) Initializing EhCache CacheManager
+2016-9-19 22:34:41[ INFO](ContextLoader.java:325) Root WebApplicationContext: initialization completed in 6976 ms
+2016-9-19 22:34:42[ INFO](FrameworkServlet.java:484) FrameworkServlet 'Spring': initialization started
+2016-9-19 22:34:42[ INFO](AbstractApplicationContext.java:510) Refreshing WebApplicationContext for namespace 'Spring-servlet': startup date [Mon Sep 19 22:34:42 CST 2016]; parent: Root WebApplicationContext
+2016-9-19 22:34:42[ INFO](XmlBeanDefinitionReader.java:317) Loading XML bean definitions from class path resource [springmvc-servlet.xml]
+2016-9-19 22:34:42[ INFO](AutowiredAnnotationBeanPostProcessor.java:153) JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2016-9-19 22:34:42[ INFO](AbstractUrlHandlerMapping.java:314) Mapped URL path [/admin/testjson] onto handler 'loginController'
+2016-9-19 22:34:42[ INFO](AbstractUrlHandlerMapping.java:314) Mapped URL path [/admin/testjson.*] onto handler 'loginController'
+2016-9-19 22:34:42[ INFO](AbstractUrlHandlerMapping.java:314) Mapped URL path [/admin/testjson/] onto handler 'loginController'
+2016-9-19 22:34:42[ INFO](AbstractUrlHandlerMapping.java:314) Mapped URL path [/login] onto handler 'loginController'
+2016-9-19 22:34:42[ INFO](AbstractUrlHandlerMapping.java:314) Mapped URL path [/login.*] onto handler 'loginController'
+2016-9-19 22:34:42[ INFO](AbstractUrlHandlerMapping.java:314) Mapped URL path [/login/] onto handler 'loginController'
+2016-9-19 22:34:42[ INFO](AbstractUrlHandlerMapping.java:314) Mapped URL path [/admin/testtask] onto handler 'taskController'
+2016-9-19 22:34:42[ INFO](AbstractUrlHandlerMapping.java:314) Mapped URL path [/admin/testtask.*] onto handler 'taskController'
+2016-9-19 22:34:42[ INFO](AbstractUrlHandlerMapping.java:314) Mapped URL path [/admin/testtask/] onto handler 'taskController'
+2016-9-19 22:34:42[ INFO](AbstractUrlHandlerMapping.java:314) Mapped URL path [/admin/gettask] onto handler 'taskController'
+2016-9-19 22:34:42[ INFO](AbstractUrlHandlerMapping.java:314) Mapped URL path [/admin/gettask.*] onto handler 'taskController'
+2016-9-19 22:34:42[ INFO](AbstractUrlHandlerMapping.java:314) Mapped URL path [/admin/gettask/] onto handler 'taskController'
+2016-9-19 22:34:43[ INFO](StdSchedulerFactory.java:1184) Using default implementation for ThreadExecutor
+2016-9-19 22:34:43[ INFO](SchedulerSignalerImpl.java:61) Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+2016-9-19 22:34:43[ INFO](QuartzScheduler.java:240) Quartz Scheduler v.2.2.1 created.
+2016-9-19 22:34:43[ INFO](RAMJobStore.java:155) RAMJobStore initialized.
+2016-9-19 22:34:43[ INFO](QuartzScheduler.java:305) Scheduler meta-data: Quartz Scheduler (v2.2.1) 'scheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+2016-9-19 22:34:43[ INFO](StdSchedulerFactory.java:1339) Quartz scheduler 'scheduler' initialized from an externally provided properties instance.
+2016-9-19 22:34:43[ INFO](StdSchedulerFactory.java:1343) Quartz scheduler version: 2.2.1
+2016-9-19 22:34:43[ INFO](QuartzScheduler.java:2311) JobFactory set to: org.springframework.scheduling.quartz.AdaptableJobFactory@4b439984
+2016-9-19 22:34:43[ INFO](AbstractUrlHandlerMapping.java:314) Mapped URL path [/**] onto handler 'org.springframework.web.servlet.resource.DefaultServletHttpRequestHandler#0'
+2016-9-19 22:34:43[ INFO](DefaultLifecycleProcessor.java:341) Starting beans in phase 2147483647
+2016-9-19 22:34:43[ INFO](SchedulerFactoryBean.java:647) Starting Quartz Scheduler now
+2016-9-19 22:34:43[ INFO](QuartzScheduler.java:575) Scheduler scheduler_$_NON_CLUSTERED started.
+2016-9-19 22:34:43[ INFO](FrameworkServlet.java:503) FrameworkServlet 'Spring': initialization completed in 1872 ms
+2016-9-19 22:43:58[ INFO](ContextLoader.java:285) Root WebApplicationContext: initialization started
+2016-9-19 22:43:58[ INFO](AbstractApplicationContext.java:510) Refreshing Root WebApplicationContext: startup date [Mon Sep 19 22:43:58 CST 2016]; root of context hierarchy
+2016-9-19 22:43:58[ INFO](XmlBeanDefinitionReader.java:317) Loading XML bean definitions from class path resource [spring-mybatis.xml]
+2016-9-19 22:43:59[ INFO](XmlBeanDefinitionReader.java:317) Loading XML bean definitions from class path resource [spring-config-shiro.xml]
+2016-9-19 22:43:59[ INFO](PropertiesLoaderSupport.java:172) Loading properties file from class path resource [jdbc.properties]
+2016-9-19 22:43:59[ INFO](PropertiesLoaderSupport.java:172) Loading properties file from class path resource [druid.properties]
+2016-9-19 22:43:59[ INFO](AutowiredAnnotationBeanPostProcessor.java:153) JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2016-9-19 22:44:00[ INFO](PostProcessorRegistrationDelegate.java:309) Bean '(inner bean)#4ae1169e' of type [class org.springframework.aop.aspectj.AspectJMethodBeforeAdvice] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2016-9-19 22:44:00[ INFO](PostProcessorRegistrationDelegate.java:309) Bean 'org.springframework.aop.aspectj.AspectJPointcutAdvisor#0' of type [class org.springframework.aop.aspectj.AspectJPointcutAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2016-9-19 22:44:00[ INFO](PostProcessorRegistrationDelegate.java:309) Bean '(inner bean)#2ddb6542' of type [class org.springframework.aop.aspectj.AspectJAfterAdvice] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2016-9-19 22:44:00[ INFO](PostProcessorRegistrationDelegate.java:309) Bean 'org.springframework.aop.aspectj.AspectJPointcutAdvisor#1' of type [class org.springframework.aop.aspectj.AspectJPointcutAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2016-9-19 22:44:00[ INFO](PostProcessorRegistrationDelegate.java:309) Bean '(inner bean)#101d6332' of type [class org.springframework.aop.aspectj.AspectJAroundAdvice] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2016-9-19 22:44:00[ INFO](PostProcessorRegistrationDelegate.java:309) Bean 'org.springframework.aop.aspectj.AspectJPointcutAdvisor#2' of type [class org.springframework.aop.aspectj.AspectJPointcutAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2016-9-19 22:44:00[ INFO](PostProcessorRegistrationDelegate.java:309) Bean 'org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0' of type [class org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2016-9-19 22:44:00[ INFO](PostProcessorRegistrationDelegate.java:309) Bean 'org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#1' of type [class org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2016-9-19 22:44:00[ INFO](PostProcessorRegistrationDelegate.java:309) Bean 'org.springframework.cache.annotation.AnnotationCacheOperationSource#0' of type [class org.springframework.cache.annotation.AnnotationCacheOperationSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2016-9-19 22:44:00[ INFO](PostProcessorRegistrationDelegate.java:309) Bean 'org.springframework.cache.config.internalCacheAdvisor' of type [class org.springframework.cache.interceptor.BeanFactoryCacheOperationSourceAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2016-9-19 22:44:00[ INFO](PostProcessorRegistrationDelegate.java:309) Bean 'org.springframework.transaction.annotation.AnnotationTransactionAttributeSource#0' of type [class org.springframework.transaction.annotation.AnnotationTransactionAttributeSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2016-9-19 22:44:00[ INFO](PostProcessorRegistrationDelegate.java:309) Bean 'org.springframework.transaction.config.internalTransactionAdvisor' of type [class org.springframework.transaction.interceptor.BeanFactoryTransactionAttributeSourceAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2016-9-19 22:44:00[ INFO](PostProcessorRegistrationDelegate.java:309) Bean 'sysUserFilter' of type [class org.sunhk.meweb.common.filter.SysUserFilter] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2016-9-19 22:44:01[ INFO](PostProcessorRegistrationDelegate.java:309) Bean 'dataSource' of type [class com.alibaba.druid.pool.DruidDataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2016-9-19 22:44:02[ INFO](PostProcessorRegistrationDelegate.java:309) Bean 'sqlSessionFactory' of type [class org.mybatis.spring.SqlSessionFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2016-9-19 22:44:02[ INFO](PostProcessorRegistrationDelegate.java:309) Bean 'sqlSessionFactory' of type [class org.apache.ibatis.session.defaults.DefaultSqlSessionFactory] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2016-9-19 22:44:02[ INFO](PostProcessorRegistrationDelegate.java:309) Bean 'sysUserMapper' of type [class org.mybatis.spring.mapper.MapperFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2016-9-19 22:44:02[ INFO](PostProcessorRegistrationDelegate.java:309) Bean 'taskMapper' of type [class org.mybatis.spring.mapper.MapperFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2016-9-19 22:44:02[ INFO](PostProcessorRegistrationDelegate.java:309) Bean 'sysUserMapper' of type [class com.sun.proxy.$Proxy35] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2016-9-19 22:44:02[ INFO](PostProcessorRegistrationDelegate.java:309) Bean 'sysUserService' of type [class org.sunhk.meweb.service.impl.SysUserServiceImpl] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2016-9-19 22:44:02[ INFO](PostProcessorRegistrationDelegate.java:309) Bean 'transactionManager' of type [class org.springframework.jdbc.datasource.DataSourceTransactionManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2016-9-19 22:44:02[ INFO](PostProcessorRegistrationDelegate.java:309) Bean '(inner bean)#6d7e07e1' of type [class org.springframework.transaction.interceptor.NameMatchTransactionAttributeSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2016-9-19 22:44:02[ INFO](PostProcessorRegistrationDelegate.java:309) Bean 'txadvice' of type [class org.springframework.transaction.interceptor.TransactionInterceptor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2016-9-19 22:44:02[ INFO](PostProcessorRegistrationDelegate.java:309) Bean 'performanceMonitor' of type [class org.springframework.aop.interceptor.PerformanceMonitorInterceptor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2016-9-19 22:44:02[ INFO](AuthorizingRealm.java:248) No cache or cacheManager properties have been set.  Authorization cache cannot be obtained.
+2016-9-19 22:44:02[ INFO](PostProcessorRegistrationDelegate.java:309) Bean 'userRealm' of type [class org.sunhk.meweb.common.realm.UserRealm] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2016-9-19 22:44:02[ INFO](PostProcessorRegistrationDelegate.java:309) Bean 'securityManager' of type [class org.apache.shiro.web.mgt.DefaultWebSecurityManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2016-9-19 22:44:03[ INFO](PostProcessorRegistrationDelegate.java:309) Bean 'util:map#51288e85' of type [class org.springframework.beans.factory.config.MapFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2016-9-19 22:44:03[ INFO](PostProcessorRegistrationDelegate.java:309) Bean 'util:map#51288e85' of type [class java.util.LinkedHashMap] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2016-9-19 22:44:03[ INFO](PostProcessorRegistrationDelegate.java:309) Bean 'authService' of type [class org.sunhk.meweb.service.impl.AuthServiceImpl] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2016-9-19 22:44:03[ INFO](PostProcessorRegistrationDelegate.java:309) Bean 'proxy' of type [class org.sunhk.meweb.common.proxy.MyProxy] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2016-9-19 22:44:03[ INFO](MyProxy.java:27) ------------------------------before excute method,method name is:'org.sunhk.meweb.service.impl.AuthServiceImpl.loadFilterChainDefinitions'
+2016-9-19 22:44:04[ INFO](DruidDataSource.java:456) {dataSource-1} inited
+2016-9-19 22:44:04[ INFO](MyProxy.java:29) ------------------------------after excute method
+2016-9-19 22:44:04[ INFO](EhCacheManagerFactoryBean.java:129) Initializing EhCache CacheManager
+2016-9-19 22:44:05[ INFO](ContextLoader.java:325) Root WebApplicationContext: initialization completed in 7075 ms
+2016-9-19 22:44:05[ INFO](FrameworkServlet.java:484) FrameworkServlet 'Spring': initialization started
+2016-9-19 22:44:05[ INFO](AbstractApplicationContext.java:510) Refreshing WebApplicationContext for namespace 'Spring-servlet': startup date [Mon Sep 19 22:44:05 CST 2016]; parent: Root WebApplicationContext
+2016-9-19 22:44:05[ INFO](XmlBeanDefinitionReader.java:317) Loading XML bean definitions from class path resource [springmvc-servlet.xml]
+2016-9-19 22:44:05[ INFO](AutowiredAnnotationBeanPostProcessor.java:153) JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2016-9-19 22:44:06[ INFO](AbstractUrlHandlerMapping.java:314) Mapped URL path [/admin/testjson] onto handler 'loginController'
+2016-9-19 22:44:06[ INFO](AbstractUrlHandlerMapping.java:314) Mapped URL path [/admin/testjson.*] onto handler 'loginController'
+2016-9-19 22:44:06[ INFO](AbstractUrlHandlerMapping.java:314) Mapped URL path [/admin/testjson/] onto handler 'loginController'
+2016-9-19 22:44:06[ INFO](AbstractUrlHandlerMapping.java:314) Mapped URL path [/login] onto handler 'loginController'
+2016-9-19 22:44:06[ INFO](AbstractUrlHandlerMapping.java:314) Mapped URL path [/login.*] onto handler 'loginController'
+2016-9-19 22:44:06[ INFO](AbstractUrlHandlerMapping.java:314) Mapped URL path [/login/] onto handler 'loginController'
+2016-9-19 22:44:06[ INFO](AbstractUrlHandlerMapping.java:314) Mapped URL path [/admin/testtask] onto handler 'taskController'
+2016-9-19 22:44:06[ INFO](AbstractUrlHandlerMapping.java:314) Mapped URL path [/admin/testtask.*] onto handler 'taskController'
+2016-9-19 22:44:06[ INFO](AbstractUrlHandlerMapping.java:314) Mapped URL path [/admin/testtask/] onto handler 'taskController'
+2016-9-19 22:44:06[ INFO](AbstractUrlHandlerMapping.java:314) Mapped URL path [/admin/gettask] onto handler 'taskController'
+2016-9-19 22:44:06[ INFO](AbstractUrlHandlerMapping.java:314) Mapped URL path [/admin/gettask.*] onto handler 'taskController'
+2016-9-19 22:44:06[ INFO](AbstractUrlHandlerMapping.java:314) Mapped URL path [/admin/gettask/] onto handler 'taskController'
+2016-9-19 22:44:07[ INFO](StdSchedulerFactory.java:1184) Using default implementation for ThreadExecutor
+2016-9-19 22:44:07[ INFO](SchedulerSignalerImpl.java:61) Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+2016-9-19 22:44:07[ INFO](QuartzScheduler.java:240) Quartz Scheduler v.2.2.1 created.
+2016-9-19 22:44:07[ INFO](RAMJobStore.java:155) RAMJobStore initialized.
+2016-9-19 22:44:07[ INFO](QuartzScheduler.java:305) Scheduler meta-data: Quartz Scheduler (v2.2.1) 'scheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+2016-9-19 22:44:07[ INFO](StdSchedulerFactory.java:1339) Quartz scheduler 'scheduler' initialized from an externally provided properties instance.
+2016-9-19 22:44:07[ INFO](StdSchedulerFactory.java:1343) Quartz scheduler version: 2.2.1
+2016-9-19 22:44:07[ INFO](QuartzScheduler.java:2311) JobFactory set to: org.springframework.scheduling.quartz.AdaptableJobFactory@99137d3
+2016-9-19 22:44:07[ INFO](AbstractUrlHandlerMapping.java:314) Mapped URL path [/**] onto handler 'org.springframework.web.servlet.resource.DefaultServletHttpRequestHandler#0'
+2016-9-19 22:44:07[ INFO](DefaultLifecycleProcessor.java:341) Starting beans in phase 2147483647
+2016-9-19 22:44:07[ INFO](SchedulerFactoryBean.java:647) Starting Quartz Scheduler now
+2016-9-19 22:44:07[ INFO](QuartzScheduler.java:575) Scheduler scheduler_$_NON_CLUSTERED started.
+2016-9-19 22:44:07[ INFO](FrameworkServlet.java:503) FrameworkServlet 'Spring': initialization completed in 1974 ms
+2016-9-19 22:52:42[ INFO](ContextLoader.java:285) Root WebApplicationContext: initialization started
+2016-9-19 22:52:43[ INFO](AbstractApplicationContext.java:510) Refreshing Root WebApplicationContext: startup date [Mon Sep 19 22:52:43 CST 2016]; root of context hierarchy
+2016-9-19 22:52:43[ INFO](XmlBeanDefinitionReader.java:317) Loading XML bean definitions from class path resource [spring-mybatis.xml]
+2016-9-19 22:52:43[ INFO](XmlBeanDefinitionReader.java:317) Loading XML bean definitions from class path resource [spring-config-shiro.xml]
+2016-9-19 22:52:44[ INFO](PropertiesLoaderSupport.java:172) Loading properties file from class path resource [jdbc.properties]
+2016-9-19 22:52:44[ INFO](PropertiesLoaderSupport.java:172) Loading properties file from class path resource [druid.properties]
+2016-9-19 22:52:44[ INFO](AutowiredAnnotationBeanPostProcessor.java:153) JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2016-9-19 22:52:44[ INFO](PostProcessorRegistrationDelegate.java:309) Bean '(inner bean)#2132067d' of type [class org.springframework.aop.aspectj.AspectJMethodBeforeAdvice] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2016-9-19 22:52:45[ INFO](PostProcessorRegistrationDelegate.java:309) Bean 'org.springframework.aop.aspectj.AspectJPointcutAdvisor#0' of type [class org.springframework.aop.aspectj.AspectJPointcutAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2016-9-19 22:52:45[ INFO](PostProcessorRegistrationDelegate.java:309) Bean '(inner bean)#327b0318' of type [class org.springframework.aop.aspectj.AspectJAfterAdvice] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2016-9-19 22:52:45[ INFO](PostProcessorRegistrationDelegate.java:309) Bean 'org.springframework.aop.aspectj.AspectJPointcutAdvisor#1' of type [class org.springframework.aop.aspectj.AspectJPointcutAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2016-9-19 22:52:45[ INFO](PostProcessorRegistrationDelegate.java:309) Bean '(inner bean)#14ca6aa9' of type [class org.springframework.aop.aspectj.AspectJAroundAdvice] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2016-9-19 22:52:45[ INFO](PostProcessorRegistrationDelegate.java:309) Bean 'org.springframework.aop.aspectj.AspectJPointcutAdvisor#2' of type [class org.springframework.aop.aspectj.AspectJPointcutAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2016-9-19 22:52:45[ INFO](PostProcessorRegistrationDelegate.java:309) Bean 'org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0' of type [class org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2016-9-19 22:52:45[ INFO](PostProcessorRegistrationDelegate.java:309) Bean 'org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#1' of type [class org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2016-9-19 22:52:45[ INFO](PostProcessorRegistrationDelegate.java:309) Bean 'org.springframework.cache.annotation.AnnotationCacheOperationSource#0' of type [class org.springframework.cache.annotation.AnnotationCacheOperationSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2016-9-19 22:52:45[ INFO](PostProcessorRegistrationDelegate.java:309) Bean 'org.springframework.cache.config.internalCacheAdvisor' of type [class org.springframework.cache.interceptor.BeanFactoryCacheOperationSourceAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2016-9-19 22:52:45[ INFO](PostProcessorRegistrationDelegate.java:309) Bean 'org.springframework.transaction.annotation.AnnotationTransactionAttributeSource#0' of type [class org.springframework.transaction.annotation.AnnotationTransactionAttributeSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2016-9-19 22:52:45[ INFO](PostProcessorRegistrationDelegate.java:309) Bean 'org.springframework.transaction.config.internalTransactionAdvisor' of type [class org.springframework.transaction.interceptor.BeanFactoryTransactionAttributeSourceAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2016-9-19 22:52:45[ INFO](PostProcessorRegistrationDelegate.java:309) Bean 'sysUserFilter' of type [class org.sunhk.meweb.common.filter.SysUserFilter] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2016-9-19 22:52:46[ INFO](PostProcessorRegistrationDelegate.java:309) Bean 'dataSource' of type [class com.alibaba.druid.pool.DruidDataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2016-9-19 22:52:47[ INFO](PostProcessorRegistrationDelegate.java:309) Bean 'sqlSessionFactory' of type [class org.mybatis.spring.SqlSessionFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2016-9-19 22:52:47[ INFO](PostProcessorRegistrationDelegate.java:309) Bean 'sqlSessionFactory' of type [class org.apache.ibatis.session.defaults.DefaultSqlSessionFactory] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2016-9-19 22:52:47[ INFO](PostProcessorRegistrationDelegate.java:309) Bean 'sysUserMapper' of type [class org.mybatis.spring.mapper.MapperFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2016-9-19 22:52:47[ INFO](PostProcessorRegistrationDelegate.java:309) Bean 'taskMapper' of type [class org.mybatis.spring.mapper.MapperFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2016-9-19 22:52:47[ INFO](PostProcessorRegistrationDelegate.java:309) Bean 'sysUserMapper' of type [class com.sun.proxy.$Proxy35] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2016-9-19 22:52:47[ INFO](PostProcessorRegistrationDelegate.java:309) Bean 'sysUserService' of type [class org.sunhk.meweb.service.impl.SysUserServiceImpl] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2016-9-19 22:52:47[ INFO](PostProcessorRegistrationDelegate.java:309) Bean 'transactionManager' of type [class org.springframework.jdbc.datasource.DataSourceTransactionManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2016-9-19 22:52:47[ INFO](PostProcessorRegistrationDelegate.java:309) Bean '(inner bean)#51f6983a' of type [class org.springframework.transaction.interceptor.NameMatchTransactionAttributeSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2016-9-19 22:52:47[ INFO](PostProcessorRegistrationDelegate.java:309) Bean 'txadvice' of type [class org.springframework.transaction.interceptor.TransactionInterceptor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2016-9-19 22:52:47[ INFO](PostProcessorRegistrationDelegate.java:309) Bean 'performanceMonitor' of type [class org.springframework.aop.interceptor.PerformanceMonitorInterceptor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2016-9-19 22:52:47[ INFO](AuthorizingRealm.java:248) No cache or cacheManager properties have been set.  Authorization cache cannot be obtained.
+2016-9-19 22:52:47[ INFO](PostProcessorRegistrationDelegate.java:309) Bean 'userRealm' of type [class org.sunhk.meweb.common.realm.UserRealm] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2016-9-19 22:52:47[ INFO](PostProcessorRegistrationDelegate.java:309) Bean 'securityManager' of type [class org.apache.shiro.web.mgt.DefaultWebSecurityManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2016-9-19 22:52:47[ INFO](PostProcessorRegistrationDelegate.java:309) Bean 'util:map#72a78732' of type [class org.springframework.beans.factory.config.MapFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2016-9-19 22:52:47[ INFO](PostProcessorRegistrationDelegate.java:309) Bean 'util:map#72a78732' of type [class java.util.LinkedHashMap] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2016-9-19 22:52:48[ INFO](PostProcessorRegistrationDelegate.java:309) Bean 'authService' of type [class org.sunhk.meweb.service.impl.AuthServiceImpl] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2016-9-19 22:52:48[ INFO](PostProcessorRegistrationDelegate.java:309) Bean 'proxy' of type [class org.sunhk.meweb.common.proxy.MyProxy] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2016-9-19 22:52:48[ INFO](MyProxy.java:27) ------------------------------before excute method,method name is:'org.sunhk.meweb.service.impl.AuthServiceImpl.loadFilterChainDefinitions'
+2016-9-19 22:52:49[ INFO](DruidDataSource.java:456) {dataSource-1} inited
+2016-9-19 22:52:49[ INFO](MyProxy.java:29) ------------------------------after excute method
+2016-9-19 22:52:49[ INFO](EhCacheManagerFactoryBean.java:129) Initializing EhCache CacheManager
+2016-9-19 22:52:49[ INFO](ContextLoader.java:325) Root WebApplicationContext: initialization completed in 6967 ms
+2016-9-19 22:52:50[ INFO](FrameworkServlet.java:484) FrameworkServlet 'Spring': initialization started
+2016-9-19 22:52:50[ INFO](AbstractApplicationContext.java:510) Refreshing WebApplicationContext for namespace 'Spring-servlet': startup date [Mon Sep 19 22:52:50 CST 2016]; parent: Root WebApplicationContext
+2016-9-19 22:52:50[ INFO](XmlBeanDefinitionReader.java:317) Loading XML bean definitions from class path resource [springmvc-servlet.xml]
+2016-9-19 22:52:50[ INFO](AutowiredAnnotationBeanPostProcessor.java:153) JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2016-9-19 22:52:50[ INFO](AbstractUrlHandlerMapping.java:314) Mapped URL path [/login] onto handler 'loginController'
+2016-9-19 22:52:50[ INFO](AbstractUrlHandlerMapping.java:314) Mapped URL path [/login.*] onto handler 'loginController'
+2016-9-19 22:52:50[ INFO](AbstractUrlHandlerMapping.java:314) Mapped URL path [/login/] onto handler 'loginController'
+2016-9-19 22:52:50[ INFO](AbstractUrlHandlerMapping.java:314) Mapped URL path [/admin/testjson] onto handler 'loginController'
+2016-9-19 22:52:50[ INFO](AbstractUrlHandlerMapping.java:314) Mapped URL path [/admin/testjson.*] onto handler 'loginController'
+2016-9-19 22:52:50[ INFO](AbstractUrlHandlerMapping.java:314) Mapped URL path [/admin/testjson/] onto handler 'loginController'
+2016-9-19 22:52:50[ INFO](AbstractUrlHandlerMapping.java:314) Mapped URL path [/admin/testtask] onto handler 'taskController'
+2016-9-19 22:52:50[ INFO](AbstractUrlHandlerMapping.java:314) Mapped URL path [/admin/testtask.*] onto handler 'taskController'
+2016-9-19 22:52:50[ INFO](AbstractUrlHandlerMapping.java:314) Mapped URL path [/admin/testtask/] onto handler 'taskController'
+2016-9-19 22:52:50[ INFO](AbstractUrlHandlerMapping.java:314) Mapped URL path [/admin/gettask] onto handler 'taskController'
+2016-9-19 22:52:50[ INFO](AbstractUrlHandlerMapping.java:314) Mapped URL path [/admin/gettask.*] onto handler 'taskController'
+2016-9-19 22:52:50[ INFO](AbstractUrlHandlerMapping.java:314) Mapped URL path [/admin/gettask/] onto handler 'taskController'
+2016-9-19 22:52:52[ INFO](StdSchedulerFactory.java:1184) Using default implementation for ThreadExecutor
+2016-9-19 22:52:52[ INFO](SchedulerSignalerImpl.java:61) Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+2016-9-19 22:52:52[ INFO](QuartzScheduler.java:240) Quartz Scheduler v.2.2.1 created.
+2016-9-19 22:52:52[ INFO](RAMJobStore.java:155) RAMJobStore initialized.
+2016-9-19 22:52:52[ INFO](QuartzScheduler.java:305) Scheduler meta-data: Quartz Scheduler (v2.2.1) 'scheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+2016-9-19 22:52:52[ INFO](StdSchedulerFactory.java:1339) Quartz scheduler 'scheduler' initialized from an externally provided properties instance.
+2016-9-19 22:52:52[ INFO](StdSchedulerFactory.java:1343) Quartz scheduler version: 2.2.1
+2016-9-19 22:52:52[ INFO](QuartzScheduler.java:2311) JobFactory set to: org.springframework.scheduling.quartz.AdaptableJobFactory@47696c5f
+2016-9-19 22:52:52[ INFO](AbstractUrlHandlerMapping.java:314) Mapped URL path [/**] onto handler 'org.springframework.web.servlet.resource.DefaultServletHttpRequestHandler#0'
+2016-9-19 22:52:52[ INFO](DefaultLifecycleProcessor.java:341) Starting beans in phase 2147483647
+2016-9-19 22:52:52[ INFO](SchedulerFactoryBean.java:647) Starting Quartz Scheduler now
+2016-9-19 22:52:52[ INFO](QuartzScheduler.java:575) Scheduler scheduler_$_NON_CLUSTERED started.
+2016-9-19 22:52:52[ INFO](FrameworkServlet.java:503) FrameworkServlet 'Spring': initialization completed in 2253 ms
+2016-9-19 23:08:47[ INFO](ContextLoader.java:285) Root WebApplicationContext: initialization started
+2016-9-19 23:08:47[ INFO](AbstractApplicationContext.java:510) Refreshing Root WebApplicationContext: startup date [Mon Sep 19 23:08:47 CST 2016]; root of context hierarchy
+2016-9-19 23:08:48[ INFO](XmlBeanDefinitionReader.java:317) Loading XML bean definitions from class path resource [spring-mybatis.xml]
+2016-9-19 23:08:48[ INFO](XmlBeanDefinitionReader.java:317) Loading XML bean definitions from class path resource [spring-config-shiro.xml]
+2016-9-19 23:08:49[ INFO](PropertiesLoaderSupport.java:172) Loading properties file from class path resource [jdbc.properties]
+2016-9-19 23:08:49[ INFO](PropertiesLoaderSupport.java:172) Loading properties file from class path resource [druid.properties]
+2016-9-19 23:08:49[ INFO](AutowiredAnnotationBeanPostProcessor.java:153) JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2016-9-19 23:08:49[ INFO](PostProcessorRegistrationDelegate.java:309) Bean '(inner bean)#6e04b624' of type [class org.springframework.aop.aspectj.AspectJMethodBeforeAdvice] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2016-9-19 23:08:49[ INFO](PostProcessorRegistrationDelegate.java:309) Bean 'org.springframework.aop.aspectj.AspectJPointcutAdvisor#0' of type [class org.springframework.aop.aspectj.AspectJPointcutAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2016-9-19 23:08:49[ INFO](PostProcessorRegistrationDelegate.java:309) Bean '(inner bean)#7b81787' of type [class org.springframework.aop.aspectj.AspectJAfterAdvice] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2016-9-19 23:08:49[ INFO](PostProcessorRegistrationDelegate.java:309) Bean 'org.springframework.aop.aspectj.AspectJPointcutAdvisor#1' of type [class org.springframework.aop.aspectj.AspectJPointcutAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2016-9-19 23:08:49[ INFO](PostProcessorRegistrationDelegate.java:309) Bean '(inner bean)#20beea2' of type [class org.springframework.aop.aspectj.AspectJAroundAdvice] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2016-9-19 23:08:49[ INFO](PostProcessorRegistrationDelegate.java:309) Bean 'org.springframework.aop.aspectj.AspectJPointcutAdvisor#2' of type [class org.springframework.aop.aspectj.AspectJPointcutAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2016-9-19 23:08:49[ INFO](PostProcessorRegistrationDelegate.java:309) Bean 'org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0' of type [class org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2016-9-19 23:08:49[ INFO](PostProcessorRegistrationDelegate.java:309) Bean 'org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#1' of type [class org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2016-9-19 23:08:50[ INFO](PostProcessorRegistrationDelegate.java:309) Bean 'org.springframework.cache.annotation.AnnotationCacheOperationSource#0' of type [class org.springframework.cache.annotation.AnnotationCacheOperationSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2016-9-19 23:08:50[ INFO](PostProcessorRegistrationDelegate.java:309) Bean 'org.springframework.cache.config.internalCacheAdvisor' of type [class org.springframework.cache.interceptor.BeanFactoryCacheOperationSourceAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2016-9-19 23:08:50[ INFO](PostProcessorRegistrationDelegate.java:309) Bean 'org.springframework.transaction.annotation.AnnotationTransactionAttributeSource#0' of type [class org.springframework.transaction.annotation.AnnotationTransactionAttributeSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2016-9-19 23:08:50[ INFO](PostProcessorRegistrationDelegate.java:309) Bean 'org.springframework.transaction.config.internalTransactionAdvisor' of type [class org.springframework.transaction.interceptor.BeanFactoryTransactionAttributeSourceAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2016-9-19 23:08:50[ INFO](PostProcessorRegistrationDelegate.java:309) Bean 'sysUserFilter' of type [class org.sunhk.meweb.common.filter.SysUserFilter] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2016-9-19 23:08:50[ INFO](PostProcessorRegistrationDelegate.java:309) Bean 'dataSource' of type [class com.alibaba.druid.pool.DruidDataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2016-9-19 23:08:51[ INFO](PostProcessorRegistrationDelegate.java:309) Bean 'sqlSessionFactory' of type [class org.mybatis.spring.SqlSessionFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2016-9-19 23:08:51[ INFO](PostProcessorRegistrationDelegate.java:309) Bean 'sqlSessionFactory' of type [class org.apache.ibatis.session.defaults.DefaultSqlSessionFactory] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2016-9-19 23:08:51[ INFO](PostProcessorRegistrationDelegate.java:309) Bean 'sysUserMapper' of type [class org.mybatis.spring.mapper.MapperFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2016-9-19 23:08:51[ INFO](PostProcessorRegistrationDelegate.java:309) Bean 'taskMapper' of type [class org.mybatis.spring.mapper.MapperFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2016-9-19 23:08:51[ INFO](PostProcessorRegistrationDelegate.java:309) Bean 'sysUserMapper' of type [class com.sun.proxy.$Proxy35] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2016-9-19 23:08:51[ INFO](PostProcessorRegistrationDelegate.java:309) Bean 'sysUserService' of type [class org.sunhk.meweb.service.impl.SysUserServiceImpl] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2016-9-19 23:08:52[ INFO](PostProcessorRegistrationDelegate.java:309) Bean 'transactionManager' of type [class org.springframework.jdbc.datasource.DataSourceTransactionManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2016-9-19 23:08:52[ INFO](PostProcessorRegistrationDelegate.java:309) Bean '(inner bean)#4be10126' of type [class org.springframework.transaction.interceptor.NameMatchTransactionAttributeSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2016-9-19 23:08:52[ INFO](PostProcessorRegistrationDelegate.java:309) Bean 'txadvice' of type [class org.springframework.transaction.interceptor.TransactionInterceptor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2016-9-19 23:08:52[ INFO](PostProcessorRegistrationDelegate.java:309) Bean 'performanceMonitor' of type [class org.springframework.aop.interceptor.PerformanceMonitorInterceptor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2016-9-19 23:08:52[ INFO](AuthorizingRealm.java:248) No cache or cacheManager properties have been set.  Authorization cache cannot be obtained.
+2016-9-19 23:08:52[ INFO](PostProcessorRegistrationDelegate.java:309) Bean 'userRealm' of type [class org.sunhk.meweb.common.realm.UserRealm] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2016-9-19 23:08:52[ INFO](PostProcessorRegistrationDelegate.java:309) Bean 'securityManager' of type [class org.apache.shiro.web.mgt.DefaultWebSecurityManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2016-9-19 23:08:52[ INFO](PostProcessorRegistrationDelegate.java:309) Bean 'util:map#59a30fb9' of type [class org.springframework.beans.factory.config.MapFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2016-9-19 23:08:52[ INFO](PostProcessorRegistrationDelegate.java:309) Bean 'util:map#59a30fb9' of type [class java.util.LinkedHashMap] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2016-9-19 23:08:52[ INFO](PostProcessorRegistrationDelegate.java:309) Bean 'authService' of type [class org.sunhk.meweb.service.impl.AuthServiceImpl] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2016-9-19 23:08:52[ INFO](PostProcessorRegistrationDelegate.java:309) Bean 'proxy' of type [class org.sunhk.meweb.common.proxy.MyProxy] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2016-9-19 23:08:52[ INFO](MyProxy.java:27) ------------------------------before excute method,method name is:'org.sunhk.meweb.service.impl.AuthServiceImpl.loadFilterChainDefinitions'
+2016-9-19 23:08:53[ INFO](DruidDataSource.java:456) {dataSource-1} inited
+2016-9-19 23:08:53[ INFO](MyProxy.java:29) ------------------------------after excute method
+2016-9-19 23:08:54[ INFO](EhCacheManagerFactoryBean.java:129) Initializing EhCache CacheManager
+2016-9-19 23:08:54[ INFO](ContextLoader.java:325) Root WebApplicationContext: initialization completed in 6928 ms
+2016-9-19 23:08:54[ INFO](FrameworkServlet.java:484) FrameworkServlet 'Spring': initialization started
+2016-9-19 23:08:54[ INFO](AbstractApplicationContext.java:510) Refreshing WebApplicationContext for namespace 'Spring-servlet': startup date [Mon Sep 19 23:08:54 CST 2016]; parent: Root WebApplicationContext
+2016-9-19 23:08:54[ INFO](XmlBeanDefinitionReader.java:317) Loading XML bean definitions from class path resource [springmvc-servlet.xml]
+2016-9-19 23:08:55[ INFO](AutowiredAnnotationBeanPostProcessor.java:153) JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2016-9-19 23:08:55[ INFO](AbstractUrlHandlerMapping.java:314) Mapped URL path [/login] onto handler 'loginController'
+2016-9-19 23:08:55[ INFO](AbstractUrlHandlerMapping.java:314) Mapped URL path [/login.*] onto handler 'loginController'
+2016-9-19 23:08:55[ INFO](AbstractUrlHandlerMapping.java:314) Mapped URL path [/login/] onto handler 'loginController'
+2016-9-19 23:08:55[ INFO](AbstractUrlHandlerMapping.java:314) Mapped URL path [/admin/testjson] onto handler 'loginController'
+2016-9-19 23:08:55[ INFO](AbstractUrlHandlerMapping.java:314) Mapped URL path [/admin/testjson.*] onto handler 'loginController'
+2016-9-19 23:08:55[ INFO](AbstractUrlHandlerMapping.java:314) Mapped URL path [/admin/testjson/] onto handler 'loginController'
+2016-9-19 23:08:55[ INFO](AbstractUrlHandlerMapping.java:314) Mapped URL path [/admin/testtask] onto handler 'taskController'
+2016-9-19 23:08:55[ INFO](AbstractUrlHandlerMapping.java:314) Mapped URL path [/admin/testtask.*] onto handler 'taskController'
+2016-9-19 23:08:55[ INFO](AbstractUrlHandlerMapping.java:314) Mapped URL path [/admin/testtask/] onto handler 'taskController'
+2016-9-19 23:08:55[ INFO](AbstractUrlHandlerMapping.java:314) Mapped URL path [/admin/gettask] onto handler 'taskController'
+2016-9-19 23:08:55[ INFO](AbstractUrlHandlerMapping.java:314) Mapped URL path [/admin/gettask.*] onto handler 'taskController'
+2016-9-19 23:08:55[ INFO](AbstractUrlHandlerMapping.java:314) Mapped URL path [/admin/gettask/] onto handler 'taskController'
+2016-9-19 23:08:56[ INFO](StdSchedulerFactory.java:1184) Using default implementation for ThreadExecutor
+2016-9-19 23:08:57[ INFO](SchedulerSignalerImpl.java:61) Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+2016-9-19 23:08:57[ INFO](QuartzScheduler.java:240) Quartz Scheduler v.2.2.1 created.
+2016-9-19 23:08:57[ INFO](RAMJobStore.java:155) RAMJobStore initialized.
+2016-9-19 23:08:57[ INFO](QuartzScheduler.java:305) Scheduler meta-data: Quartz Scheduler (v2.2.1) 'scheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+2016-9-19 23:08:57[ INFO](StdSchedulerFactory.java:1339) Quartz scheduler 'scheduler' initialized from an externally provided properties instance.
+2016-9-19 23:08:57[ INFO](StdSchedulerFactory.java:1343) Quartz scheduler version: 2.2.1
+2016-9-19 23:08:57[ INFO](QuartzScheduler.java:2311) JobFactory set to: org.springframework.scheduling.quartz.AdaptableJobFactory@5abd13ae
+2016-9-19 23:08:57[ INFO](AbstractUrlHandlerMapping.java:314) Mapped URL path [/**] onto handler 'org.springframework.web.servlet.resource.DefaultServletHttpRequestHandler#0'
+2016-9-19 23:08:57[ INFO](DefaultLifecycleProcessor.java:341) Starting beans in phase 2147483647
+2016-9-19 23:08:57[ INFO](SchedulerFactoryBean.java:647) Starting Quartz Scheduler now
+2016-9-19 23:08:57[ INFO](QuartzScheduler.java:575) Scheduler scheduler_$_NON_CLUSTERED started.
+2016-9-19 23:08:57[ INFO](FrameworkServlet.java:503) FrameworkServlet 'Spring': initialization completed in 2374 ms

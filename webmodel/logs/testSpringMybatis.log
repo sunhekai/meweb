@@ -1,785 +1,70 @@
-2016-9-17 21:20:42[ INFO](ContextLoader.java:285) Root WebApplicationContext: initialization started
-2016-9-17 21:20:43[ INFO](AbstractApplicationContext.java:510) Refreshing Root WebApplicationContext: startup date [Sat Sep 17 21:20:43 CST 2016]; root of context hierarchy
-2016-9-17 21:20:43[ INFO](XmlBeanDefinitionReader.java:317) Loading XML bean definitions from class path resource [spring-mybatis.xml]
-2016-9-17 21:20:44[ INFO](XmlBeanDefinitionReader.java:317) Loading XML bean definitions from class path resource [spring-config-shiro.xml]
-2016-9-17 21:20:44[ INFO](PropertiesLoaderSupport.java:172) Loading properties file from class path resource [jdbc.properties]
-2016-9-17 21:20:44[ INFO](PropertiesLoaderSupport.java:172) Loading properties file from class path resource [druid.properties]
-2016-9-17 21:20:45[ INFO](AutowiredAnnotationBeanPostProcessor.java:153) JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
-2016-9-17 21:20:45[ INFO](PostProcessorRegistrationDelegate.java:309) Bean '(inner bean)#371536a5' of type [class org.springframework.aop.aspectj.AspectJMethodBeforeAdvice] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2016-9-17 21:20:45[ INFO](PostProcessorRegistrationDelegate.java:309) Bean 'org.springframework.aop.aspectj.AspectJPointcutAdvisor#0' of type [class org.springframework.aop.aspectj.AspectJPointcutAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2016-9-17 21:20:45[ INFO](PostProcessorRegistrationDelegate.java:309) Bean '(inner bean)#5d9ed108' of type [class org.springframework.aop.aspectj.AspectJAfterAdvice] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2016-9-17 21:20:45[ INFO](PostProcessorRegistrationDelegate.java:309) Bean 'org.springframework.aop.aspectj.AspectJPointcutAdvisor#1' of type [class org.springframework.aop.aspectj.AspectJPointcutAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2016-9-17 21:20:45[ INFO](PostProcessorRegistrationDelegate.java:309) Bean '(inner bean)#1067d06' of type [class org.springframework.aop.aspectj.AspectJAroundAdvice] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2016-9-17 21:20:45[ INFO](PostProcessorRegistrationDelegate.java:309) Bean 'org.springframework.aop.aspectj.AspectJPointcutAdvisor#2' of type [class org.springframework.aop.aspectj.AspectJPointcutAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2016-9-17 21:20:45[ INFO](PostProcessorRegistrationDelegate.java:309) Bean 'org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0' of type [class org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2016-9-17 21:20:45[ INFO](PostProcessorRegistrationDelegate.java:309) Bean 'org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#1' of type [class org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2016-9-17 21:20:45[ INFO](PostProcessorRegistrationDelegate.java:309) Bean 'org.springframework.cache.annotation.AnnotationCacheOperationSource#0' of type [class org.springframework.cache.annotation.AnnotationCacheOperationSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2016-9-17 21:20:45[ INFO](PostProcessorRegistrationDelegate.java:309) Bean 'org.springframework.cache.config.internalCacheAdvisor' of type [class org.springframework.cache.interceptor.BeanFactoryCacheOperationSourceAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2016-9-17 21:20:45[ INFO](PostProcessorRegistrationDelegate.java:309) Bean 'org.springframework.transaction.annotation.AnnotationTransactionAttributeSource#0' of type [class org.springframework.transaction.annotation.AnnotationTransactionAttributeSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2016-9-17 21:20:45[ INFO](PostProcessorRegistrationDelegate.java:309) Bean 'org.springframework.transaction.config.internalTransactionAdvisor' of type [class org.springframework.transaction.interceptor.BeanFactoryTransactionAttributeSourceAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2016-9-17 21:20:46[ INFO](PostProcessorRegistrationDelegate.java:309) Bean 'sysUserFilter' of type [class org.sunhk.meweb.common.filter.SysUserFilter] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2016-9-17 21:20:46[ INFO](PostProcessorRegistrationDelegate.java:309) Bean 'dataSource' of type [class com.alibaba.druid.pool.DruidDataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2016-9-17 21:20:47[ INFO](PostProcessorRegistrationDelegate.java:309) Bean 'sqlSessionFactory' of type [class org.mybatis.spring.SqlSessionFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2016-9-17 21:20:47[ INFO](PostProcessorRegistrationDelegate.java:309) Bean 'sqlSessionFactory' of type [class org.apache.ibatis.session.defaults.DefaultSqlSessionFactory] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2016-9-17 21:20:47[ INFO](PostProcessorRegistrationDelegate.java:309) Bean 'sysUserMapper' of type [class org.mybatis.spring.mapper.MapperFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2016-9-17 21:20:47[ INFO](PostProcessorRegistrationDelegate.java:309) Bean 'taskMapper' of type [class org.mybatis.spring.mapper.MapperFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2016-9-17 21:20:47[ INFO](PostProcessorRegistrationDelegate.java:309) Bean 'sysUserMapper' of type [class com.sun.proxy.$Proxy35] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2016-9-17 21:20:47[ INFO](PostProcessorRegistrationDelegate.java:309) Bean 'sysUserService' of type [class org.sunhk.meweb.service.impl.SysUserServiceImpl] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2016-9-17 21:20:47[ INFO](PostProcessorRegistrationDelegate.java:309) Bean 'transactionManager' of type [class org.springframework.jdbc.datasource.DataSourceTransactionManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2016-9-17 21:20:48[ INFO](PostProcessorRegistrationDelegate.java:309) Bean '(inner bean)#3ece790e' of type [class org.springframework.transaction.interceptor.NameMatchTransactionAttributeSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2016-9-17 21:20:48[ INFO](PostProcessorRegistrationDelegate.java:309) Bean 'txadvice' of type [class org.springframework.transaction.interceptor.TransactionInterceptor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2016-9-17 21:20:48[ INFO](PostProcessorRegistrationDelegate.java:309) Bean 'performanceMonitor' of type [class org.springframework.aop.interceptor.PerformanceMonitorInterceptor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2016-9-17 21:20:48[ INFO](AuthorizingRealm.java:248) No cache or cacheManager properties have been set.  Authorization cache cannot be obtained.
-2016-9-17 21:20:48[ INFO](PostProcessorRegistrationDelegate.java:309) Bean 'userRealm' of type [class org.sunhk.meweb.common.realm.UserRealm] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2016-9-17 21:20:48[ INFO](PostProcessorRegistrationDelegate.java:309) Bean 'securityManager' of type [class org.apache.shiro.web.mgt.DefaultWebSecurityManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2016-9-17 21:20:48[ INFO](PostProcessorRegistrationDelegate.java:309) Bean 'util:map#74c18499' of type [class org.springframework.beans.factory.config.MapFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2016-9-17 21:20:48[ INFO](PostProcessorRegistrationDelegate.java:309) Bean 'util:map#74c18499' of type [class java.util.LinkedHashMap] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2016-9-17 21:20:48[ INFO](PostProcessorRegistrationDelegate.java:309) Bean 'authService' of type [class org.sunhk.meweb.service.impl.AuthServiceImpl] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2016-9-17 21:20:48[ INFO](PostProcessorRegistrationDelegate.java:309) Bean 'proxy' of type [class org.sunhk.meweb.common.proxy.MyProxy] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2016-9-17 21:20:48[ INFO](MyProxy.java:27) ------------------------------before excute method,method name is:'org.sunhk.meweb.service.impl.AuthServiceImpl.loadFilterChainDefinitions'
-2016-9-17 21:20:50[ INFO](DruidDataSource.java:456) {dataSource-1} inited
-2016-9-17 21:20:50[ INFO](MyProxy.java:29) ------------------------------after excute method
-2016-9-17 21:20:50[ INFO](EhCacheManagerFactoryBean.java:129) Initializing EhCache CacheManager
-2016-9-17 21:20:51[ INFO](ContextLoader.java:325) Root WebApplicationContext: initialization completed in 8210 ms
-2016-9-17 21:20:51[ INFO](FrameworkServlet.java:484) FrameworkServlet 'Spring': initialization started
-2016-9-17 21:20:51[ INFO](AbstractApplicationContext.java:510) Refreshing WebApplicationContext for namespace 'Spring-servlet': startup date [Sat Sep 17 21:20:51 CST 2016]; parent: Root WebApplicationContext
-2016-9-17 21:20:51[ INFO](XmlBeanDefinitionReader.java:317) Loading XML bean definitions from class path resource [springmvc-servlet.xml]
-2016-9-17 21:20:51[ INFO](AutowiredAnnotationBeanPostProcessor.java:153) JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
-2016-9-17 21:20:52[ WARN](AbstractApplicationContext.java:487) Exception encountered during context initialization - cancelling refresh attempt
-org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'loginController': Injection of autowired dependencies failed; nested exception is org.springframework.beans.factory.BeanCreationException: Could not autowire field: private org.sunhk.meweb.service.SysUserService org.sunhk.meweb.controller.LoginController.userSevice; nested exception is java.lang.NoClassDefFoundError: org/quartz/impl/JobDetailImpl
-	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessPropertyValues(AutowiredAnnotationBeanPostProcessor.java:334)
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1202)
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:537)
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:476)
-	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:302)
-	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230)
-	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:298)
-	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:193)
-	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:762)
-	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:757)
-	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:480)
-	at org.springframework.web.servlet.FrameworkServlet.configureAndRefreshWebApplicationContext(FrameworkServlet.java:663)
-	at org.springframework.web.servlet.FrameworkServlet.createWebApplicationContext(FrameworkServlet.java:629)
-	at org.springframework.web.servlet.FrameworkServlet.createWebApplicationContext(FrameworkServlet.java:677)
-	at org.springframework.web.servlet.FrameworkServlet.initWebApplicationContext(FrameworkServlet.java:548)
-	at org.springframework.web.servlet.FrameworkServlet.initServletBean(FrameworkServlet.java:489)
-	at org.springframework.web.servlet.HttpServletBean.init(HttpServletBean.java:136)
-	at javax.servlet.GenericServlet.init(GenericServlet.java:160)
-	at org.apache.catalina.core.StandardWrapper.initServlet(StandardWrapper.java:1280)
-	at org.apache.catalina.core.StandardWrapper.loadServlet(StandardWrapper.java:1193)
-	at org.apache.catalina.core.StandardWrapper.load(StandardWrapper.java:1088)
-	at org.apache.catalina.core.StandardContext.loadOnStartup(StandardContext.java:5176)
-	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5460)
-	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150)
-	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1559)
-	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1549)
-	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
-	at java.lang.Thread.run(Thread.java:745)
-Caused by: org.springframework.beans.factory.BeanCreationException: Could not autowire field: private org.sunhk.meweb.service.SysUserService org.sunhk.meweb.controller.LoginController.userSevice; nested exception is java.lang.NoClassDefFoundError: org/quartz/impl/JobDetailImpl
-	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:558)
-	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:87)
-	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessPropertyValues(AutowiredAnnotationBeanPostProcessor.java:331)
-	... 29 more
-Caused by: java.lang.NoClassDefFoundError: org/quartz/impl/JobDetailImpl
-	at java.lang.Class.getDeclaredMethods0(Native Method)
-	at java.lang.Class.privateGetDeclaredMethods(Class.java:2701)
-	at java.lang.Class.getDeclaredMethods(Class.java:1975)
-	at org.springframework.util.ReflectionUtils.getDeclaredMethods(ReflectionUtils.java:571)
-	at org.springframework.util.ReflectionUtils.doWithMethods(ReflectionUtils.java:490)
-	at org.springframework.util.ReflectionUtils.doWithMethods(ReflectionUtils.java:474)
-	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.determineCandidateConstructors(AutowiredAnnotationBeanPostProcessor.java:241)
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.determineConstructorsFromBeanPostProcessors(AbstractAutowireCapableBeanFactory.java:1057)
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1030)
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.getSingletonFactoryBeanForTypeCheck(AbstractAutowireCapableBeanFactory.java:860)
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.getTypeForFactoryBean(AbstractAutowireCapableBeanFactory.java:790)
-	at org.springframework.beans.factory.support.AbstractBeanFactory.isTypeMatch(AbstractBeanFactory.java:541)
-	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doGetBeanNamesForType(DefaultListableBeanFactory.java:436)
-	at org.springframework.beans.factory.support.DefaultListableBeanFactory.getBeanNamesForType(DefaultListableBeanFactory.java:412)
-	at org.springframework.beans.factory.BeanFactoryUtils.beanNamesForTypeIncludingAncestors(BeanFactoryUtils.java:187)
-	at org.springframework.beans.factory.support.DefaultListableBeanFactory.findAutowireCandidates(DefaultListableBeanFactory.java:1112)
-	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1051)
-	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:949)
-	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:530)
-	... 31 more
-Caused by: java.lang.ClassNotFoundException: org.quartz.impl.JobDetailImpl
-	at org.apache.catalina.loader.WebappClassLoader.loadClass(WebappClassLoader.java:1702)
-	at org.apache.catalina.loader.WebappClassLoader.loadClass(WebappClassLoader.java:1547)
-	... 50 more
-2016-9-17 21:20:52[ERROR](FrameworkServlet.java:497) Context initialization failed
-org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'loginController': Injection of autowired dependencies failed; nested exception is org.springframework.beans.factory.BeanCreationException: Could not autowire field: private org.sunhk.meweb.service.SysUserService org.sunhk.meweb.controller.LoginController.userSevice; nested exception is java.lang.NoClassDefFoundError: org/quartz/impl/JobDetailImpl
-	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessPropertyValues(AutowiredAnnotationBeanPostProcessor.java:334)
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1202)
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:537)
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:476)
-	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:302)
-	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230)
-	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:298)
-	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:193)
-	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:762)
-	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:757)
-	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:480)
-	at org.springframework.web.servlet.FrameworkServlet.configureAndRefreshWebApplicationContext(FrameworkServlet.java:663)
-	at org.springframework.web.servlet.FrameworkServlet.createWebApplicationContext(FrameworkServlet.java:629)
-	at org.springframework.web.servlet.FrameworkServlet.createWebApplicationContext(FrameworkServlet.java:677)
-	at org.springframework.web.servlet.FrameworkServlet.initWebApplicationContext(FrameworkServlet.java:548)
-	at org.springframework.web.servlet.FrameworkServlet.initServletBean(FrameworkServlet.java:489)
-	at org.springframework.web.servlet.HttpServletBean.init(HttpServletBean.java:136)
-	at javax.servlet.GenericServlet.init(GenericServlet.java:160)
-	at org.apache.catalina.core.StandardWrapper.initServlet(StandardWrapper.java:1280)
-	at org.apache.catalina.core.StandardWrapper.loadServlet(StandardWrapper.java:1193)
-	at org.apache.catalina.core.StandardWrapper.load(StandardWrapper.java:1088)
-	at org.apache.catalina.core.StandardContext.loadOnStartup(StandardContext.java:5176)
-	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5460)
-	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150)
-	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1559)
-	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1549)
-	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
-	at java.lang.Thread.run(Thread.java:745)
-Caused by: org.springframework.beans.factory.BeanCreationException: Could not autowire field: private org.sunhk.meweb.service.SysUserService org.sunhk.meweb.controller.LoginController.userSevice; nested exception is java.lang.NoClassDefFoundError: org/quartz/impl/JobDetailImpl
-	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:558)
-	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:87)
-	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessPropertyValues(AutowiredAnnotationBeanPostProcessor.java:331)
-	... 29 more
-Caused by: java.lang.NoClassDefFoundError: org/quartz/impl/JobDetailImpl
-	at java.lang.Class.getDeclaredMethods0(Native Method)
-	at java.lang.Class.privateGetDeclaredMethods(Class.java:2701)
-	at java.lang.Class.getDeclaredMethods(Class.java:1975)
-	at org.springframework.util.ReflectionUtils.getDeclaredMethods(ReflectionUtils.java:571)
-	at org.springframework.util.ReflectionUtils.doWithMethods(ReflectionUtils.java:490)
-	at org.springframework.util.ReflectionUtils.doWithMethods(ReflectionUtils.java:474)
-	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.determineCandidateConstructors(AutowiredAnnotationBeanPostProcessor.java:241)
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.determineConstructorsFromBeanPostProcessors(AbstractAutowireCapableBeanFactory.java:1057)
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1030)
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.getSingletonFactoryBeanForTypeCheck(AbstractAutowireCapableBeanFactory.java:860)
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.getTypeForFactoryBean(AbstractAutowireCapableBeanFactory.java:790)
-	at org.springframework.beans.factory.support.AbstractBeanFactory.isTypeMatch(AbstractBeanFactory.java:541)
-	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doGetBeanNamesForType(DefaultListableBeanFactory.java:436)
-	at org.springframework.beans.factory.support.DefaultListableBeanFactory.getBeanNamesForType(DefaultListableBeanFactory.java:412)
-	at org.springframework.beans.factory.BeanFactoryUtils.beanNamesForTypeIncludingAncestors(BeanFactoryUtils.java:187)
-	at org.springframework.beans.factory.support.DefaultListableBeanFactory.findAutowireCandidates(DefaultListableBeanFactory.java:1112)
-	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1051)
-	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:949)
-	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:530)
-	... 31 more
-Caused by: java.lang.ClassNotFoundException: org.quartz.impl.JobDetailImpl
-	at org.apache.catalina.loader.WebappClassLoader.loadClass(WebappClassLoader.java:1702)
-	at org.apache.catalina.loader.WebappClassLoader.loadClass(WebappClassLoader.java:1547)
-	... 50 more
-2016-9-17 21:23:06[ INFO](ContextLoader.java:285) Root WebApplicationContext: initialization started
-2016-9-17 21:23:06[ INFO](AbstractApplicationContext.java:510) Refreshing Root WebApplicationContext: startup date [Sat Sep 17 21:23:06 CST 2016]; root of context hierarchy
-2016-9-17 21:23:06[ INFO](XmlBeanDefinitionReader.java:317) Loading XML bean definitions from class path resource [spring-mybatis.xml]
-2016-9-17 21:23:07[ INFO](XmlBeanDefinitionReader.java:317) Loading XML bean definitions from class path resource [spring-config-shiro.xml]
-2016-9-17 21:23:08[ INFO](PropertiesLoaderSupport.java:172) Loading properties file from class path resource [jdbc.properties]
-2016-9-17 21:23:08[ INFO](PropertiesLoaderSupport.java:172) Loading properties file from class path resource [druid.properties]
-2016-9-17 21:23:08[ INFO](AutowiredAnnotationBeanPostProcessor.java:153) JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
-2016-9-17 21:23:08[ INFO](PostProcessorRegistrationDelegate.java:309) Bean '(inner bean)#6fe9292b' of type [class org.springframework.aop.aspectj.AspectJMethodBeforeAdvice] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2016-9-17 21:23:08[ INFO](PostProcessorRegistrationDelegate.java:309) Bean 'org.springframework.aop.aspectj.AspectJPointcutAdvisor#0' of type [class org.springframework.aop.aspectj.AspectJPointcutAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2016-9-17 21:23:08[ INFO](PostProcessorRegistrationDelegate.java:309) Bean '(inner bean)#420158a0' of type [class org.springframework.aop.aspectj.AspectJAfterAdvice] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2016-9-17 21:23:08[ INFO](PostProcessorRegistrationDelegate.java:309) Bean 'org.springframework.aop.aspectj.AspectJPointcutAdvisor#1' of type [class org.springframework.aop.aspectj.AspectJPointcutAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2016-9-17 21:23:08[ INFO](PostProcessorRegistrationDelegate.java:309) Bean '(inner bean)#34ca66f2' of type [class org.springframework.aop.aspectj.AspectJAroundAdvice] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2016-9-17 21:23:08[ INFO](PostProcessorRegistrationDelegate.java:309) Bean 'org.springframework.aop.aspectj.AspectJPointcutAdvisor#2' of type [class org.springframework.aop.aspectj.AspectJPointcutAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2016-9-17 21:23:08[ INFO](PostProcessorRegistrationDelegate.java:309) Bean 'org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0' of type [class org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2016-9-17 21:23:08[ INFO](PostProcessorRegistrationDelegate.java:309) Bean 'org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#1' of type [class org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2016-9-17 21:23:08[ INFO](PostProcessorRegistrationDelegate.java:309) Bean 'org.springframework.cache.annotation.AnnotationCacheOperationSource#0' of type [class org.springframework.cache.annotation.AnnotationCacheOperationSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2016-9-17 21:23:08[ INFO](PostProcessorRegistrationDelegate.java:309) Bean 'org.springframework.cache.config.internalCacheAdvisor' of type [class org.springframework.cache.interceptor.BeanFactoryCacheOperationSourceAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2016-9-17 21:23:08[ INFO](PostProcessorRegistrationDelegate.java:309) Bean 'org.springframework.transaction.annotation.AnnotationTransactionAttributeSource#0' of type [class org.springframework.transaction.annotation.AnnotationTransactionAttributeSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2016-9-17 21:23:08[ INFO](PostProcessorRegistrationDelegate.java:309) Bean 'org.springframework.transaction.config.internalTransactionAdvisor' of type [class org.springframework.transaction.interceptor.BeanFactoryTransactionAttributeSourceAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2016-9-17 21:23:09[ INFO](PostProcessorRegistrationDelegate.java:309) Bean 'sysUserFilter' of type [class org.sunhk.meweb.common.filter.SysUserFilter] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2016-9-17 21:23:09[ INFO](PostProcessorRegistrationDelegate.java:309) Bean 'dataSource' of type [class com.alibaba.druid.pool.DruidDataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2016-9-17 21:23:11[ INFO](PostProcessorRegistrationDelegate.java:309) Bean 'sqlSessionFactory' of type [class org.mybatis.spring.SqlSessionFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2016-9-17 21:23:11[ INFO](PostProcessorRegistrationDelegate.java:309) Bean 'sqlSessionFactory' of type [class org.apache.ibatis.session.defaults.DefaultSqlSessionFactory] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2016-9-17 21:23:11[ INFO](PostProcessorRegistrationDelegate.java:309) Bean 'sysUserMapper' of type [class org.mybatis.spring.mapper.MapperFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2016-9-17 21:23:11[ INFO](PostProcessorRegistrationDelegate.java:309) Bean 'taskMapper' of type [class org.mybatis.spring.mapper.MapperFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2016-9-17 21:23:11[ INFO](PostProcessorRegistrationDelegate.java:309) Bean 'sysUserMapper' of type [class com.sun.proxy.$Proxy35] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2016-9-17 21:23:11[ INFO](PostProcessorRegistrationDelegate.java:309) Bean 'sysUserService' of type [class org.sunhk.meweb.service.impl.SysUserServiceImpl] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2016-9-17 21:23:11[ INFO](PostProcessorRegistrationDelegate.java:309) Bean 'transactionManager' of type [class org.springframework.jdbc.datasource.DataSourceTransactionManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2016-9-17 21:23:11[ INFO](PostProcessorRegistrationDelegate.java:309) Bean '(inner bean)#76b38736' of type [class org.springframework.transaction.interceptor.NameMatchTransactionAttributeSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2016-9-17 21:23:11[ INFO](PostProcessorRegistrationDelegate.java:309) Bean 'txadvice' of type [class org.springframework.transaction.interceptor.TransactionInterceptor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2016-9-17 21:23:11[ INFO](PostProcessorRegistrationDelegate.java:309) Bean 'performanceMonitor' of type [class org.springframework.aop.interceptor.PerformanceMonitorInterceptor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2016-9-17 21:23:11[ INFO](AuthorizingRealm.java:248) No cache or cacheManager properties have been set.  Authorization cache cannot be obtained.
-2016-9-17 21:23:11[ INFO](PostProcessorRegistrationDelegate.java:309) Bean 'userRealm' of type [class org.sunhk.meweb.common.realm.UserRealm] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2016-9-17 21:23:11[ INFO](PostProcessorRegistrationDelegate.java:309) Bean 'securityManager' of type [class org.apache.shiro.web.mgt.DefaultWebSecurityManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2016-9-17 21:23:11[ INFO](PostProcessorRegistrationDelegate.java:309) Bean 'util:map#5adec2d' of type [class org.springframework.beans.factory.config.MapFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2016-9-17 21:23:11[ INFO](PostProcessorRegistrationDelegate.java:309) Bean 'util:map#5adec2d' of type [class java.util.LinkedHashMap] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2016-9-17 21:23:12[ INFO](PostProcessorRegistrationDelegate.java:309) Bean 'authService' of type [class org.sunhk.meweb.service.impl.AuthServiceImpl] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2016-9-17 21:23:12[ INFO](PostProcessorRegistrationDelegate.java:309) Bean 'proxy' of type [class org.sunhk.meweb.common.proxy.MyProxy] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2016-9-17 21:23:12[ INFO](MyProxy.java:27) ------------------------------before excute method,method name is:'org.sunhk.meweb.service.impl.AuthServiceImpl.loadFilterChainDefinitions'
-2016-9-17 21:23:13[ INFO](DruidDataSource.java:456) {dataSource-1} inited
-2016-9-17 21:23:13[ INFO](MyProxy.java:29) ------------------------------after excute method
-2016-9-17 21:23:13[ INFO](EhCacheManagerFactoryBean.java:129) Initializing EhCache CacheManager
-2016-9-17 21:23:14[ INFO](ContextLoader.java:325) Root WebApplicationContext: initialization completed in 7738 ms
-2016-9-17 21:23:14[ INFO](FrameworkServlet.java:484) FrameworkServlet 'Spring': initialization started
-2016-9-17 21:23:14[ INFO](AbstractApplicationContext.java:510) Refreshing WebApplicationContext for namespace 'Spring-servlet': startup date [Sat Sep 17 21:23:14 CST 2016]; parent: Root WebApplicationContext
-2016-9-17 21:23:14[ INFO](XmlBeanDefinitionReader.java:317) Loading XML bean definitions from class path resource [springmvc-servlet.xml]
-2016-9-17 21:23:14[ INFO](AutowiredAnnotationBeanPostProcessor.java:153) JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
-2016-9-17 21:23:15[ WARN](AbstractApplicationContext.java:487) Exception encountered during context initialization - cancelling refresh attempt
-org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'loginController': Injection of autowired dependencies failed; nested exception is org.springframework.beans.factory.BeanCreationException: Could not autowire field: private org.sunhk.meweb.service.SysUserService org.sunhk.meweb.controller.LoginController.userSevice; nested exception is java.lang.NoClassDefFoundError: org/quartz/impl/JobDetailImpl
-	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessPropertyValues(AutowiredAnnotationBeanPostProcessor.java:334)
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1202)
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:537)
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:476)
-	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:302)
-	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230)
-	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:298)
-	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:193)
-	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:762)
-	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:757)
-	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:480)
-	at org.springframework.web.servlet.FrameworkServlet.configureAndRefreshWebApplicationContext(FrameworkServlet.java:663)
-	at org.springframework.web.servlet.FrameworkServlet.createWebApplicationContext(FrameworkServlet.java:629)
-	at org.springframework.web.servlet.FrameworkServlet.createWebApplicationContext(FrameworkServlet.java:677)
-	at org.springframework.web.servlet.FrameworkServlet.initWebApplicationContext(FrameworkServlet.java:548)
-	at org.springframework.web.servlet.FrameworkServlet.initServletBean(FrameworkServlet.java:489)
-	at org.springframework.web.servlet.HttpServletBean.init(HttpServletBean.java:136)
-	at javax.servlet.GenericServlet.init(GenericServlet.java:160)
-	at org.apache.catalina.core.StandardWrapper.initServlet(StandardWrapper.java:1280)
-	at org.apache.catalina.core.StandardWrapper.loadServlet(StandardWrapper.java:1193)
-	at org.apache.catalina.core.StandardWrapper.load(StandardWrapper.java:1088)
-	at org.apache.catalina.core.StandardContext.loadOnStartup(StandardContext.java:5176)
-	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5460)
-	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150)
-	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1559)
-	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1549)
-	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
-	at java.lang.Thread.run(Thread.java:745)
-Caused by: org.springframework.beans.factory.BeanCreationException: Could not autowire field: private org.sunhk.meweb.service.SysUserService org.sunhk.meweb.controller.LoginController.userSevice; nested exception is java.lang.NoClassDefFoundError: org/quartz/impl/JobDetailImpl
-	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:558)
-	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:87)
-	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessPropertyValues(AutowiredAnnotationBeanPostProcessor.java:331)
-	... 29 more
-Caused by: java.lang.NoClassDefFoundError: org/quartz/impl/JobDetailImpl
-	at java.lang.Class.getDeclaredMethods0(Native Method)
-	at java.lang.Class.privateGetDeclaredMethods(Class.java:2701)
-	at java.lang.Class.getDeclaredMethods(Class.java:1975)
-	at org.springframework.util.ReflectionUtils.getDeclaredMethods(ReflectionUtils.java:571)
-	at org.springframework.util.ReflectionUtils.doWithMethods(ReflectionUtils.java:490)
-	at org.springframework.util.ReflectionUtils.doWithMethods(ReflectionUtils.java:474)
-	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.determineCandidateConstructors(AutowiredAnnotationBeanPostProcessor.java:241)
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.determineConstructorsFromBeanPostProcessors(AbstractAutowireCapableBeanFactory.java:1057)
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1030)
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.getSingletonFactoryBeanForTypeCheck(AbstractAutowireCapableBeanFactory.java:860)
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.getTypeForFactoryBean(AbstractAutowireCapableBeanFactory.java:790)
-	at org.springframework.beans.factory.support.AbstractBeanFactory.isTypeMatch(AbstractBeanFactory.java:541)
-	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doGetBeanNamesForType(DefaultListableBeanFactory.java:436)
-	at org.springframework.beans.factory.support.DefaultListableBeanFactory.getBeanNamesForType(DefaultListableBeanFactory.java:412)
-	at org.springframework.beans.factory.BeanFactoryUtils.beanNamesForTypeIncludingAncestors(BeanFactoryUtils.java:187)
-	at org.springframework.beans.factory.support.DefaultListableBeanFactory.findAutowireCandidates(DefaultListableBeanFactory.java:1112)
-	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1051)
-	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:949)
-	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:530)
-	... 31 more
-Caused by: java.lang.ClassNotFoundException: org.quartz.impl.JobDetailImpl
-	at org.apache.catalina.loader.WebappClassLoader.loadClass(WebappClassLoader.java:1702)
-	at org.apache.catalina.loader.WebappClassLoader.loadClass(WebappClassLoader.java:1547)
-	... 50 more
-2016-9-17 21:23:15[ERROR](FrameworkServlet.java:497) Context initialization failed
-org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'loginController': Injection of autowired dependencies failed; nested exception is org.springframework.beans.factory.BeanCreationException: Could not autowire field: private org.sunhk.meweb.service.SysUserService org.sunhk.meweb.controller.LoginController.userSevice; nested exception is java.lang.NoClassDefFoundError: org/quartz/impl/JobDetailImpl
-	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessPropertyValues(AutowiredAnnotationBeanPostProcessor.java:334)
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1202)
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:537)
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:476)
-	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:302)
-	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230)
-	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:298)
-	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:193)
-	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:762)
-	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:757)
-	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:480)
-	at org.springframework.web.servlet.FrameworkServlet.configureAndRefreshWebApplicationContext(FrameworkServlet.java:663)
-	at org.springframework.web.servlet.FrameworkServlet.createWebApplicationContext(FrameworkServlet.java:629)
-	at org.springframework.web.servlet.FrameworkServlet.createWebApplicationContext(FrameworkServlet.java:677)
-	at org.springframework.web.servlet.FrameworkServlet.initWebApplicationContext(FrameworkServlet.java:548)
-	at org.springframework.web.servlet.FrameworkServlet.initServletBean(FrameworkServlet.java:489)
-	at org.springframework.web.servlet.HttpServletBean.init(HttpServletBean.java:136)
-	at javax.servlet.GenericServlet.init(GenericServlet.java:160)
-	at org.apache.catalina.core.StandardWrapper.initServlet(StandardWrapper.java:1280)
-	at org.apache.catalina.core.StandardWrapper.loadServlet(StandardWrapper.java:1193)
-	at org.apache.catalina.core.StandardWrapper.load(StandardWrapper.java:1088)
-	at org.apache.catalina.core.StandardContext.loadOnStartup(StandardContext.java:5176)
-	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5460)
-	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150)
-	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1559)
-	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1549)
-	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
-	at java.lang.Thread.run(Thread.java:745)
-Caused by: org.springframework.beans.factory.BeanCreationException: Could not autowire field: private org.sunhk.meweb.service.SysUserService org.sunhk.meweb.controller.LoginController.userSevice; nested exception is java.lang.NoClassDefFoundError: org/quartz/impl/JobDetailImpl
-	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:558)
-	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:87)
-	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessPropertyValues(AutowiredAnnotationBeanPostProcessor.java:331)
-	... 29 more
-Caused by: java.lang.NoClassDefFoundError: org/quartz/impl/JobDetailImpl
-	at java.lang.Class.getDeclaredMethods0(Native Method)
-	at java.lang.Class.privateGetDeclaredMethods(Class.java:2701)
-	at java.lang.Class.getDeclaredMethods(Class.java:1975)
-	at org.springframework.util.ReflectionUtils.getDeclaredMethods(ReflectionUtils.java:571)
-	at org.springframework.util.ReflectionUtils.doWithMethods(ReflectionUtils.java:490)
-	at org.springframework.util.ReflectionUtils.doWithMethods(ReflectionUtils.java:474)
-	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.determineCandidateConstructors(AutowiredAnnotationBeanPostProcessor.java:241)
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.determineConstructorsFromBeanPostProcessors(AbstractAutowireCapableBeanFactory.java:1057)
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1030)
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.getSingletonFactoryBeanForTypeCheck(AbstractAutowireCapableBeanFactory.java:860)
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.getTypeForFactoryBean(AbstractAutowireCapableBeanFactory.java:790)
-	at org.springframework.beans.factory.support.AbstractBeanFactory.isTypeMatch(AbstractBeanFactory.java:541)
-	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doGetBeanNamesForType(DefaultListableBeanFactory.java:436)
-	at org.springframework.beans.factory.support.DefaultListableBeanFactory.getBeanNamesForType(DefaultListableBeanFactory.java:412)
-	at org.springframework.beans.factory.BeanFactoryUtils.beanNamesForTypeIncludingAncestors(BeanFactoryUtils.java:187)
-	at org.springframework.beans.factory.support.DefaultListableBeanFactory.findAutowireCandidates(DefaultListableBeanFactory.java:1112)
-	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1051)
-	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:949)
-	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:530)
-	... 31 more
-Caused by: java.lang.ClassNotFoundException: org.quartz.impl.JobDetailImpl
-	at org.apache.catalina.loader.WebappClassLoader.loadClass(WebappClassLoader.java:1702)
-	at org.apache.catalina.loader.WebappClassLoader.loadClass(WebappClassLoader.java:1547)
-	... 50 more
-2016-9-17 21:27:40[ INFO](ContextLoader.java:285) Root WebApplicationContext: initialization started
-2016-9-17 21:27:40[ INFO](AbstractApplicationContext.java:510) Refreshing Root WebApplicationContext: startup date [Sat Sep 17 21:27:40 CST 2016]; root of context hierarchy
-2016-9-17 21:27:40[ INFO](XmlBeanDefinitionReader.java:317) Loading XML bean definitions from class path resource [spring-mybatis.xml]
-2016-9-17 21:27:41[ INFO](XmlBeanDefinitionReader.java:317) Loading XML bean definitions from class path resource [spring-config-shiro.xml]
-2016-9-17 21:27:42[ INFO](PropertiesLoaderSupport.java:172) Loading properties file from class path resource [jdbc.properties]
-2016-9-17 21:27:42[ INFO](PropertiesLoaderSupport.java:172) Loading properties file from class path resource [druid.properties]
-2016-9-17 21:27:42[ INFO](AutowiredAnnotationBeanPostProcessor.java:153) JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
-2016-9-17 21:27:42[ INFO](PostProcessorRegistrationDelegate.java:309) Bean '(inner bean)#458827e0' of type [class org.springframework.aop.aspectj.AspectJMethodBeforeAdvice] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2016-9-17 21:27:42[ INFO](PostProcessorRegistrationDelegate.java:309) Bean 'org.springframework.aop.aspectj.AspectJPointcutAdvisor#0' of type [class org.springframework.aop.aspectj.AspectJPointcutAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2016-9-17 21:27:42[ INFO](PostProcessorRegistrationDelegate.java:309) Bean '(inner bean)#6e14a81d' of type [class org.springframework.aop.aspectj.AspectJAfterAdvice] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2016-9-17 21:27:42[ INFO](PostProcessorRegistrationDelegate.java:309) Bean 'org.springframework.aop.aspectj.AspectJPointcutAdvisor#1' of type [class org.springframework.aop.aspectj.AspectJPointcutAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2016-9-17 21:27:42[ INFO](PostProcessorRegistrationDelegate.java:309) Bean '(inner bean)#cc441ee' of type [class org.springframework.aop.aspectj.AspectJAroundAdvice] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2016-9-17 21:27:42[ INFO](PostProcessorRegistrationDelegate.java:309) Bean 'org.springframework.aop.aspectj.AspectJPointcutAdvisor#2' of type [class org.springframework.aop.aspectj.AspectJPointcutAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2016-9-17 21:27:42[ INFO](PostProcessorRegistrationDelegate.java:309) Bean 'org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0' of type [class org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2016-9-17 21:27:42[ INFO](PostProcessorRegistrationDelegate.java:309) Bean 'org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#1' of type [class org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2016-9-17 21:27:42[ INFO](PostProcessorRegistrationDelegate.java:309) Bean 'org.springframework.cache.annotation.AnnotationCacheOperationSource#0' of type [class org.springframework.cache.annotation.AnnotationCacheOperationSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2016-9-17 21:27:42[ INFO](PostProcessorRegistrationDelegate.java:309) Bean 'org.springframework.cache.config.internalCacheAdvisor' of type [class org.springframework.cache.interceptor.BeanFactoryCacheOperationSourceAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2016-9-17 21:27:43[ INFO](PostProcessorRegistrationDelegate.java:309) Bean 'org.springframework.transaction.annotation.AnnotationTransactionAttributeSource#0' of type [class org.springframework.transaction.annotation.AnnotationTransactionAttributeSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2016-9-17 21:27:43[ INFO](PostProcessorRegistrationDelegate.java:309) Bean 'org.springframework.transaction.config.internalTransactionAdvisor' of type [class org.springframework.transaction.interceptor.BeanFactoryTransactionAttributeSourceAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2016-9-17 21:27:43[ INFO](PostProcessorRegistrationDelegate.java:309) Bean 'sysUserFilter' of type [class org.sunhk.meweb.common.filter.SysUserFilter] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2016-9-17 21:27:43[ INFO](PostProcessorRegistrationDelegate.java:309) Bean 'dataSource' of type [class com.alibaba.druid.pool.DruidDataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2016-9-17 21:27:44[ INFO](PostProcessorRegistrationDelegate.java:309) Bean 'sqlSessionFactory' of type [class org.mybatis.spring.SqlSessionFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2016-9-17 21:27:44[ INFO](PostProcessorRegistrationDelegate.java:309) Bean 'sqlSessionFactory' of type [class org.apache.ibatis.session.defaults.DefaultSqlSessionFactory] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2016-9-17 21:27:44[ INFO](PostProcessorRegistrationDelegate.java:309) Bean 'sysUserMapper' of type [class org.mybatis.spring.mapper.MapperFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2016-9-17 21:27:44[ INFO](PostProcessorRegistrationDelegate.java:309) Bean 'taskMapper' of type [class org.mybatis.spring.mapper.MapperFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2016-9-17 21:27:45[ INFO](PostProcessorRegistrationDelegate.java:309) Bean 'sysUserMapper' of type [class com.sun.proxy.$Proxy35] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2016-9-17 21:27:45[ INFO](PostProcessorRegistrationDelegate.java:309) Bean 'sysUserService' of type [class org.sunhk.meweb.service.impl.SysUserServiceImpl] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2016-9-17 21:27:45[ INFO](PostProcessorRegistrationDelegate.java:309) Bean 'transactionManager' of type [class org.springframework.jdbc.datasource.DataSourceTransactionManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2016-9-17 21:27:45[ INFO](PostProcessorRegistrationDelegate.java:309) Bean '(inner bean)#63fcc864' of type [class org.springframework.transaction.interceptor.NameMatchTransactionAttributeSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2016-9-17 21:27:45[ INFO](PostProcessorRegistrationDelegate.java:309) Bean 'txadvice' of type [class org.springframework.transaction.interceptor.TransactionInterceptor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2016-9-17 21:27:45[ INFO](PostProcessorRegistrationDelegate.java:309) Bean 'performanceMonitor' of type [class org.springframework.aop.interceptor.PerformanceMonitorInterceptor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2016-9-17 21:27:45[ INFO](AuthorizingRealm.java:248) No cache or cacheManager properties have been set.  Authorization cache cannot be obtained.
-2016-9-17 21:27:45[ INFO](PostProcessorRegistrationDelegate.java:309) Bean 'userRealm' of type [class org.sunhk.meweb.common.realm.UserRealm] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2016-9-17 21:27:45[ INFO](PostProcessorRegistrationDelegate.java:309) Bean 'securityManager' of type [class org.apache.shiro.web.mgt.DefaultWebSecurityManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2016-9-17 21:27:45[ INFO](PostProcessorRegistrationDelegate.java:309) Bean 'util:map#35ab2764' of type [class org.springframework.beans.factory.config.MapFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2016-9-17 21:27:45[ INFO](PostProcessorRegistrationDelegate.java:309) Bean 'util:map#35ab2764' of type [class java.util.LinkedHashMap] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2016-9-17 21:27:46[ INFO](PostProcessorRegistrationDelegate.java:309) Bean 'authService' of type [class org.sunhk.meweb.service.impl.AuthServiceImpl] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2016-9-17 21:27:46[ INFO](PostProcessorRegistrationDelegate.java:309) Bean 'proxy' of type [class org.sunhk.meweb.common.proxy.MyProxy] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2016-9-17 21:27:46[ INFO](MyProxy.java:27) ------------------------------before excute method,method name is:'org.sunhk.meweb.service.impl.AuthServiceImpl.loadFilterChainDefinitions'
-2016-9-17 21:27:47[ INFO](DruidDataSource.java:456) {dataSource-1} inited
-2016-9-17 21:27:47[ INFO](MyProxy.java:29) ------------------------------after excute method
-2016-9-17 21:27:47[ INFO](EhCacheManagerFactoryBean.java:129) Initializing EhCache CacheManager
-2016-9-17 21:27:48[ INFO](ContextLoader.java:325) Root WebApplicationContext: initialization completed in 7881 ms
-2016-9-17 21:27:48[ INFO](FrameworkServlet.java:484) FrameworkServlet 'Spring': initialization started
-2016-9-17 21:27:48[ INFO](AbstractApplicationContext.java:510) Refreshing WebApplicationContext for namespace 'Spring-servlet': startup date [Sat Sep 17 21:27:48 CST 2016]; parent: Root WebApplicationContext
-2016-9-17 21:27:48[ INFO](XmlBeanDefinitionReader.java:317) Loading XML bean definitions from class path resource [springmvc-servlet.xml]
-2016-9-17 21:27:49[ INFO](AutowiredAnnotationBeanPostProcessor.java:153) JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
-2016-9-17 21:27:49[ WARN](AbstractApplicationContext.java:487) Exception encountered during context initialization - cancelling refresh attempt
-org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'loginController': Injection of autowired dependencies failed; nested exception is org.springframework.beans.factory.BeanCreationException: Could not autowire field: private org.sunhk.meweb.service.SysUserService org.sunhk.meweb.controller.LoginController.userSevice; nested exception is java.lang.IncompatibleClassChangeError: Implementing class
-	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessPropertyValues(AutowiredAnnotationBeanPostProcessor.java:334)
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1202)
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:537)
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:476)
-	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:302)
-	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230)
-	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:298)
-	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:193)
-	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:762)
-	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:757)
-	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:480)
-	at org.springframework.web.servlet.FrameworkServlet.configureAndRefreshWebApplicationContext(FrameworkServlet.java:663)
-	at org.springframework.web.servlet.FrameworkServlet.createWebApplicationContext(FrameworkServlet.java:629)
-	at org.springframework.web.servlet.FrameworkServlet.createWebApplicationContext(FrameworkServlet.java:677)
-	at org.springframework.web.servlet.FrameworkServlet.initWebApplicationContext(FrameworkServlet.java:548)
-	at org.springframework.web.servlet.FrameworkServlet.initServletBean(FrameworkServlet.java:489)
-	at org.springframework.web.servlet.HttpServletBean.init(HttpServletBean.java:136)
-	at javax.servlet.GenericServlet.init(GenericServlet.java:160)
-	at org.apache.catalina.core.StandardWrapper.initServlet(StandardWrapper.java:1280)
-	at org.apache.catalina.core.StandardWrapper.loadServlet(StandardWrapper.java:1193)
-	at org.apache.catalina.core.StandardWrapper.load(StandardWrapper.java:1088)
-	at org.apache.catalina.core.StandardContext.loadOnStartup(StandardContext.java:5176)
-	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5460)
-	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150)
-	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1559)
-	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1549)
-	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
-	at java.lang.Thread.run(Thread.java:745)
-Caused by: org.springframework.beans.factory.BeanCreationException: Could not autowire field: private org.sunhk.meweb.service.SysUserService org.sunhk.meweb.controller.LoginController.userSevice; nested exception is java.lang.IncompatibleClassChangeError: Implementing class
-	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:558)
-	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:87)
-	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessPropertyValues(AutowiredAnnotationBeanPostProcessor.java:331)
-	... 29 more
-Caused by: java.lang.IncompatibleClassChangeError: Implementing class
-	at java.lang.ClassLoader.defineClass1(Native Method)
-	at java.lang.ClassLoader.defineClass(ClassLoader.java:763)
-	at java.security.SecureClassLoader.defineClass(SecureClassLoader.java:142)
-	at java.net.URLClassLoader.defineClass(URLClassLoader.java:467)
-	at java.net.URLClassLoader.access$100(URLClassLoader.java:73)
-	at java.net.URLClassLoader$1.run(URLClassLoader.java:368)
-	at java.net.URLClassLoader$1.run(URLClassLoader.java:362)
-	at java.security.AccessController.doPrivileged(Native Method)
-	at java.net.URLClassLoader.findClass(URLClassLoader.java:361)
-	at org.apache.catalina.loader.WebappClassLoader.findClass(WebappClassLoader.java:1191)
-	at org.apache.catalina.loader.WebappClassLoader.loadClass(WebappClassLoader.java:1669)
-	at org.apache.catalina.loader.WebappClassLoader.loadClass(WebappClassLoader.java:1547)
-	at java.lang.Class.getDeclaredMethods0(Native Method)
-	at java.lang.Class.privateGetDeclaredMethods(Class.java:2701)
-	at java.lang.Class.getDeclaredMethods(Class.java:1975)
-	at org.springframework.util.ReflectionUtils.getDeclaredMethods(ReflectionUtils.java:571)
-	at org.springframework.util.ReflectionUtils.doWithMethods(ReflectionUtils.java:490)
-	at org.springframework.util.ReflectionUtils.doWithMethods(ReflectionUtils.java:474)
-	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.determineCandidateConstructors(AutowiredAnnotationBeanPostProcessor.java:241)
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.determineConstructorsFromBeanPostProcessors(AbstractAutowireCapableBeanFactory.java:1057)
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1030)
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.getSingletonFactoryBeanForTypeCheck(AbstractAutowireCapableBeanFactory.java:860)
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.getTypeForFactoryBean(AbstractAutowireCapableBeanFactory.java:790)
-	at org.springframework.beans.factory.support.AbstractBeanFactory.isTypeMatch(AbstractBeanFactory.java:541)
-	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doGetBeanNamesForType(DefaultListableBeanFactory.java:436)
-	at org.springframework.beans.factory.support.DefaultListableBeanFactory.getBeanNamesForType(DefaultListableBeanFactory.java:412)
-	at org.springframework.beans.factory.BeanFactoryUtils.beanNamesForTypeIncludingAncestors(BeanFactoryUtils.java:187)
-	at org.springframework.beans.factory.support.DefaultListableBeanFactory.findAutowireCandidates(DefaultListableBeanFactory.java:1112)
-	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1051)
-	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:949)
-	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:530)
-	... 31 more
-2016-9-17 21:27:49[ERROR](FrameworkServlet.java:497) Context initialization failed
-org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'loginController': Injection of autowired dependencies failed; nested exception is org.springframework.beans.factory.BeanCreationException: Could not autowire field: private org.sunhk.meweb.service.SysUserService org.sunhk.meweb.controller.LoginController.userSevice; nested exception is java.lang.IncompatibleClassChangeError: Implementing class
-	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessPropertyValues(AutowiredAnnotationBeanPostProcessor.java:334)
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1202)
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:537)
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:476)
-	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:302)
-	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230)
-	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:298)
-	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:193)
-	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:762)
-	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:757)
-	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:480)
-	at org.springframework.web.servlet.FrameworkServlet.configureAndRefreshWebApplicationContext(FrameworkServlet.java:663)
-	at org.springframework.web.servlet.FrameworkServlet.createWebApplicationContext(FrameworkServlet.java:629)
-	at org.springframework.web.servlet.FrameworkServlet.createWebApplicationContext(FrameworkServlet.java:677)
-	at org.springframework.web.servlet.FrameworkServlet.initWebApplicationContext(FrameworkServlet.java:548)
-	at org.springframework.web.servlet.FrameworkServlet.initServletBean(FrameworkServlet.java:489)
-	at org.springframework.web.servlet.HttpServletBean.init(HttpServletBean.java:136)
-	at javax.servlet.GenericServlet.init(GenericServlet.java:160)
-	at org.apache.catalina.core.StandardWrapper.initServlet(StandardWrapper.java:1280)
-	at org.apache.catalina.core.StandardWrapper.loadServlet(StandardWrapper.java:1193)
-	at org.apache.catalina.core.StandardWrapper.load(StandardWrapper.java:1088)
-	at org.apache.catalina.core.StandardContext.loadOnStartup(StandardContext.java:5176)
-	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5460)
-	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150)
-	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1559)
-	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1549)
-	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
-	at java.lang.Thread.run(Thread.java:745)
-Caused by: org.springframework.beans.factory.BeanCreationException: Could not autowire field: private org.sunhk.meweb.service.SysUserService org.sunhk.meweb.controller.LoginController.userSevice; nested exception is java.lang.IncompatibleClassChangeError: Implementing class
-	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:558)
-	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:87)
-	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessPropertyValues(AutowiredAnnotationBeanPostProcessor.java:331)
-	... 29 more
-Caused by: java.lang.IncompatibleClassChangeError: Implementing class
-	at java.lang.ClassLoader.defineClass1(Native Method)
-	at java.lang.ClassLoader.defineClass(ClassLoader.java:763)
-	at java.security.SecureClassLoader.defineClass(SecureClassLoader.java:142)
-	at java.net.URLClassLoader.defineClass(URLClassLoader.java:467)
-	at java.net.URLClassLoader.access$100(URLClassLoader.java:73)
-	at java.net.URLClassLoader$1.run(URLClassLoader.java:368)
-	at java.net.URLClassLoader$1.run(URLClassLoader.java:362)
-	at java.security.AccessController.doPrivileged(Native Method)
-	at java.net.URLClassLoader.findClass(URLClassLoader.java:361)
-	at org.apache.catalina.loader.WebappClassLoader.findClass(WebappClassLoader.java:1191)
-	at org.apache.catalina.loader.WebappClassLoader.loadClass(WebappClassLoader.java:1669)
-	at org.apache.catalina.loader.WebappClassLoader.loadClass(WebappClassLoader.java:1547)
-	at java.lang.Class.getDeclaredMethods0(Native Method)
-	at java.lang.Class.privateGetDeclaredMethods(Class.java:2701)
-	at java.lang.Class.getDeclaredMethods(Class.java:1975)
-	at org.springframework.util.ReflectionUtils.getDeclaredMethods(ReflectionUtils.java:571)
-	at org.springframework.util.ReflectionUtils.doWithMethods(ReflectionUtils.java:490)
-	at org.springframework.util.ReflectionUtils.doWithMethods(ReflectionUtils.java:474)
-	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.determineCandidateConstructors(AutowiredAnnotationBeanPostProcessor.java:241)
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.determineConstructorsFromBeanPostProcessors(AbstractAutowireCapableBeanFactory.java:1057)
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1030)
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.getSingletonFactoryBeanForTypeCheck(AbstractAutowireCapableBeanFactory.java:860)
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.getTypeForFactoryBean(AbstractAutowireCapableBeanFactory.java:790)
-	at org.springframework.beans.factory.support.AbstractBeanFactory.isTypeMatch(AbstractBeanFactory.java:541)
-	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doGetBeanNamesForType(DefaultListableBeanFactory.java:436)
-	at org.springframework.beans.factory.support.DefaultListableBeanFactory.getBeanNamesForType(DefaultListableBeanFactory.java:412)
-	at org.springframework.beans.factory.BeanFactoryUtils.beanNamesForTypeIncludingAncestors(BeanFactoryUtils.java:187)
-	at org.springframework.beans.factory.support.DefaultListableBeanFactory.findAutowireCandidates(DefaultListableBeanFactory.java:1112)
-	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1051)
-	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:949)
-	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:530)
-	... 31 more
-2016-9-17 21:30:53[ INFO](ContextLoader.java:285) Root WebApplicationContext: initialization started
-2016-9-17 21:30:53[ INFO](AbstractApplicationContext.java:510) Refreshing Root WebApplicationContext: startup date [Sat Sep 17 21:30:53 CST 2016]; root of context hierarchy
-2016-9-17 21:30:53[ INFO](XmlBeanDefinitionReader.java:317) Loading XML bean definitions from class path resource [spring-mybatis.xml]
-2016-9-17 21:30:54[ INFO](XmlBeanDefinitionReader.java:317) Loading XML bean definitions from class path resource [spring-config-shiro.xml]
-2016-9-17 21:30:54[ INFO](PropertiesLoaderSupport.java:172) Loading properties file from class path resource [jdbc.properties]
-2016-9-17 21:30:54[ INFO](PropertiesLoaderSupport.java:172) Loading properties file from class path resource [druid.properties]
-2016-9-17 21:30:54[ INFO](AutowiredAnnotationBeanPostProcessor.java:153) JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
-2016-9-17 21:30:55[ INFO](PostProcessorRegistrationDelegate.java:309) Bean '(inner bean)#71119e46' of type [class org.springframework.aop.aspectj.AspectJMethodBeforeAdvice] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2016-9-17 21:30:55[ INFO](PostProcessorRegistrationDelegate.java:309) Bean 'org.springframework.aop.aspectj.AspectJPointcutAdvisor#0' of type [class org.springframework.aop.aspectj.AspectJPointcutAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2016-9-17 21:30:55[ INFO](PostProcessorRegistrationDelegate.java:309) Bean '(inner bean)#60bdbb1c' of type [class org.springframework.aop.aspectj.AspectJAfterAdvice] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2016-9-17 21:30:55[ INFO](PostProcessorRegistrationDelegate.java:309) Bean 'org.springframework.aop.aspectj.AspectJPointcutAdvisor#1' of type [class org.springframework.aop.aspectj.AspectJPointcutAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2016-9-17 21:30:55[ INFO](PostProcessorRegistrationDelegate.java:309) Bean '(inner bean)#71589c8c' of type [class org.springframework.aop.aspectj.AspectJAroundAdvice] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2016-9-17 21:30:55[ INFO](PostProcessorRegistrationDelegate.java:309) Bean 'org.springframework.aop.aspectj.AspectJPointcutAdvisor#2' of type [class org.springframework.aop.aspectj.AspectJPointcutAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2016-9-17 21:30:55[ INFO](PostProcessorRegistrationDelegate.java:309) Bean 'org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0' of type [class org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2016-9-17 21:30:55[ INFO](PostProcessorRegistrationDelegate.java:309) Bean 'org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#1' of type [class org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2016-9-17 21:30:55[ INFO](PostProcessorRegistrationDelegate.java:309) Bean 'org.springframework.cache.annotation.AnnotationCacheOperationSource#0' of type [class org.springframework.cache.annotation.AnnotationCacheOperationSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2016-9-17 21:30:55[ INFO](PostProcessorRegistrationDelegate.java:309) Bean 'org.springframework.cache.config.internalCacheAdvisor' of type [class org.springframework.cache.interceptor.BeanFactoryCacheOperationSourceAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2016-9-17 21:30:55[ INFO](PostProcessorRegistrationDelegate.java:309) Bean 'org.springframework.transaction.annotation.AnnotationTransactionAttributeSource#0' of type [class org.springframework.transaction.annotation.AnnotationTransactionAttributeSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2016-9-17 21:30:55[ INFO](PostProcessorRegistrationDelegate.java:309) Bean 'org.springframework.transaction.config.internalTransactionAdvisor' of type [class org.springframework.transaction.interceptor.BeanFactoryTransactionAttributeSourceAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2016-9-17 21:30:55[ INFO](PostProcessorRegistrationDelegate.java:309) Bean 'sysUserFilter' of type [class org.sunhk.meweb.common.filter.SysUserFilter] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2016-9-17 21:30:56[ INFO](PostProcessorRegistrationDelegate.java:309) Bean 'dataSource' of type [class com.alibaba.druid.pool.DruidDataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2016-9-17 21:30:57[ INFO](PostProcessorRegistrationDelegate.java:309) Bean 'sqlSessionFactory' of type [class org.mybatis.spring.SqlSessionFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2016-9-17 21:30:57[ INFO](PostProcessorRegistrationDelegate.java:309) Bean 'sqlSessionFactory' of type [class org.apache.ibatis.session.defaults.DefaultSqlSessionFactory] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2016-9-17 21:30:57[ INFO](PostProcessorRegistrationDelegate.java:309) Bean 'sysUserMapper' of type [class org.mybatis.spring.mapper.MapperFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2016-9-17 21:30:57[ INFO](PostProcessorRegistrationDelegate.java:309) Bean 'taskMapper' of type [class org.mybatis.spring.mapper.MapperFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2016-9-17 21:30:57[ INFO](PostProcessorRegistrationDelegate.java:309) Bean 'sysUserMapper' of type [class com.sun.proxy.$Proxy35] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2016-9-17 21:30:57[ INFO](PostProcessorRegistrationDelegate.java:309) Bean 'sysUserService' of type [class org.sunhk.meweb.service.impl.SysUserServiceImpl] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2016-9-17 21:30:57[ INFO](PostProcessorRegistrationDelegate.java:309) Bean 'transactionManager' of type [class org.springframework.jdbc.datasource.DataSourceTransactionManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2016-9-17 21:30:58[ INFO](PostProcessorRegistrationDelegate.java:309) Bean '(inner bean)#6fd037c8' of type [class org.springframework.transaction.interceptor.NameMatchTransactionAttributeSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2016-9-17 21:30:58[ INFO](PostProcessorRegistrationDelegate.java:309) Bean 'txadvice' of type [class org.springframework.transaction.interceptor.TransactionInterceptor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2016-9-17 21:30:58[ INFO](PostProcessorRegistrationDelegate.java:309) Bean 'performanceMonitor' of type [class org.springframework.aop.interceptor.PerformanceMonitorInterceptor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2016-9-17 21:30:58[ INFO](AuthorizingRealm.java:248) No cache or cacheManager properties have been set.  Authorization cache cannot be obtained.
-2016-9-17 21:30:58[ INFO](PostProcessorRegistrationDelegate.java:309) Bean 'userRealm' of type [class org.sunhk.meweb.common.realm.UserRealm] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2016-9-17 21:30:58[ INFO](PostProcessorRegistrationDelegate.java:309) Bean 'securityManager' of type [class org.apache.shiro.web.mgt.DefaultWebSecurityManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2016-9-17 21:30:58[ INFO](PostProcessorRegistrationDelegate.java:309) Bean 'util:map#3c85381e' of type [class org.springframework.beans.factory.config.MapFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2016-9-17 21:30:58[ INFO](PostProcessorRegistrationDelegate.java:309) Bean 'util:map#3c85381e' of type [class java.util.LinkedHashMap] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2016-9-17 21:30:59[ INFO](PostProcessorRegistrationDelegate.java:309) Bean 'authService' of type [class org.sunhk.meweb.service.impl.AuthServiceImpl] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2016-9-17 21:30:59[ INFO](PostProcessorRegistrationDelegate.java:309) Bean 'proxy' of type [class org.sunhk.meweb.common.proxy.MyProxy] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2016-9-17 21:30:59[ INFO](MyProxy.java:27) ------------------------------before excute method,method name is:'org.sunhk.meweb.service.impl.AuthServiceImpl.loadFilterChainDefinitions'
-2016-9-17 21:31:00[ INFO](DruidDataSource.java:456) {dataSource-1} inited
-2016-9-17 21:31:00[ INFO](MyProxy.java:29) ------------------------------after excute method
-2016-9-17 21:31:00[ INFO](EhCacheManagerFactoryBean.java:129) Initializing EhCache CacheManager
-2016-9-17 21:31:01[ INFO](ContextLoader.java:325) Root WebApplicationContext: initialization completed in 8168 ms
-2016-9-17 21:31:01[ INFO](FrameworkServlet.java:484) FrameworkServlet 'Spring': initialization started
-2016-9-17 21:31:01[ INFO](AbstractApplicationContext.java:510) Refreshing WebApplicationContext for namespace 'Spring-servlet': startup date [Sat Sep 17 21:31:01 CST 2016]; parent: Root WebApplicationContext
-2016-9-17 21:31:01[ INFO](XmlBeanDefinitionReader.java:317) Loading XML bean definitions from class path resource [springmvc-servlet.xml]
-2016-9-17 21:31:02[ INFO](AutowiredAnnotationBeanPostProcessor.java:153) JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
-2016-9-17 21:31:02[ WARN](AbstractApplicationContext.java:487) Exception encountered during context initialization - cancelling refresh attempt
-org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'loginController': Injection of autowired dependencies failed; nested exception is org.springframework.beans.factory.BeanCreationException: Could not autowire field: private org.sunhk.meweb.service.SysUserService org.sunhk.meweb.controller.LoginController.userSevice; nested exception is java.lang.IncompatibleClassChangeError: Implementing class
-	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessPropertyValues(AutowiredAnnotationBeanPostProcessor.java:334)
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1202)
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:537)
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:476)
-	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:302)
-	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230)
-	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:298)
-	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:193)
-	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:762)
-	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:757)
-	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:480)
-	at org.springframework.web.servlet.FrameworkServlet.configureAndRefreshWebApplicationContext(FrameworkServlet.java:663)
-	at org.springframework.web.servlet.FrameworkServlet.createWebApplicationContext(FrameworkServlet.java:629)
-	at org.springframework.web.servlet.FrameworkServlet.createWebApplicationContext(FrameworkServlet.java:677)
-	at org.springframework.web.servlet.FrameworkServlet.initWebApplicationContext(FrameworkServlet.java:548)
-	at org.springframework.web.servlet.FrameworkServlet.initServletBean(FrameworkServlet.java:489)
-	at org.springframework.web.servlet.HttpServletBean.init(HttpServletBean.java:136)
-	at javax.servlet.GenericServlet.init(GenericServlet.java:160)
-	at org.apache.catalina.core.StandardWrapper.initServlet(StandardWrapper.java:1280)
-	at org.apache.catalina.core.StandardWrapper.loadServlet(StandardWrapper.java:1193)
-	at org.apache.catalina.core.StandardWrapper.load(StandardWrapper.java:1088)
-	at org.apache.catalina.core.StandardContext.loadOnStartup(StandardContext.java:5176)
-	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5460)
-	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150)
-	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1559)
-	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1549)
-	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
-	at java.lang.Thread.run(Thread.java:745)
-Caused by: org.springframework.beans.factory.BeanCreationException: Could not autowire field: private org.sunhk.meweb.service.SysUserService org.sunhk.meweb.controller.LoginController.userSevice; nested exception is java.lang.IncompatibleClassChangeError: Implementing class
-	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:558)
-	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:87)
-	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessPropertyValues(AutowiredAnnotationBeanPostProcessor.java:331)
-	... 29 more
-Caused by: java.lang.IncompatibleClassChangeError: Implementing class
-	at java.lang.ClassLoader.defineClass1(Native Method)
-	at java.lang.ClassLoader.defineClass(ClassLoader.java:763)
-	at java.security.SecureClassLoader.defineClass(SecureClassLoader.java:142)
-	at java.net.URLClassLoader.defineClass(URLClassLoader.java:467)
-	at java.net.URLClassLoader.access$100(URLClassLoader.java:73)
-	at java.net.URLClassLoader$1.run(URLClassLoader.java:368)
-	at java.net.URLClassLoader$1.run(URLClassLoader.java:362)
-	at java.security.AccessController.doPrivileged(Native Method)
-	at java.net.URLClassLoader.findClass(URLClassLoader.java:361)
-	at org.apache.catalina.loader.WebappClassLoader.findClass(WebappClassLoader.java:1191)
-	at org.apache.catalina.loader.WebappClassLoader.loadClass(WebappClassLoader.java:1669)
-	at org.apache.catalina.loader.WebappClassLoader.loadClass(WebappClassLoader.java:1547)
-	at java.lang.Class.getDeclaredMethods0(Native Method)
-	at java.lang.Class.privateGetDeclaredMethods(Class.java:2701)
-	at java.lang.Class.getDeclaredMethods(Class.java:1975)
-	at org.springframework.util.ReflectionUtils.getDeclaredMethods(ReflectionUtils.java:571)
-	at org.springframework.util.ReflectionUtils.doWithMethods(ReflectionUtils.java:490)
-	at org.springframework.util.ReflectionUtils.doWithMethods(ReflectionUtils.java:474)
-	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.determineCandidateConstructors(AutowiredAnnotationBeanPostProcessor.java:241)
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.determineConstructorsFromBeanPostProcessors(AbstractAutowireCapableBeanFactory.java:1057)
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1030)
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.getSingletonFactoryBeanForTypeCheck(AbstractAutowireCapableBeanFactory.java:860)
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.getTypeForFactoryBean(AbstractAutowireCapableBeanFactory.java:790)
-	at org.springframework.beans.factory.support.AbstractBeanFactory.isTypeMatch(AbstractBeanFactory.java:541)
-	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doGetBeanNamesForType(DefaultListableBeanFactory.java:436)
-	at org.springframework.beans.factory.support.DefaultListableBeanFactory.getBeanNamesForType(DefaultListableBeanFactory.java:412)
-	at org.springframework.beans.factory.BeanFactoryUtils.beanNamesForTypeIncludingAncestors(BeanFactoryUtils.java:187)
-	at org.springframework.beans.factory.support.DefaultListableBeanFactory.findAutowireCandidates(DefaultListableBeanFactory.java:1112)
-	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1051)
-	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:949)
-	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:530)
-	... 31 more
-2016-9-17 21:31:02[ERROR](FrameworkServlet.java:497) Context initialization failed
-org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'loginController': Injection of autowired dependencies failed; nested exception is org.springframework.beans.factory.BeanCreationException: Could not autowire field: private org.sunhk.meweb.service.SysUserService org.sunhk.meweb.controller.LoginController.userSevice; nested exception is java.lang.IncompatibleClassChangeError: Implementing class
-	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessPropertyValues(AutowiredAnnotationBeanPostProcessor.java:334)
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1202)
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:537)
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:476)
-	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:302)
-	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230)
-	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:298)
-	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:193)
-	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:762)
-	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:757)
-	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:480)
-	at org.springframework.web.servlet.FrameworkServlet.configureAndRefreshWebApplicationContext(FrameworkServlet.java:663)
-	at org.springframework.web.servlet.FrameworkServlet.createWebApplicationContext(FrameworkServlet.java:629)
-	at org.springframework.web.servlet.FrameworkServlet.createWebApplicationContext(FrameworkServlet.java:677)
-	at org.springframework.web.servlet.FrameworkServlet.initWebApplicationContext(FrameworkServlet.java:548)
-	at org.springframework.web.servlet.FrameworkServlet.initServletBean(FrameworkServlet.java:489)
-	at org.springframework.web.servlet.HttpServletBean.init(HttpServletBean.java:136)
-	at javax.servlet.GenericServlet.init(GenericServlet.java:160)
-	at org.apache.catalina.core.StandardWrapper.initServlet(StandardWrapper.java:1280)
-	at org.apache.catalina.core.StandardWrapper.loadServlet(StandardWrapper.java:1193)
-	at org.apache.catalina.core.StandardWrapper.load(StandardWrapper.java:1088)
-	at org.apache.catalina.core.StandardContext.loadOnStartup(StandardContext.java:5176)
-	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5460)
-	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150)
-	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1559)
-	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1549)
-	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
-	at java.lang.Thread.run(Thread.java:745)
-Caused by: org.springframework.beans.factory.BeanCreationException: Could not autowire field: private org.sunhk.meweb.service.SysUserService org.sunhk.meweb.controller.LoginController.userSevice; nested exception is java.lang.IncompatibleClassChangeError: Implementing class
-	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:558)
-	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:87)
-	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessPropertyValues(AutowiredAnnotationBeanPostProcessor.java:331)
-	... 29 more
-Caused by: java.lang.IncompatibleClassChangeError: Implementing class
-	at java.lang.ClassLoader.defineClass1(Native Method)
-	at java.lang.ClassLoader.defineClass(ClassLoader.java:763)
-	at java.security.SecureClassLoader.defineClass(SecureClassLoader.java:142)
-	at java.net.URLClassLoader.defineClass(URLClassLoader.java:467)
-	at java.net.URLClassLoader.access$100(URLClassLoader.java:73)
-	at java.net.URLClassLoader$1.run(URLClassLoader.java:368)
-	at java.net.URLClassLoader$1.run(URLClassLoader.java:362)
-	at java.security.AccessController.doPrivileged(Native Method)
-	at java.net.URLClassLoader.findClass(URLClassLoader.java:361)
-	at org.apache.catalina.loader.WebappClassLoader.findClass(WebappClassLoader.java:1191)
-	at org.apache.catalina.loader.WebappClassLoader.loadClass(WebappClassLoader.java:1669)
-	at org.apache.catalina.loader.WebappClassLoader.loadClass(WebappClassLoader.java:1547)
-	at java.lang.Class.getDeclaredMethods0(Native Method)
-	at java.lang.Class.privateGetDeclaredMethods(Class.java:2701)
-	at java.lang.Class.getDeclaredMethods(Class.java:1975)
-	at org.springframework.util.ReflectionUtils.getDeclaredMethods(ReflectionUtils.java:571)
-	at org.springframework.util.ReflectionUtils.doWithMethods(ReflectionUtils.java:490)
-	at org.springframework.util.ReflectionUtils.doWithMethods(ReflectionUtils.java:474)
-	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.determineCandidateConstructors(AutowiredAnnotationBeanPostProcessor.java:241)
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.determineConstructorsFromBeanPostProcessors(AbstractAutowireCapableBeanFactory.java:1057)
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1030)
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.getSingletonFactoryBeanForTypeCheck(AbstractAutowireCapableBeanFactory.java:860)
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.getTypeForFactoryBean(AbstractAutowireCapableBeanFactory.java:790)
-	at org.springframework.beans.factory.support.AbstractBeanFactory.isTypeMatch(AbstractBeanFactory.java:541)
-	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doGetBeanNamesForType(DefaultListableBeanFactory.java:436)
-	at org.springframework.beans.factory.support.DefaultListableBeanFactory.getBeanNamesForType(DefaultListableBeanFactory.java:412)
-	at org.springframework.beans.factory.BeanFactoryUtils.beanNamesForTypeIncludingAncestors(BeanFactoryUtils.java:187)
-	at org.springframework.beans.factory.support.DefaultListableBeanFactory.findAutowireCandidates(DefaultListableBeanFactory.java:1112)
-	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1051)
-	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:949)
-	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:530)
-	... 31 more
-2016-9-17 21:39:30[ INFO](ContextLoader.java:285) Root WebApplicationContext: initialization started
-2016-9-17 21:39:31[ INFO](AbstractApplicationContext.java:510) Refreshing Root WebApplicationContext: startup date [Sat Sep 17 21:39:31 CST 2016]; root of context hierarchy
-2016-9-17 21:39:31[ INFO](XmlBeanDefinitionReader.java:317) Loading XML bean definitions from class path resource [spring-mybatis.xml]
-2016-9-17 21:39:32[ INFO](XmlBeanDefinitionReader.java:317) Loading XML bean definitions from class path resource [spring-config-shiro.xml]
-2016-9-17 21:39:32[ INFO](PropertiesLoaderSupport.java:172) Loading properties file from class path resource [jdbc.properties]
-2016-9-17 21:39:32[ INFO](PropertiesLoaderSupport.java:172) Loading properties file from class path resource [druid.properties]
-2016-9-17 21:39:33[ INFO](AutowiredAnnotationBeanPostProcessor.java:153) JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
-2016-9-17 21:39:33[ INFO](PostProcessorRegistrationDelegate.java:309) Bean '(inner bean)#4daac4aa' of type [class org.springframework.aop.aspectj.AspectJMethodBeforeAdvice] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2016-9-17 21:39:33[ INFO](PostProcessorRegistrationDelegate.java:309) Bean 'org.springframework.aop.aspectj.AspectJPointcutAdvisor#0' of type [class org.springframework.aop.aspectj.AspectJPointcutAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2016-9-17 21:39:33[ INFO](PostProcessorRegistrationDelegate.java:309) Bean '(inner bean)#e0f2871' of type [class org.springframework.aop.aspectj.AspectJAfterAdvice] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2016-9-17 21:39:33[ INFO](PostProcessorRegistrationDelegate.java:309) Bean 'org.springframework.aop.aspectj.AspectJPointcutAdvisor#1' of type [class org.springframework.aop.aspectj.AspectJPointcutAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2016-9-17 21:39:33[ INFO](PostProcessorRegistrationDelegate.java:309) Bean '(inner bean)#40fe85aa' of type [class org.springframework.aop.aspectj.AspectJAroundAdvice] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2016-9-17 21:39:33[ INFO](PostProcessorRegistrationDelegate.java:309) Bean 'org.springframework.aop.aspectj.AspectJPointcutAdvisor#2' of type [class org.springframework.aop.aspectj.AspectJPointcutAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2016-9-17 21:39:33[ INFO](PostProcessorRegistrationDelegate.java:309) Bean 'org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0' of type [class org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2016-9-17 21:39:33[ INFO](PostProcessorRegistrationDelegate.java:309) Bean 'org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#1' of type [class org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2016-9-17 21:39:33[ INFO](PostProcessorRegistrationDelegate.java:309) Bean 'org.springframework.cache.annotation.AnnotationCacheOperationSource#0' of type [class org.springframework.cache.annotation.AnnotationCacheOperationSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2016-9-17 21:39:33[ INFO](PostProcessorRegistrationDelegate.java:309) Bean 'org.springframework.cache.config.internalCacheAdvisor' of type [class org.springframework.cache.interceptor.BeanFactoryCacheOperationSourceAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2016-9-17 21:39:34[ INFO](PostProcessorRegistrationDelegate.java:309) Bean 'org.springframework.transaction.annotation.AnnotationTransactionAttributeSource#0' of type [class org.springframework.transaction.annotation.AnnotationTransactionAttributeSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2016-9-17 21:39:34[ INFO](PostProcessorRegistrationDelegate.java:309) Bean 'org.springframework.transaction.config.internalTransactionAdvisor' of type [class org.springframework.transaction.interceptor.BeanFactoryTransactionAttributeSourceAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2016-9-17 21:39:34[ INFO](PostProcessorRegistrationDelegate.java:309) Bean 'sysUserFilter' of type [class org.sunhk.meweb.common.filter.SysUserFilter] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2016-9-17 21:39:35[ INFO](PostProcessorRegistrationDelegate.java:309) Bean 'dataSource' of type [class com.alibaba.druid.pool.DruidDataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2016-9-17 21:39:35[ INFO](PostProcessorRegistrationDelegate.java:309) Bean 'sqlSessionFactory' of type [class org.mybatis.spring.SqlSessionFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2016-9-17 21:39:36[ INFO](PostProcessorRegistrationDelegate.java:309) Bean 'sqlSessionFactory' of type [class org.apache.ibatis.session.defaults.DefaultSqlSessionFactory] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2016-9-17 21:39:36[ INFO](PostProcessorRegistrationDelegate.java:309) Bean 'sysUserMapper' of type [class org.mybatis.spring.mapper.MapperFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2016-9-17 21:39:36[ INFO](PostProcessorRegistrationDelegate.java:309) Bean 'taskMapper' of type [class org.mybatis.spring.mapper.MapperFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2016-9-17 21:39:36[ INFO](PostProcessorRegistrationDelegate.java:309) Bean 'sysUserMapper' of type [class com.sun.proxy.$Proxy35] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2016-9-17 21:39:36[ INFO](PostProcessorRegistrationDelegate.java:309) Bean 'sysUserService' of type [class org.sunhk.meweb.service.impl.SysUserServiceImpl] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2016-9-17 21:39:36[ INFO](PostProcessorRegistrationDelegate.java:309) Bean 'transactionManager' of type [class org.springframework.jdbc.datasource.DataSourceTransactionManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2016-9-17 21:39:36[ INFO](PostProcessorRegistrationDelegate.java:309) Bean '(inner bean)#30687231' of type [class org.springframework.transaction.interceptor.NameMatchTransactionAttributeSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2016-9-17 21:39:36[ INFO](PostProcessorRegistrationDelegate.java:309) Bean 'txadvice' of type [class org.springframework.transaction.interceptor.TransactionInterceptor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2016-9-17 21:39:36[ INFO](PostProcessorRegistrationDelegate.java:309) Bean 'performanceMonitor' of type [class org.springframework.aop.interceptor.PerformanceMonitorInterceptor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2016-9-17 21:39:36[ INFO](AuthorizingRealm.java:248) No cache or cacheManager properties have been set.  Authorization cache cannot be obtained.
-2016-9-17 21:39:36[ INFO](PostProcessorRegistrationDelegate.java:309) Bean 'userRealm' of type [class org.sunhk.meweb.common.realm.UserRealm] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2016-9-17 21:39:36[ INFO](PostProcessorRegistrationDelegate.java:309) Bean 'securityManager' of type [class org.apache.shiro.web.mgt.DefaultWebSecurityManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2016-9-17 21:39:36[ INFO](PostProcessorRegistrationDelegate.java:309) Bean 'util:map#3a9cfec1' of type [class org.springframework.beans.factory.config.MapFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2016-9-17 21:39:36[ INFO](PostProcessorRegistrationDelegate.java:309) Bean 'util:map#3a9cfec1' of type [class java.util.LinkedHashMap] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2016-9-17 21:39:37[ INFO](PostProcessorRegistrationDelegate.java:309) Bean 'authService' of type [class org.sunhk.meweb.service.impl.AuthServiceImpl] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2016-9-17 21:39:37[ INFO](PostProcessorRegistrationDelegate.java:309) Bean 'proxy' of type [class org.sunhk.meweb.common.proxy.MyProxy] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2016-9-17 21:39:37[ INFO](MyProxy.java:27) ------------------------------before excute method,method name is:'org.sunhk.meweb.service.impl.AuthServiceImpl.loadFilterChainDefinitions'
-2016-9-17 21:39:38[ INFO](DruidDataSource.java:456) {dataSource-1} inited
-2016-9-17 21:39:38[ INFO](MyProxy.java:29) ------------------------------after excute method
-2016-9-17 21:39:38[ INFO](EhCacheManagerFactoryBean.java:129) Initializing EhCache CacheManager
-2016-9-17 21:39:39[ INFO](ContextLoader.java:325) Root WebApplicationContext: initialization completed in 8431 ms
-2016-9-17 21:39:39[ INFO](FrameworkServlet.java:484) FrameworkServlet 'Spring': initialization started
-2016-9-17 21:39:39[ INFO](AbstractApplicationContext.java:510) Refreshing WebApplicationContext for namespace 'Spring-servlet': startup date [Sat Sep 17 21:39:39 CST 2016]; parent: Root WebApplicationContext
-2016-9-17 21:39:39[ INFO](XmlBeanDefinitionReader.java:317) Loading XML bean definitions from class path resource [springmvc-servlet.xml]
-2016-9-17 21:39:40[ INFO](AutowiredAnnotationBeanPostProcessor.java:153) JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
-2016-9-17 21:39:40[ INFO](AbstractHandlerMethodMapping.java:220) Mapped "{[/admin/testjson],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.Object org.sunhk.meweb.controller.LoginController.getJSON()
-2016-9-17 21:39:40[ INFO](AbstractHandlerMethodMapping.java:220) Mapped "{[/login],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String org.sunhk.meweb.controller.LoginController.doLogin(java.lang.String,java.lang.String,javax.servlet.http.HttpServletRequest)
-2016-9-17 21:39:40[ INFO](AbstractHandlerMethodMapping.java:220) Mapped "{[/admin/testtask],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.Object org.sunhk.meweb.controller.TaskController.getJSON(org.sunhk.meweb.model.Task)
-2016-9-17 21:39:41[ INFO](RequestMappingHandlerAdapter.java:518) Looking for @ControllerAdvice: WebApplicationContext for namespace 'Spring-servlet': startup date [Sat Sep 17 21:39:39 CST 2016]; parent: Root WebApplicationContext
-2016-9-17 21:39:41[ INFO](RequestMappingHandlerAdapter.java:518) Looking for @ControllerAdvice: WebApplicationContext for namespace 'Spring-servlet': startup date [Sat Sep 17 21:39:39 CST 2016]; parent: Root WebApplicationContext
-2016-9-17 21:39:42[ INFO](AbstractUrlHandlerMapping.java:314) Mapped URL path [/admin/testjson] onto handler 'loginController'
-2016-9-17 21:39:42[ INFO](AbstractUrlHandlerMapping.java:314) Mapped URL path [/admin/testjson.*] onto handler 'loginController'
-2016-9-17 21:39:42[ INFO](AbstractUrlHandlerMapping.java:314) Mapped URL path [/admin/testjson/] onto handler 'loginController'
-2016-9-17 21:39:42[ INFO](AbstractUrlHandlerMapping.java:314) Mapped URL path [/login] onto handler 'loginController'
-2016-9-17 21:39:42[ INFO](AbstractUrlHandlerMapping.java:314) Mapped URL path [/login.*] onto handler 'loginController'
-2016-9-17 21:39:42[ INFO](AbstractUrlHandlerMapping.java:314) Mapped URL path [/login/] onto handler 'loginController'
-2016-9-17 21:39:42[ INFO](AbstractUrlHandlerMapping.java:314) Mapped URL path [/admin/testtask] onto handler 'taskController'
-2016-9-17 21:39:42[ INFO](AbstractUrlHandlerMapping.java:314) Mapped URL path [/admin/testtask.*] onto handler 'taskController'
-2016-9-17 21:39:42[ INFO](AbstractUrlHandlerMapping.java:314) Mapped URL path [/admin/testtask/] onto handler 'taskController'
-2016-9-17 21:39:42[ INFO](StdSchedulerFactory.java:1184) Using default implementation for ThreadExecutor
-2016-9-17 21:39:42[ INFO](SchedulerSignalerImpl.java:61) Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
-2016-9-17 21:39:42[ INFO](QuartzScheduler.java:240) Quartz Scheduler v.2.2.1 created.
-2016-9-17 21:39:42[ INFO](RAMJobStore.java:155) RAMJobStore initialized.
-2016-9-17 21:39:42[ INFO](QuartzScheduler.java:305) Scheduler meta-data: Quartz Scheduler (v2.2.1) 'scheduler' with instanceId 'NON_CLUSTERED'
+2016-10-7 19:30:21[ INFO](ContextLoader.java:285) Root WebApplicationContext: initialization started
+2016-10-7 19:30:22[ INFO](AbstractApplicationContext.java:510) Refreshing Root WebApplicationContext: startup date [Fri Oct 07 19:30:22 CST 2016]; root of context hierarchy
+2016-10-7 19:30:22[ INFO](XmlBeanDefinitionReader.java:317) Loading XML bean definitions from class path resource [spring-mybatis.xml]
+2016-10-7 19:30:23[ INFO](XmlBeanDefinitionReader.java:317) Loading XML bean definitions from class path resource [spring-config-shiro.xml]
+2016-10-7 19:30:23[ INFO](PropertiesLoaderSupport.java:172) Loading properties file from class path resource [jdbc.properties]
+2016-10-7 19:30:23[ INFO](PropertiesLoaderSupport.java:172) Loading properties file from class path resource [druid.properties]
+2016-10-7 19:30:23[ INFO](AutowiredAnnotationBeanPostProcessor.java:153) JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2016-10-7 19:30:24[ INFO](PostProcessorRegistrationDelegate.java:309) Bean '(inner bean)#4d92d4c4' of type [class org.springframework.aop.aspectj.AspectJMethodBeforeAdvice] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2016-10-7 19:30:24[ INFO](PostProcessorRegistrationDelegate.java:309) Bean 'org.springframework.aop.aspectj.AspectJPointcutAdvisor#0' of type [class org.springframework.aop.aspectj.AspectJPointcutAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2016-10-7 19:30:24[ INFO](PostProcessorRegistrationDelegate.java:309) Bean '(inner bean)#2cb8aeec' of type [class org.springframework.aop.aspectj.AspectJAfterAdvice] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2016-10-7 19:30:24[ INFO](PostProcessorRegistrationDelegate.java:309) Bean 'org.springframework.aop.aspectj.AspectJPointcutAdvisor#1' of type [class org.springframework.aop.aspectj.AspectJPointcutAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2016-10-7 19:30:24[ INFO](PostProcessorRegistrationDelegate.java:309) Bean '(inner bean)#90dfcd7' of type [class org.springframework.aop.aspectj.AspectJAroundAdvice] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2016-10-7 19:30:24[ INFO](PostProcessorRegistrationDelegate.java:309) Bean 'org.springframework.aop.aspectj.AspectJPointcutAdvisor#2' of type [class org.springframework.aop.aspectj.AspectJPointcutAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2016-10-7 19:30:24[ INFO](PostProcessorRegistrationDelegate.java:309) Bean 'org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0' of type [class org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2016-10-7 19:30:24[ INFO](PostProcessorRegistrationDelegate.java:309) Bean 'org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#1' of type [class org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2016-10-7 19:30:24[ INFO](PostProcessorRegistrationDelegate.java:309) Bean 'org.springframework.cache.annotation.AnnotationCacheOperationSource#0' of type [class org.springframework.cache.annotation.AnnotationCacheOperationSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2016-10-7 19:30:24[ INFO](PostProcessorRegistrationDelegate.java:309) Bean 'org.springframework.cache.config.internalCacheAdvisor' of type [class org.springframework.cache.interceptor.BeanFactoryCacheOperationSourceAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2016-10-7 19:30:24[ INFO](PostProcessorRegistrationDelegate.java:309) Bean 'org.springframework.transaction.annotation.AnnotationTransactionAttributeSource#0' of type [class org.springframework.transaction.annotation.AnnotationTransactionAttributeSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2016-10-7 19:30:24[ INFO](PostProcessorRegistrationDelegate.java:309) Bean 'org.springframework.transaction.config.internalTransactionAdvisor' of type [class org.springframework.transaction.interceptor.BeanFactoryTransactionAttributeSourceAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2016-10-7 19:30:24[ INFO](PostProcessorRegistrationDelegate.java:309) Bean 'sysUserFilter' of type [class org.sunhk.meweb.common.filter.SysUserFilter] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2016-10-7 19:30:25[ INFO](PostProcessorRegistrationDelegate.java:309) Bean 'dataSource' of type [class com.alibaba.druid.pool.DruidDataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2016-10-7 19:30:26[ INFO](PostProcessorRegistrationDelegate.java:309) Bean 'sqlSessionFactory' of type [class org.mybatis.spring.SqlSessionFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2016-10-7 19:30:26[ INFO](PostProcessorRegistrationDelegate.java:309) Bean 'sqlSessionFactory' of type [class org.apache.ibatis.session.defaults.DefaultSqlSessionFactory] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2016-10-7 19:30:26[ INFO](PostProcessorRegistrationDelegate.java:309) Bean 'sysUserMapper' of type [class org.mybatis.spring.mapper.MapperFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2016-10-7 19:30:26[ INFO](PostProcessorRegistrationDelegate.java:309) Bean 'taskMapper' of type [class org.mybatis.spring.mapper.MapperFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2016-10-7 19:30:26[ INFO](PostProcessorRegistrationDelegate.java:309) Bean 'sysUserMapper' of type [class com.sun.proxy.$Proxy35] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2016-10-7 19:30:26[ INFO](PostProcessorRegistrationDelegate.java:309) Bean 'sysUserService' of type [class org.sunhk.meweb.service.impl.SysUserServiceImpl] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2016-10-7 19:30:26[ INFO](PostProcessorRegistrationDelegate.java:309) Bean 'transactionManager' of type [class org.springframework.jdbc.datasource.DataSourceTransactionManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2016-10-7 19:30:26[ INFO](PostProcessorRegistrationDelegate.java:309) Bean '(inner bean)#4742efee' of type [class org.springframework.transaction.interceptor.NameMatchTransactionAttributeSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2016-10-7 19:30:26[ INFO](PostProcessorRegistrationDelegate.java:309) Bean 'txadvice' of type [class org.springframework.transaction.interceptor.TransactionInterceptor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2016-10-7 19:30:26[ INFO](PostProcessorRegistrationDelegate.java:309) Bean 'performanceMonitor' of type [class org.springframework.aop.interceptor.PerformanceMonitorInterceptor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2016-10-7 19:30:26[ INFO](AuthorizingRealm.java:248) No cache or cacheManager properties have been set.  Authorization cache cannot be obtained.
+2016-10-7 19:30:26[ INFO](PostProcessorRegistrationDelegate.java:309) Bean 'userRealm' of type [class org.sunhk.meweb.common.realm.UserRealm] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2016-10-7 19:30:27[ INFO](PostProcessorRegistrationDelegate.java:309) Bean 'securityManager' of type [class org.apache.shiro.web.mgt.DefaultWebSecurityManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2016-10-7 19:30:27[ INFO](PostProcessorRegistrationDelegate.java:309) Bean 'util:map#47dbda0e' of type [class org.springframework.beans.factory.config.MapFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2016-10-7 19:30:27[ INFO](PostProcessorRegistrationDelegate.java:309) Bean 'util:map#47dbda0e' of type [class java.util.LinkedHashMap] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2016-10-7 19:30:27[ INFO](PostProcessorRegistrationDelegate.java:309) Bean 'authService' of type [class org.sunhk.meweb.service.impl.AuthServiceImpl] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2016-10-7 19:30:27[ INFO](PostProcessorRegistrationDelegate.java:309) Bean 'proxy' of type [class org.sunhk.meweb.common.proxy.MyProxy] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2016-10-7 19:30:27[ INFO](MyProxy.java:27) ------------------------------before excute method,method name is:'org.sunhk.meweb.service.impl.AuthServiceImpl.loadFilterChainDefinitions'
+2016-10-7 19:30:28[ INFO](DruidDataSource.java:456) {dataSource-1} inited
+2016-10-7 19:30:28[ INFO](MyProxy.java:29) ------------------------------after excute method
+2016-10-7 19:30:29[ INFO](EhCacheManagerFactoryBean.java:129) Initializing EhCache CacheManager
+2016-10-7 19:30:29[ INFO](ContextLoader.java:325) Root WebApplicationContext: initialization completed in 7611 ms
+2016-10-7 19:30:29[ INFO](FrameworkServlet.java:484) FrameworkServlet 'Spring': initialization started
+2016-10-7 19:30:29[ INFO](AbstractApplicationContext.java:510) Refreshing WebApplicationContext for namespace 'Spring-servlet': startup date [Fri Oct 07 19:30:29 CST 2016]; parent: Root WebApplicationContext
+2016-10-7 19:30:29[ INFO](XmlBeanDefinitionReader.java:317) Loading XML bean definitions from class path resource [springmvc-servlet.xml]
+2016-10-7 19:30:30[ INFO](AutowiredAnnotationBeanPostProcessor.java:153) JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2016-10-7 19:30:30[ INFO](AbstractUrlHandlerMapping.java:314) Mapped URL path [/admin/testjson] onto handler 'loginController'
+2016-10-7 19:30:30[ INFO](AbstractUrlHandlerMapping.java:314) Mapped URL path [/admin/testjson.*] onto handler 'loginController'
+2016-10-7 19:30:30[ INFO](AbstractUrlHandlerMapping.java:314) Mapped URL path [/admin/testjson/] onto handler 'loginController'
+2016-10-7 19:30:30[ INFO](AbstractUrlHandlerMapping.java:314) Mapped URL path [/login] onto handler 'loginController'
+2016-10-7 19:30:30[ INFO](AbstractUrlHandlerMapping.java:314) Mapped URL path [/login.*] onto handler 'loginController'
+2016-10-7 19:30:30[ INFO](AbstractUrlHandlerMapping.java:314) Mapped URL path [/login/] onto handler 'loginController'
+2016-10-7 19:30:30[ INFO](AbstractUrlHandlerMapping.java:314) Mapped URL path [/admin/gettask] onto handler 'taskController'
+2016-10-7 19:30:30[ INFO](AbstractUrlHandlerMapping.java:314) Mapped URL path [/admin/gettask.*] onto handler 'taskController'
+2016-10-7 19:30:30[ INFO](AbstractUrlHandlerMapping.java:314) Mapped URL path [/admin/gettask/] onto handler 'taskController'
+2016-10-7 19:30:30[ INFO](AbstractUrlHandlerMapping.java:314) Mapped URL path [/admin/testtask] onto handler 'taskController'
+2016-10-7 19:30:30[ INFO](AbstractUrlHandlerMapping.java:314) Mapped URL path [/admin/testtask.*] onto handler 'taskController'
+2016-10-7 19:30:30[ INFO](AbstractUrlHandlerMapping.java:314) Mapped URL path [/admin/testtask/] onto handler 'taskController'
+2016-10-7 19:30:30[ INFO](AbstractUrlHandlerMapping.java:314) Mapped URL path [/admin/testexport] onto handler 'taskController'
+2016-10-7 19:30:30[ INFO](AbstractUrlHandlerMapping.java:314) Mapped URL path [/admin/testexport.*] onto handler 'taskController'
+2016-10-7 19:30:30[ INFO](AbstractUrlHandlerMapping.java:314) Mapped URL path [/admin/testexport/] onto handler 'taskController'
+2016-10-7 19:30:31[ INFO](StdSchedulerFactory.java:1184) Using default implementation for ThreadExecutor
+2016-10-7 19:30:31[ INFO](SchedulerSignalerImpl.java:61) Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+2016-10-7 19:30:31[ INFO](QuartzScheduler.java:240) Quartz Scheduler v.2.2.1 created.
+2016-10-7 19:30:31[ INFO](RAMJobStore.java:155) RAMJobStore initialized.
+2016-10-7 19:30:31[ INFO](QuartzScheduler.java:305) Scheduler meta-data: Quartz Scheduler (v2.2.1) 'scheduler' with instanceId 'NON_CLUSTERED'
   Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
   NOT STARTED.
   Currently in standby mode.
@@ -787,11 +72,178 @@ Caused by: java.lang.IncompatibleClassChangeError: Implementing class
   Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
   Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
 
-2016-9-17 21:39:42[ INFO](StdSchedulerFactory.java:1339) Quartz scheduler 'scheduler' initialized from an externally provided properties instance.
-2016-9-17 21:39:42[ INFO](StdSchedulerFactory.java:1343) Quartz scheduler version: 2.2.1
-2016-9-17 21:39:42[ INFO](QuartzScheduler.java:2311) JobFactory set to: org.springframework.scheduling.quartz.AdaptableJobFactory@281201b6
-2016-9-17 21:39:42[ INFO](AbstractUrlHandlerMapping.java:314) Mapped URL path [/**] onto handler 'org.springframework.web.servlet.resource.DefaultServletHttpRequestHandler#0'
-2016-9-17 21:39:42[ INFO](DefaultLifecycleProcessor.java:341) Starting beans in phase 2147483647
-2016-9-17 21:39:42[ INFO](SchedulerFactoryBean.java:647) Starting Quartz Scheduler now
-2016-9-17 21:39:42[ INFO](QuartzScheduler.java:575) Scheduler scheduler_$_NON_CLUSTERED started.
-2016-9-17 21:39:42[ INFO](FrameworkServlet.java:503) FrameworkServlet 'Spring': initialization completed in 3257 ms
+2016-10-7 19:30:31[ INFO](StdSchedulerFactory.java:1339) Quartz scheduler 'scheduler' initialized from an externally provided properties instance.
+2016-10-7 19:30:31[ INFO](StdSchedulerFactory.java:1343) Quartz scheduler version: 2.2.1
+2016-10-7 19:30:31[ INFO](QuartzScheduler.java:2311) JobFactory set to: org.springframework.scheduling.quartz.AdaptableJobFactory@106495f9
+2016-10-7 19:30:31[ INFO](AbstractUrlHandlerMapping.java:314) Mapped URL path [/**] onto handler 'org.springframework.web.servlet.resource.DefaultServletHttpRequestHandler#0'
+2016-10-7 19:30:31[ INFO](DefaultLifecycleProcessor.java:341) Starting beans in phase 2147483647
+2016-10-7 19:30:31[ INFO](SchedulerFactoryBean.java:647) Starting Quartz Scheduler now
+2016-10-7 19:30:31[ INFO](QuartzScheduler.java:575) Scheduler scheduler_$_NON_CLUSTERED started.
+2016-10-7 19:30:31[ INFO](FrameworkServlet.java:503) FrameworkServlet 'Spring': initialization completed in 1968 ms
+2016-10-7 19:34:12[ INFO](ContextLoader.java:285) Root WebApplicationContext: initialization started
+2016-10-7 19:34:12[ INFO](AbstractApplicationContext.java:510) Refreshing Root WebApplicationContext: startup date [Fri Oct 07 19:34:12 CST 2016]; root of context hierarchy
+2016-10-7 19:34:13[ INFO](XmlBeanDefinitionReader.java:317) Loading XML bean definitions from class path resource [spring-mybatis.xml]
+2016-10-7 19:34:13[ INFO](XmlBeanDefinitionReader.java:317) Loading XML bean definitions from class path resource [spring-config-shiro.xml]
+2016-10-7 19:34:14[ INFO](PropertiesLoaderSupport.java:172) Loading properties file from class path resource [jdbc.properties]
+2016-10-7 19:34:14[ INFO](PropertiesLoaderSupport.java:172) Loading properties file from class path resource [druid.properties]
+2016-10-7 19:34:14[ INFO](AutowiredAnnotationBeanPostProcessor.java:153) JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2016-10-7 19:34:14[ INFO](PostProcessorRegistrationDelegate.java:309) Bean '(inner bean)#7cef18a8' of type [class org.springframework.aop.aspectj.AspectJMethodBeforeAdvice] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2016-10-7 19:34:15[ INFO](PostProcessorRegistrationDelegate.java:309) Bean 'org.springframework.aop.aspectj.AspectJPointcutAdvisor#0' of type [class org.springframework.aop.aspectj.AspectJPointcutAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2016-10-7 19:34:15[ INFO](PostProcessorRegistrationDelegate.java:309) Bean '(inner bean)#493fc57e' of type [class org.springframework.aop.aspectj.AspectJAfterAdvice] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2016-10-7 19:34:15[ INFO](PostProcessorRegistrationDelegate.java:309) Bean 'org.springframework.aop.aspectj.AspectJPointcutAdvisor#1' of type [class org.springframework.aop.aspectj.AspectJPointcutAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2016-10-7 19:34:15[ INFO](PostProcessorRegistrationDelegate.java:309) Bean '(inner bean)#46207e9e' of type [class org.springframework.aop.aspectj.AspectJAroundAdvice] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2016-10-7 19:34:15[ INFO](PostProcessorRegistrationDelegate.java:309) Bean 'org.springframework.aop.aspectj.AspectJPointcutAdvisor#2' of type [class org.springframework.aop.aspectj.AspectJPointcutAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2016-10-7 19:34:15[ INFO](PostProcessorRegistrationDelegate.java:309) Bean 'org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0' of type [class org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2016-10-7 19:34:15[ INFO](PostProcessorRegistrationDelegate.java:309) Bean 'org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#1' of type [class org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2016-10-7 19:34:15[ INFO](PostProcessorRegistrationDelegate.java:309) Bean 'org.springframework.cache.annotation.AnnotationCacheOperationSource#0' of type [class org.springframework.cache.annotation.AnnotationCacheOperationSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2016-10-7 19:34:15[ INFO](PostProcessorRegistrationDelegate.java:309) Bean 'org.springframework.cache.config.internalCacheAdvisor' of type [class org.springframework.cache.interceptor.BeanFactoryCacheOperationSourceAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2016-10-7 19:34:15[ INFO](PostProcessorRegistrationDelegate.java:309) Bean 'org.springframework.transaction.annotation.AnnotationTransactionAttributeSource#0' of type [class org.springframework.transaction.annotation.AnnotationTransactionAttributeSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2016-10-7 19:34:15[ INFO](PostProcessorRegistrationDelegate.java:309) Bean 'org.springframework.transaction.config.internalTransactionAdvisor' of type [class org.springframework.transaction.interceptor.BeanFactoryTransactionAttributeSourceAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2016-10-7 19:34:15[ INFO](PostProcessorRegistrationDelegate.java:309) Bean 'sysUserFilter' of type [class org.sunhk.meweb.common.filter.SysUserFilter] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2016-10-7 19:34:16[ INFO](PostProcessorRegistrationDelegate.java:309) Bean 'dataSource' of type [class com.alibaba.druid.pool.DruidDataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2016-10-7 19:35:09[ INFO](ContextLoader.java:285) Root WebApplicationContext: initialization started
+2016-10-7 19:35:09[ INFO](AbstractApplicationContext.java:510) Refreshing Root WebApplicationContext: startup date [Fri Oct 07 19:35:09 CST 2016]; root of context hierarchy
+2016-10-7 19:35:09[ INFO](XmlBeanDefinitionReader.java:317) Loading XML bean definitions from class path resource [spring-mybatis.xml]
+2016-10-7 19:35:10[ INFO](XmlBeanDefinitionReader.java:317) Loading XML bean definitions from class path resource [spring-config-shiro.xml]
+2016-10-7 19:35:11[ INFO](PropertiesLoaderSupport.java:172) Loading properties file from class path resource [jdbc.properties]
+2016-10-7 19:35:11[ INFO](PropertiesLoaderSupport.java:172) Loading properties file from class path resource [druid.properties]
+2016-10-7 19:35:11[ INFO](AutowiredAnnotationBeanPostProcessor.java:153) JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2016-10-7 19:35:11[ INFO](PostProcessorRegistrationDelegate.java:309) Bean '(inner bean)#14100fc2' of type [class org.springframework.aop.aspectj.AspectJMethodBeforeAdvice] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2016-10-7 19:35:11[ INFO](PostProcessorRegistrationDelegate.java:309) Bean 'org.springframework.aop.aspectj.AspectJPointcutAdvisor#0' of type [class org.springframework.aop.aspectj.AspectJPointcutAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2016-10-7 19:35:11[ INFO](PostProcessorRegistrationDelegate.java:309) Bean '(inner bean)#263a1445' of type [class org.springframework.aop.aspectj.AspectJAfterAdvice] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2016-10-7 19:35:11[ INFO](PostProcessorRegistrationDelegate.java:309) Bean 'org.springframework.aop.aspectj.AspectJPointcutAdvisor#1' of type [class org.springframework.aop.aspectj.AspectJPointcutAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2016-10-7 19:35:11[ INFO](PostProcessorRegistrationDelegate.java:309) Bean '(inner bean)#108abd39' of type [class org.springframework.aop.aspectj.AspectJAroundAdvice] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2016-10-7 19:35:11[ INFO](PostProcessorRegistrationDelegate.java:309) Bean 'org.springframework.aop.aspectj.AspectJPointcutAdvisor#2' of type [class org.springframework.aop.aspectj.AspectJPointcutAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2016-10-7 19:35:11[ INFO](PostProcessorRegistrationDelegate.java:309) Bean 'org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0' of type [class org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2016-10-7 19:35:12[ INFO](PostProcessorRegistrationDelegate.java:309) Bean 'org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#1' of type [class org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2016-10-7 19:35:12[ INFO](PostProcessorRegistrationDelegate.java:309) Bean 'org.springframework.cache.annotation.AnnotationCacheOperationSource#0' of type [class org.springframework.cache.annotation.AnnotationCacheOperationSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2016-10-7 19:35:12[ INFO](PostProcessorRegistrationDelegate.java:309) Bean 'org.springframework.cache.config.internalCacheAdvisor' of type [class org.springframework.cache.interceptor.BeanFactoryCacheOperationSourceAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2016-10-7 19:35:12[ INFO](PostProcessorRegistrationDelegate.java:309) Bean 'org.springframework.transaction.annotation.AnnotationTransactionAttributeSource#0' of type [class org.springframework.transaction.annotation.AnnotationTransactionAttributeSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2016-10-7 19:35:12[ INFO](PostProcessorRegistrationDelegate.java:309) Bean 'org.springframework.transaction.config.internalTransactionAdvisor' of type [class org.springframework.transaction.interceptor.BeanFactoryTransactionAttributeSourceAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2016-10-7 19:35:12[ INFO](PostProcessorRegistrationDelegate.java:309) Bean 'sysUserFilter' of type [class org.sunhk.meweb.common.filter.SysUserFilter] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2016-10-7 19:35:13[ INFO](PostProcessorRegistrationDelegate.java:309) Bean 'dataSource' of type [class com.alibaba.druid.pool.DruidDataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2016-10-7 19:35:14[ INFO](PostProcessorRegistrationDelegate.java:309) Bean 'sqlSessionFactory' of type [class org.mybatis.spring.SqlSessionFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2016-10-7 19:35:14[ INFO](PostProcessorRegistrationDelegate.java:309) Bean 'sqlSessionFactory' of type [class org.apache.ibatis.session.defaults.DefaultSqlSessionFactory] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2016-10-7 19:35:14[ INFO](PostProcessorRegistrationDelegate.java:309) Bean 'sysUserMapper' of type [class org.mybatis.spring.mapper.MapperFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2016-10-7 19:35:14[ INFO](PostProcessorRegistrationDelegate.java:309) Bean 'taskMapper' of type [class org.mybatis.spring.mapper.MapperFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2016-10-7 19:35:14[ INFO](PostProcessorRegistrationDelegate.java:309) Bean 'sysUserMapper' of type [class com.sun.proxy.$Proxy35] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2016-10-7 19:35:14[ INFO](PostProcessorRegistrationDelegate.java:309) Bean 'sysUserService' of type [class org.sunhk.meweb.service.impl.SysUserServiceImpl] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2016-10-7 19:35:14[ INFO](PostProcessorRegistrationDelegate.java:309) Bean 'transactionManager' of type [class org.springframework.jdbc.datasource.DataSourceTransactionManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2016-10-7 19:35:14[ INFO](PostProcessorRegistrationDelegate.java:309) Bean '(inner bean)#f3744ac' of type [class org.springframework.transaction.interceptor.NameMatchTransactionAttributeSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2016-10-7 19:35:14[ INFO](PostProcessorRegistrationDelegate.java:309) Bean 'txadvice' of type [class org.springframework.transaction.interceptor.TransactionInterceptor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2016-10-7 19:35:14[ INFO](PostProcessorRegistrationDelegate.java:309) Bean 'performanceMonitor' of type [class org.springframework.aop.interceptor.PerformanceMonitorInterceptor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2016-10-7 19:35:14[ INFO](AuthorizingRealm.java:248) No cache or cacheManager properties have been set.  Authorization cache cannot be obtained.
+2016-10-7 19:35:14[ INFO](PostProcessorRegistrationDelegate.java:309) Bean 'userRealm' of type [class org.sunhk.meweb.common.realm.UserRealm] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2016-10-7 19:35:15[ INFO](PostProcessorRegistrationDelegate.java:309) Bean 'securityManager' of type [class org.apache.shiro.web.mgt.DefaultWebSecurityManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2016-10-7 19:35:15[ INFO](PostProcessorRegistrationDelegate.java:309) Bean 'util:map#6cd7d401' of type [class org.springframework.beans.factory.config.MapFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2016-10-7 19:35:15[ INFO](PostProcessorRegistrationDelegate.java:309) Bean 'util:map#6cd7d401' of type [class java.util.LinkedHashMap] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2016-10-7 19:35:15[ INFO](PostProcessorRegistrationDelegate.java:309) Bean 'authService' of type [class org.sunhk.meweb.service.impl.AuthServiceImpl] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2016-10-7 19:35:15[ INFO](PostProcessorRegistrationDelegate.java:309) Bean 'proxy' of type [class org.sunhk.meweb.common.proxy.MyProxy] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2016-10-7 19:35:15[ INFO](MyProxy.java:27) ------------------------------before excute method,method name is:'org.sunhk.meweb.service.impl.AuthServiceImpl.loadFilterChainDefinitions'
+2016-10-7 19:35:17[ INFO](DruidDataSource.java:456) {dataSource-1} inited
+2016-10-7 19:35:17[ INFO](MyProxy.java:29) ------------------------------after excute method
+2016-10-7 19:35:17[ INFO](EhCacheManagerFactoryBean.java:129) Initializing EhCache CacheManager
+2016-10-7 19:35:18[ INFO](ContextLoader.java:325) Root WebApplicationContext: initialization completed in 9277 ms
+2016-10-7 19:35:18[ INFO](FrameworkServlet.java:484) FrameworkServlet 'Spring': initialization started
+2016-10-7 19:35:18[ INFO](AbstractApplicationContext.java:510) Refreshing WebApplicationContext for namespace 'Spring-servlet': startup date [Fri Oct 07 19:35:18 CST 2016]; parent: Root WebApplicationContext
+2016-10-7 19:35:18[ INFO](XmlBeanDefinitionReader.java:317) Loading XML bean definitions from class path resource [springmvc-servlet.xml]
+2016-10-7 19:35:19[ INFO](AutowiredAnnotationBeanPostProcessor.java:153) JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2016-10-7 19:35:19[ INFO](AbstractUrlHandlerMapping.java:314) Mapped URL path [/login] onto handler 'loginController'
+2016-10-7 19:35:19[ INFO](AbstractUrlHandlerMapping.java:314) Mapped URL path [/login.*] onto handler 'loginController'
+2016-10-7 19:35:19[ INFO](AbstractUrlHandlerMapping.java:314) Mapped URL path [/login/] onto handler 'loginController'
+2016-10-7 19:35:19[ INFO](AbstractUrlHandlerMapping.java:314) Mapped URL path [/admin/testjson] onto handler 'loginController'
+2016-10-7 19:35:19[ INFO](AbstractUrlHandlerMapping.java:314) Mapped URL path [/admin/testjson.*] onto handler 'loginController'
+2016-10-7 19:35:19[ INFO](AbstractUrlHandlerMapping.java:314) Mapped URL path [/admin/testjson/] onto handler 'loginController'
+2016-10-7 19:35:19[ INFO](AbstractUrlHandlerMapping.java:314) Mapped URL path [/admin/testexport] onto handler 'taskController'
+2016-10-7 19:35:19[ INFO](AbstractUrlHandlerMapping.java:314) Mapped URL path [/admin/testexport.*] onto handler 'taskController'
+2016-10-7 19:35:19[ INFO](AbstractUrlHandlerMapping.java:314) Mapped URL path [/admin/testexport/] onto handler 'taskController'
+2016-10-7 19:35:19[ INFO](AbstractUrlHandlerMapping.java:314) Mapped URL path [/admin/testtask] onto handler 'taskController'
+2016-10-7 19:35:19[ INFO](AbstractUrlHandlerMapping.java:314) Mapped URL path [/admin/testtask.*] onto handler 'taskController'
+2016-10-7 19:35:19[ INFO](AbstractUrlHandlerMapping.java:314) Mapped URL path [/admin/testtask/] onto handler 'taskController'
+2016-10-7 19:35:19[ INFO](AbstractUrlHandlerMapping.java:314) Mapped URL path [/admin/gettask] onto handler 'taskController'
+2016-10-7 19:35:19[ INFO](AbstractUrlHandlerMapping.java:314) Mapped URL path [/admin/gettask.*] onto handler 'taskController'
+2016-10-7 19:35:19[ INFO](AbstractUrlHandlerMapping.java:314) Mapped URL path [/admin/gettask/] onto handler 'taskController'
+2016-10-7 19:35:21[ INFO](StdSchedulerFactory.java:1184) Using default implementation for ThreadExecutor
+2016-10-7 19:35:21[ INFO](SchedulerSignalerImpl.java:61) Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+2016-10-7 19:35:21[ INFO](QuartzScheduler.java:240) Quartz Scheduler v.2.2.1 created.
+2016-10-7 19:35:21[ INFO](RAMJobStore.java:155) RAMJobStore initialized.
+2016-10-7 19:35:21[ INFO](QuartzScheduler.java:305) Scheduler meta-data: Quartz Scheduler (v2.2.1) 'scheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+2016-10-7 19:35:21[ INFO](StdSchedulerFactory.java:1339) Quartz scheduler 'scheduler' initialized from an externally provided properties instance.
+2016-10-7 19:35:21[ INFO](StdSchedulerFactory.java:1343) Quartz scheduler version: 2.2.1
+2016-10-7 19:35:21[ INFO](QuartzScheduler.java:2311) JobFactory set to: org.springframework.scheduling.quartz.AdaptableJobFactory@65c5f355
+2016-10-7 19:35:21[ INFO](AbstractUrlHandlerMapping.java:314) Mapped URL path [/**] onto handler 'org.springframework.web.servlet.resource.DefaultServletHttpRequestHandler#0'
+2016-10-7 19:35:21[ INFO](DefaultLifecycleProcessor.java:341) Starting beans in phase 2147483647
+2016-10-7 19:35:21[ INFO](SchedulerFactoryBean.java:647) Starting Quartz Scheduler now
+2016-10-7 19:35:21[ INFO](QuartzScheduler.java:575) Scheduler scheduler_$_NON_CLUSTERED started.
+2016-10-7 19:35:22[ INFO](FrameworkServlet.java:503) FrameworkServlet 'Spring': initialization completed in 3191 ms
+2016-10-7 19:44:55[ INFO](ContextLoader.java:285) Root WebApplicationContext: initialization started
+2016-10-7 19:44:55[ INFO](AbstractApplicationContext.java:510) Refreshing Root WebApplicationContext: startup date [Fri Oct 07 19:44:55 CST 2016]; root of context hierarchy
+2016-10-7 19:44:55[ INFO](XmlBeanDefinitionReader.java:317) Loading XML bean definitions from class path resource [spring-mybatis.xml]
+2016-10-7 19:44:56[ INFO](XmlBeanDefinitionReader.java:317) Loading XML bean definitions from class path resource [spring-config-shiro.xml]
+2016-10-7 19:44:56[ INFO](PropertiesLoaderSupport.java:172) Loading properties file from class path resource [jdbc.properties]
+2016-10-7 19:44:56[ INFO](PropertiesLoaderSupport.java:172) Loading properties file from class path resource [druid.properties]
+2016-10-7 19:44:56[ INFO](AutowiredAnnotationBeanPostProcessor.java:153) JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2016-10-7 19:44:56[ INFO](PostProcessorRegistrationDelegate.java:309) Bean '(inner bean)#18b7af43' of type [class org.springframework.aop.aspectj.AspectJMethodBeforeAdvice] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2016-10-7 19:44:57[ INFO](PostProcessorRegistrationDelegate.java:309) Bean 'org.springframework.aop.aspectj.AspectJPointcutAdvisor#0' of type [class org.springframework.aop.aspectj.AspectJPointcutAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2016-10-7 19:44:57[ INFO](PostProcessorRegistrationDelegate.java:309) Bean '(inner bean)#35ebcf2c' of type [class org.springframework.aop.aspectj.AspectJAfterAdvice] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2016-10-7 19:44:57[ INFO](PostProcessorRegistrationDelegate.java:309) Bean 'org.springframework.aop.aspectj.AspectJPointcutAdvisor#1' of type [class org.springframework.aop.aspectj.AspectJPointcutAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2016-10-7 19:44:57[ INFO](PostProcessorRegistrationDelegate.java:309) Bean '(inner bean)#74460889' of type [class org.springframework.aop.aspectj.AspectJAroundAdvice] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2016-10-7 19:44:57[ INFO](PostProcessorRegistrationDelegate.java:309) Bean 'org.springframework.aop.aspectj.AspectJPointcutAdvisor#2' of type [class org.springframework.aop.aspectj.AspectJPointcutAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2016-10-7 19:44:57[ INFO](PostProcessorRegistrationDelegate.java:309) Bean 'org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0' of type [class org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2016-10-7 19:44:57[ INFO](PostProcessorRegistrationDelegate.java:309) Bean 'org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#1' of type [class org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2016-10-7 19:44:57[ INFO](PostProcessorRegistrationDelegate.java:309) Bean 'org.springframework.cache.annotation.AnnotationCacheOperationSource#0' of type [class org.springframework.cache.annotation.AnnotationCacheOperationSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2016-10-7 19:44:57[ INFO](PostProcessorRegistrationDelegate.java:309) Bean 'org.springframework.cache.config.internalCacheAdvisor' of type [class org.springframework.cache.interceptor.BeanFactoryCacheOperationSourceAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2016-10-7 19:44:57[ INFO](PostProcessorRegistrationDelegate.java:309) Bean 'org.springframework.transaction.annotation.AnnotationTransactionAttributeSource#0' of type [class org.springframework.transaction.annotation.AnnotationTransactionAttributeSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2016-10-7 19:44:57[ INFO](PostProcessorRegistrationDelegate.java:309) Bean 'org.springframework.transaction.config.internalTransactionAdvisor' of type [class org.springframework.transaction.interceptor.BeanFactoryTransactionAttributeSourceAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2016-10-7 19:44:57[ INFO](PostProcessorRegistrationDelegate.java:309) Bean 'sysUserFilter' of type [class org.sunhk.meweb.common.filter.SysUserFilter] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2016-10-7 19:44:58[ INFO](PostProcessorRegistrationDelegate.java:309) Bean 'dataSource' of type [class com.alibaba.druid.pool.DruidDataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2016-10-7 19:44:59[ INFO](PostProcessorRegistrationDelegate.java:309) Bean 'sqlSessionFactory' of type [class org.mybatis.spring.SqlSessionFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2016-10-7 19:44:59[ INFO](PostProcessorRegistrationDelegate.java:309) Bean 'sqlSessionFactory' of type [class org.apache.ibatis.session.defaults.DefaultSqlSessionFactory] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2016-10-7 19:44:59[ INFO](PostProcessorRegistrationDelegate.java:309) Bean 'sysUserMapper' of type [class org.mybatis.spring.mapper.MapperFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2016-10-7 19:44:59[ INFO](PostProcessorRegistrationDelegate.java:309) Bean 'taskMapper' of type [class org.mybatis.spring.mapper.MapperFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2016-10-7 19:44:59[ INFO](PostProcessorRegistrationDelegate.java:309) Bean 'sysUserMapper' of type [class com.sun.proxy.$Proxy35] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2016-10-7 19:44:59[ INFO](PostProcessorRegistrationDelegate.java:309) Bean 'sysUserService' of type [class org.sunhk.meweb.service.impl.SysUserServiceImpl] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2016-10-7 19:44:59[ INFO](PostProcessorRegistrationDelegate.java:309) Bean 'transactionManager' of type [class org.springframework.jdbc.datasource.DataSourceTransactionManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2016-10-7 19:44:59[ INFO](PostProcessorRegistrationDelegate.java:309) Bean '(inner bean)#1a9a6bd5' of type [class org.springframework.transaction.interceptor.NameMatchTransactionAttributeSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2016-10-7 19:44:59[ INFO](PostProcessorRegistrationDelegate.java:309) Bean 'txadvice' of type [class org.springframework.transaction.interceptor.TransactionInterceptor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2016-10-7 19:44:59[ INFO](PostProcessorRegistrationDelegate.java:309) Bean 'performanceMonitor' of type [class org.springframework.aop.interceptor.PerformanceMonitorInterceptor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2016-10-7 19:44:59[ INFO](AuthorizingRealm.java:248) No cache or cacheManager properties have been set.  Authorization cache cannot be obtained.
+2016-10-7 19:44:59[ INFO](PostProcessorRegistrationDelegate.java:309) Bean 'userRealm' of type [class org.sunhk.meweb.common.realm.UserRealm] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2016-10-7 19:44:59[ INFO](PostProcessorRegistrationDelegate.java:309) Bean 'securityManager' of type [class org.apache.shiro.web.mgt.DefaultWebSecurityManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2016-10-7 19:45:00[ INFO](PostProcessorRegistrationDelegate.java:309) Bean 'util:map#4a3db723' of type [class org.springframework.beans.factory.config.MapFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2016-10-7 19:45:00[ INFO](PostProcessorRegistrationDelegate.java:309) Bean 'util:map#4a3db723' of type [class java.util.LinkedHashMap] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2016-10-7 19:45:00[ INFO](PostProcessorRegistrationDelegate.java:309) Bean 'authService' of type [class org.sunhk.meweb.service.impl.AuthServiceImpl] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2016-10-7 19:45:00[ INFO](PostProcessorRegistrationDelegate.java:309) Bean 'proxy' of type [class org.sunhk.meweb.common.proxy.MyProxy] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2016-10-7 19:45:00[ INFO](MyProxy.java:27) ------------------------------before excute method,method name is:'org.sunhk.meweb.service.impl.AuthServiceImpl.loadFilterChainDefinitions'
+2016-10-7 19:45:01[ INFO](DruidDataSource.java:456) {dataSource-1} inited
+2016-10-7 19:45:01[ INFO](MyProxy.java:29) ------------------------------after excute method
+2016-10-7 19:45:01[ INFO](EhCacheManagerFactoryBean.java:129) Initializing EhCache CacheManager
+2016-10-7 19:45:02[ INFO](ContextLoader.java:325) Root WebApplicationContext: initialization completed in 7346 ms
+2016-10-7 19:45:02[ INFO](FrameworkServlet.java:484) FrameworkServlet 'Spring': initialization started
+2016-10-7 19:45:02[ INFO](AbstractApplicationContext.java:510) Refreshing WebApplicationContext for namespace 'Spring-servlet': startup date [Fri Oct 07 19:45:02 CST 2016]; parent: Root WebApplicationContext
+2016-10-7 19:45:02[ INFO](XmlBeanDefinitionReader.java:317) Loading XML bean definitions from class path resource [springmvc-servlet.xml]
+2016-10-7 19:45:02[ INFO](AutowiredAnnotationBeanPostProcessor.java:153) JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2016-10-7 19:45:02[ INFO](AbstractUrlHandlerMapping.java:314) Mapped URL path [/login] onto handler 'loginController'
+2016-10-7 19:45:02[ INFO](AbstractUrlHandlerMapping.java:314) Mapped URL path [/login.*] onto handler 'loginController'
+2016-10-7 19:45:02[ INFO](AbstractUrlHandlerMapping.java:314) Mapped URL path [/login/] onto handler 'loginController'
+2016-10-7 19:45:02[ INFO](AbstractUrlHandlerMapping.java:314) Mapped URL path [/admin/testjson] onto handler 'loginController'
+2016-10-7 19:45:02[ INFO](AbstractUrlHandlerMapping.java:314) Mapped URL path [/admin/testjson.*] onto handler 'loginController'
+2016-10-7 19:45:02[ INFO](AbstractUrlHandlerMapping.java:314) Mapped URL path [/admin/testjson/] onto handler 'loginController'
+2016-10-7 19:45:02[ INFO](AbstractUrlHandlerMapping.java:314) Mapped URL path [/admin/testexport] onto handler 'taskController'
+2016-10-7 19:45:02[ INFO](AbstractUrlHandlerMapping.java:314) Mapped URL path [/admin/testexport.*] onto handler 'taskController'
+2016-10-7 19:45:02[ INFO](AbstractUrlHandlerMapping.java:314) Mapped URL path [/admin/testexport/] onto handler 'taskController'
+2016-10-7 19:45:02[ INFO](AbstractUrlHandlerMapping.java:314) Mapped URL path [/admin/testtask] onto handler 'taskController'
+2016-10-7 19:45:02[ INFO](AbstractUrlHandlerMapping.java:314) Mapped URL path [/admin/testtask.*] onto handler 'taskController'
+2016-10-7 19:45:02[ INFO](AbstractUrlHandlerMapping.java:314) Mapped URL path [/admin/testtask/] onto handler 'taskController'
+2016-10-7 19:45:02[ INFO](AbstractUrlHandlerMapping.java:314) Mapped URL path [/admin/gettask] onto handler 'taskController'
+2016-10-7 19:45:02[ INFO](AbstractUrlHandlerMapping.java:314) Mapped URL path [/admin/gettask.*] onto handler 'taskController'
+2016-10-7 19:45:02[ INFO](AbstractUrlHandlerMapping.java:314) Mapped URL path [/admin/gettask/] onto handler 'taskController'
+2016-10-7 19:45:04[ INFO](AbstractUrlHandlerMapping.java:314) Mapped URL path [/**] onto handler 'org.springframework.web.servlet.resource.DefaultServletHttpRequestHandler#0'
+2016-10-7 19:45:04[ INFO](FrameworkServlet.java:503) FrameworkServlet 'Spring': initialization completed in 2184 ms
