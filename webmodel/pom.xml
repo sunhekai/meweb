@@ -88,6 +88,12 @@
 			<artifactId>spring-test</artifactId>
 			<version>${spring.version}</version>
 		</dependency>
+		
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-websocket</artifactId>
+			<version>${spring.version}</version>
+		</dependency>
 		<!-- mybatis start -->
 		<dependency>
 			<groupId>org.mybatis</groupId>
@@ -190,8 +196,29 @@
 			<artifactId>poi</artifactId>
 			<version>3.14</version>
 		</dependency>
+		
+		
+		<dependency>
+        	<groupId>org.springframework.data</groupId>
+        	<artifactId>spring-data-mongodb</artifactId>
+        	<version>1.9.4.RELEASE</version>
+    	</dependency>
 
 	</dependencies>
+	<profiles>
+	<profile>
+	    <id>jdk-1.7</id>
+	    <activation>
+	        <activeByDefault>true</activeByDefault>
+	        <jdk>1.7</jdk>
+	    </activation>
+	    <properties>
+	        <maven.compiler.source>1.7</maven.compiler.source>
+	        <maven.compiler.target>1.7</maven.compiler.target>
+	        <maven.compiler.compilerVersion>1.7</maven.compiler.compilerVersion>
+	    </properties>
+	</profile>
+	</profiles>
 	<modules>
 		<module>meweb-dao</module>
 		<module>meweb-service</module>

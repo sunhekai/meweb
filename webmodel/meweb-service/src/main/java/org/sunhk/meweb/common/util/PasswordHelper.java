@@ -20,7 +20,7 @@ public class PasswordHelper {
 
     @Value("${password.algorithmName}")
     private String algorithmName = "md5";
-    @Value("${password.hashIterations}")
+    //@Value("${password.hashIterations}")
     private int hashIterations = 2;
 
     public void setRandomNumberGenerator(RandomNumberGenerator randomNumberGenerator) {

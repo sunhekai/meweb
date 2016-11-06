@@ -1,8 +1,14 @@
-D:\dev\sts-bundle\webframe\meweb\webmodel\meweb-service\src\main\java\org\sunhk\meweb\service\SysUserService.java
+D:\dev\sts-bundle\webframe\meweb\webmodel\meweb-service\src\main\java\org\sunhk\meweb\common\config\WebSocketConfig.java
+D:\dev\sts-bundle\webframe\meweb\webmodel\meweb-service\src\main\java\org\sunhk\meweb\common\config\WebSocketHandshakeInterceptor.java
+D:\dev\sts-bundle\webframe\meweb\webmodel\meweb-service\src\main\java\org\sunhk\meweb\service\WebSocketService.java
 D:\dev\sts-bundle\webframe\meweb\webmodel\meweb-service\src\main\java\org\sunhk\meweb\service\IAuthService.java
-D:\dev\sts-bundle\webframe\meweb\webmodel\meweb-service\src\main\java\org\sunhk\meweb\common\realm\UserRealm.java
+D:\dev\sts-bundle\webframe\meweb\webmodel\meweb-service\src\main\java\org\sunhk\meweb\service\impl\WebSocketServiceImpl.java
 D:\dev\sts-bundle\webframe\meweb\webmodel\meweb-service\src\main\java\org\sunhk\meweb\common\filter\SysUserFilter.java
-D:\dev\sts-bundle\webframe\meweb\webmodel\meweb-service\src\main\java\org\sunhk\meweb\service\impl\AuthServiceImpl.java
 D:\dev\sts-bundle\webframe\meweb\webmodel\meweb-service\src\main\java\org\sunhk\meweb\service\impl\SysUserServiceImpl.java
+D:\dev\sts-bundle\webframe\meweb\webmodel\meweb-service\src\main\java\org\sunhk\meweb\common\util\PasswordHelper.java
+D:\dev\sts-bundle\webframe\meweb\webmodel\meweb-service\src\main\java\org\sunhk\meweb\service\SysUserService.java
+D:\dev\sts-bundle\webframe\meweb\webmodel\meweb-service\src\main\java\org\sunhk\meweb\common\realm\UserRealm.java
+D:\dev\sts-bundle\webframe\meweb\webmodel\meweb-service\src\main\java\org\sunhk\meweb\service\impl\AuthServiceImpl.java
 D:\dev\sts-bundle\webframe\meweb\webmodel\meweb-service\src\main\java\org\sunhk\meweb\service\impl\TaskServiceImpl.java
 D:\dev\sts-bundle\webframe\meweb\webmodel\meweb-service\src\main\java\org\sunhk\meweb\service\ITaskService.java
+D:\dev\sts-bundle\webframe\meweb\webmodel\meweb-service\src\main\java\org\sunhk\meweb\common\config\SystemWebSocketHandler.java
